@@ -3,6 +3,8 @@
 *.wav
 *.jpg
 *.png
+!docs/*.png
+!linkedin_banner.png
 *.svg.bak
 
 # Transcripts & temp artifacts from scratch testing
