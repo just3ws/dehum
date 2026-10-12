@@ -20,7 +20,7 @@
 		"ftype": 1
 	},
 	"params": {
-		"model": "/Users/mike/.local/share/whisper-cpp/models/ggml-large-v3.bin",
+		"model": "~/.local/share/whisper-cpp/models/ggml-large-v3.bin",
 		"language": "en",
 		"translate": false
 	},

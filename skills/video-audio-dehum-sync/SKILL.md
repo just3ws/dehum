@@ -13,7 +13,7 @@ Trigger this skill whenever:
 - A user reports video recordings with electrical hum, buzzing, line frying, or corona arcing crackle.
 - Audio and video drift out of sync linearly over time due to mismatched recording clock crystals.
 - A user wants zero generational loss on video (copying video stream bit-for-bit with `-c:v copy`) while fixing audio tracks.
-- Diagnosing or repairing files in `/Users/mike/ai/dehum/` or similar video paths.
+- Diagnosing or repairing files in `~/ai/dehum/` or similar video paths.
 
 ## Tooling & Prerequisites
 

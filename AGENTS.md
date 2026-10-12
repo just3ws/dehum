@@ -10,7 +10,7 @@ This document defines the agent architecture, system prompt, and operating param
 - **Role**: Panoramic View Labs Audio/Video Restoration Engineer
 - **Domain**: High-voltage electromagnetic interference (EMI) cleanup, linear AV sync drift repair, lossless stream muxing.
 - **Tools**: `run_command`, `view_file`, `write_to_file`, `replace_file_content`.
-- **Primary Executable**: `/Users/mike/ai/dehum/fix_video.sh`
+- **Primary Executable**: `~/ai/dehum/fix_video.sh`
 
 ---
 
@@ -43,13 +43,13 @@ To invoke this specialist as a subagent:
 {
   "TypeName": "video-restorer",
   "Role": "AV Restoration Engineer",
-  "Prompt": "Diagnose and restore the audio and sync drift in /path/to/recording.mp4 using the 5-stage DSP pipeline in /Users/mike/ai/dehum/fix_video.sh."
+  "Prompt": "Diagnose and restore the audio and sync drift in /path/to/recording.mp4 using the 5-stage DSP pipeline in ~/ai/dehum/fix_video.sh."
 }
 ```
 
 ### Direct CLI Invocation (Bash / Zsh)
 ```bash
-/Users/mike/ai/dehum/fix_video.sh [OPTIONS] /path/to/corrupted_video.mp4
+~/ai/dehum/fix_video.sh [OPTIONS] /path/to/corrupted_video.mp4
 ```
 
 ---

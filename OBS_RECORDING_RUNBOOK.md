@@ -3,7 +3,7 @@
 **Host**: Mike Hall (Staff Observability & Software Craftsmanship Architect)  
 **Recording Date**: October 12, 2026  
 **Artifact / Episode**: `errata-concept-under-the-high-tension-wires`  
-**Target Video Master**: YouTube `8LYHo1dOkMo` / Local `/Users/mike/ai/dehum/VID_20261009_111445043_fixed.mp4`
+**Target Video Master**: YouTube `8LYHo1dOkMo` / Local `~/ai/dehum/VID_20261009_111445043_fixed.mp4`
 
 ---
 
@@ -11,7 +11,7 @@
 
 ```bash
 # 1. Validate OBS contracts, audio routing, and installed profiles
-cd /Users/mike/github.com/just3ws/just3ws.github.io
+cd ~/github.com/just3ws/just3ws.github.io
 bundle exec rake validate:obs
 ./obs/scripts/test-audio-routing.sh
 
@@ -83,8 +83,8 @@ open -a OBS
 *Switch to Scene 05: Workbench Terminal.*
 - **1. Show the UNIX Tool**:
   ```bash
-  /Users/mike/ai/dehum/fix_video.sh --help
-  man /Users/mike/ai/dehum/fix_video.1
+  ~/ai/dehum/fix_video.sh --help
+  man ~/ai/dehum/fix_video.1
   ```
   - Emphasize: Strict POSIX compliance, Darwin BSD compatibility, automatic dependency checks (`ffmpeg`, `ffprobe`, `bc`), zero side effects, idempotent execution.
 - **2. Show the Filter Graph**:
@@ -121,11 +121,11 @@ open -a OBS
 
 ### Local High-Speed Endpoints & Files
 - **Localhost Preview (Nginx 200 OK)**: `https://www.just3ws.localhost/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/`
-- **Local Restored Video Master (1080p MP4)**: `/Users/mike/ai/dehum/VID_20261009_111445043_fixed.mp4`
-- **Local Raw Corrupted Video (1080p MP4)**: `/Users/mike/ai/dehum/VID_20261009_111445043.mp4`
-- **Full Forensic Report**: `/Users/mike/ai/dehum/FORENSICS.md`
-- **Whisper Telemetry Diff**: `/Users/mike/ai/dehum/TRANSCRIPT_DIFF.md`
-- **Economic & Technical Audit**: `/Users/mike/ai/dehum/ECONOMIC_AND_TECHNICAL_AUDIT.md`
+- **Local Restored Video Master (1080p MP4)**: `~/ai/dehum/VID_20261009_111445043_fixed.mp4`
+- **Local Raw Corrupted Video (1080p MP4)**: `~/ai/dehum/VID_20261009_111445043.mp4`
+- **Full Forensic Report**: `~/ai/dehum/FORENSICS.md`
+- **Whisper Telemetry Diff**: `~/ai/dehum/TRANSCRIPT_DIFF.md`
+- **Economic & Technical Audit**: `~/ai/dehum/ECONOMIC_AND_TECHNICAL_AUDIT.md`
 
 ---
 
@@ -141,4 +141,4 @@ open -a OBS
    - Scene 05: Verify `Workbench Terminal` is hooked to iTerm2.
 4. [ ] **Overlay State**:
    - Verify Lower Third displays: *"Under the High-Tension Wires"* with subtitle *"250:1 AI Economic Leverage vs. The Mirage of Competence"*.
-5. [ ] **Local Video Backup**: If internet bandwidth hiccups occur during stream, local `/Users/mike/ai/dehum/VID_20261009_111445043_fixed.mp4` is ready to play directly in QuickTime/IINA/VLC.
+5. [ ] **Local Video Backup**: If internet bandwidth hiccups occur during stream, local `~/ai/dehum/VID_20261009_111445043_fixed.mp4` is ready to play directly in QuickTime/IINA/VLC.

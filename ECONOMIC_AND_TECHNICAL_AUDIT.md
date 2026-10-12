@@ -309,9 +309,9 @@ Every asset referenced in this audit is committed, verified, and publicly access
 | **Transcript Telemetry** | [`just3ws/dehum: TRANSCRIPT_DIFF.md`](https://github.com/just3ws/dehum/blob/main/TRANSCRIPT_DIFF.md) | 93.3% lexical recovery audit and substitution diff |
 | **Google Drive Raw Master** | `Google Drive / ai / dehum / VID_20261009_111445043.mp4` | 3.12 GB raw corrupted baseline |
 | **Google Drive Restored Master**| `Google Drive / ai / dehum / VID_20261009_111445043_fixed.mp4` | 3.30 GB restored bit-for-bit muxed master |
-| **OBS Scene Collection** | [`obs/scenes/ugtastic-sound-above.json`](file:///Users/mike/github.com/just3ws/just3ws.github.io/obs/scenes/ugtastic-sound-above.json) | Production broadcast scenes configured for Chromium |
-| **OBS Browser Theme** | [`obs/browser-themes/the-sound-above-chromium.css`](file:///Users/mike/github.com/just3ws/just3ws.github.io/obs/browser-themes/the-sound-above-chromium.css) | Custom antialiased styling for recording window |
-| **OBS Errata State** | [`obs/overlays/overlay-state.json`](file:///Users/mike/github.com/just3ws/just3ws.github.io/obs/overlays/overlay-state.json) | Live overlay HUD cued to *Under the High-Tension Wires* |
+| **OBS Scene Collection** | [`obs/scenes/ugtastic-sound-above.json`](file://~/github.com/just3ws/just3ws.github.io/obs/scenes/ugtastic-sound-above.json) | Production broadcast scenes configured for Chromium |
+| **OBS Browser Theme** | [`obs/browser-themes/the-sound-above-chromium.css`](file://~/github.com/just3ws/just3ws.github.io/obs/browser-themes/the-sound-above-chromium.css) | Custom antialiased styling for recording window |
+| **OBS Errata State** | [`obs/overlays/overlay-state.json`](file://~/github.com/just3ws/just3ws.github.io/obs/overlays/overlay-state.json) | Live overlay HUD cued to *Under the High-Tension Wires* |
 
 ---
 

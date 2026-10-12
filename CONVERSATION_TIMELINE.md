@@ -67,7 +67,7 @@ flowchart LR
 - **The Browser Origin (Pre-CLI Genesis)**  
   *Context*: The task did not originate in the CLI or terminal agent. It began in the Chrome browser via Google Search / Gemini web search (`google_search_research/` saved archive). The user conducted an exploratory web search on repairing audio buzz, high-tension wire interference, and drift. Gemini web output synthesized what appeared to be an authoritative engineering specification. The user saved that generated response locally as [`PROMPT.md`](PROMPT.md) and brought it to the terminal for autonomous execution.
 - **Turn 1 (Step 0) [02:21:32Z]**  
-  **User**: `Execute PROMPT.md on /Users/mike/ai/dehum/VID_20261009_111445043.mp4`  
+  **User**: `Execute PROMPT.md on ~/ai/dehum/VID_20261009_111445043.mp4`  
   *Action*: Model in Antigravity reads `PROMPT.md` and runs `ffprobe`. Finds video is 1303.61s (21m 43s) while audio is 1091.09s (18m 11s). Inheriting the flawed browser-generated specification, it makes the classic naive algorithmic leap: it calculates `1091.09 / 1303.61 = 0.836979` and immediately applies `atempo=0.837`. It copies video with `-c:v copy`.
 - **Turn 2 (Step 56) [02:34:17Z]**  
   **User**: *"The timing is improved, there's still a lot of crackle"*  

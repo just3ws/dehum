@@ -6,14 +6,14 @@
   ▄▀▀      ▀▀▄
 
 ────────────────────────────────────────────────────────────
-> Execute PROMPT.md on /Users/mike/ai/dehum/VID_20261009_111445043.mp4
+> Execute PROMPT.md on ~/ai/dehum/VID_20261009_111445043.mp4
 
 ○ Thought for 59.2s (Initial execution of the video fixing script is planned. Before proceeding, it's essential to estimate the processing duration...)
 ● Explored 1 file (PROMPT.md)
 ● Ran 13 commands (+11 · echo "scale=6; 1091.093333 / 1303.608144" | bc · echo ".836979 > 0.5" | bc)
 … 2 more actions (1 edit, 1 command) …
 ● Edited 1 file (fix_video.sh)
-● Ran 2 commands (+1 · /Users/mike/ai/dehum/fix_video.sh /Users/mike/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
+● Ran 2 commands (+1 · ~/ai/dehum/fix_video.sh ~/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
 
   I have generated the standalone restoration script fix_video.sh and launched it on VID_20261009_111445043.mp4.
 
@@ -27,7 +27,7 @@
   I will inspect and verify the resulting file once processing completes.
 
 ○ Thought for 3.9s (Cross-tool handoff rules require verification before session completion. The defined procedure involves reading a handoff file at...)
-● Ran (ffprobe -v error -show_streams -show_format /Users/mike/ai/dehum/VID_20261009_111445043_fixed.mp4 | grep -E "codec_name|duration=")
+● Ran (ffprobe -v error -show_streams -show_format ~/ai/dehum/VID_20261009_111445043_fixed.mp4 | grep -E "codec_name|duration=")
 ● Explored 1 file (task-38.log)
 … 2 more actions (1 read, 1 command) …
 ● Ran 2 commands (ls -la ~/.config/adots/handoffs/ · ls -la ~/.config/adots/handoffs/2026-10-09*: failed)
@@ -59,7 +59,7 @@
 ● Ran 27 commands, checked 1 task, killed 1 task (ffmpeg -filters | grep -E "declick|declip|denoise|noise|afftdn" · ffmpeg -h filter=adeclick · ffmpe...)
 ● Explored 1 file (fix_video.sh)
 ● Edited 1 file (fix_video.sh)
-● Ran (/Users/mike/ai/dehum/fix_video.sh /Users/mike/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
+● Ran (~/ai/dehum/fix_video.sh ~/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
 
   I've upgraded fix_video.sh to eliminate the crackle and buzzing, and re-launched it on VID_20261009_111445043.mp4.
 
@@ -75,7 +75,7 @@
   The process is running now in the background and I will notify you once the new render is verified.
 
 ● Explored 1 file (task-121.log)
-● Ran (ffprobe -v error -show_streams -show_format /Users/mike/ai/dehum/VID_20261009_111445043_fixed.mp4 | grep -E "codec_name|duration=")
+● Ran (ffprobe -v error -show_streams -show_format ~/ai/dehum/VID_20261009_111445043_fixed.mp4 | grep -E "codec_name|duration=")
 ● Explored 1 file (2026-10-09.md)
 ● Edited 1 file (2026-10-09.md) (ctrl+o to expand)
 
@@ -131,7 +131,7 @@
 
   A standard troff/groff manual page has been installed at fix_video.1. You can view it directly in the terminal at any time via:
 
-    man /Users/mike/ai/dehum/fix_video.1
+    man ~/ai/dehum/fix_video.1
 
   Covers NAME, SYNOPSIS, DESCRIPTION, DSP PIPELINE, OPTIONS, EXIT STATUS, EXAMPLES, and SEE ALSO.
   ──────
@@ -172,7 +172,7 @@
   actually looks like in a graphical format
 
 ○ Thought for 1m 32s (Artifact creation begins. Ensuring correct metadata for the new document, including a comprehensive summary and user-facing des...)
-● Ran 6 commands (+1 · python3 -c ' import ... ×3 · python3 -c ' svg_con... · cp /Users/mike/ai/de...)
+● Ran 6 commands (+1 · python3 -c ' import ... ×3 · python3 -c ' svg_con... · cp ~/ai/de...)
 ● Edited 1 file (restoration_forensics_and_drift_delta.md) (ctrl+o to expand)
 ▸ Thought for 6s
   This visualization aims to provide a concise overview. The user should review the visual representation and confirm its clarity in illustrating the...
@@ -313,8 +313,8 @@
 ● Ran 8 commands, checked 1 task (which whisper 2>/dev/null || python3 -c "import whisper; print('whisper installed')" 2>/dev/null || echo "No whispe...)
 ● Explored 3 files (f_0010.jpg, f_1085.jpg, f_1200.jpg)
 … 39 more actions (14 reads, 23 commands, 2 tasks) …
-● Ran (/Users/mike/ai/dehum/fix_video.sh --dry-run /Users/mike/ai/dehum/VID_20261009_111445043.mp4)
-● Running (/Users/mike/ai/dehum/fix_video.sh /Users/mike/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
+● Ran (~/ai/dehum/fix_video.sh --dry-run ~/ai/dehum/VID_20261009_111445043.mp4)
+● Running (~/ai/dehum/fix_video.sh ~/ai/dehum/VID_20261009_111445043.mp4) (ctrl+o to expand)
 
   I've launched the re-render with natural 1.0x speed and updated DSP filters in the background.
 
