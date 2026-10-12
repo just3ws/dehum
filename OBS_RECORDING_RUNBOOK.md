@@ -42,11 +42,18 @@ open -a OBS
 
 ## 3. Teleprompter & Talking Points Script
 
-### Segment 1: The Cold Open & Monologue (Scene 02: 00:00 – 04:00)
-- **The Hook**: "Last Friday morning, I walked under 345,000-volt transmission towers with a Motorola phone in a crosswind. The microphone recorded a brutal 60 Hz hum, electrostatic corona discharge clicks, and wind flutter. The video recorded clean 1080p."
-- **The Vague Prompt**: "I sat down at my machine and gave Gemini a simple, vague prompt: *'Fix the buzz and hum in this video, and fix the sync drift.'* Notice what I didn't give it: no DSP equations, no notch filters, no harmonic series, no spectral noise floor profiles. Just what 99% of people type into an LLM."
-- **The Immediate Trap**: "The AI gave me a script back in 30 seconds. It looked authoritative. It used `ffmpeg`. And right there in the middle was: `atempo=0.837`. An arbitrary 16.3% audio slowdown that turned my voice into slow-motion sludge and destroyed the video."
-- **The Core Question**: "Why did it do that? Because container timestamps and stream metadata had a 212-second mismatch, and the AI took the easiest syntactic shortcut. That is the 250:1 AI leverage trap."
+### Segment 1: The Cold Open & Monologue (Scene 02: 00:00 – 04:30)
+- **The Visual Contrast with Commercial AI Demos**:
+  - "When people watch polished commercial AI demos from venture-backed tech labs, they see miracles. They see ten-second prompt videos orchestrated by dedicated motion designers and marketing teams, and they think the gap between a vague idea and reality has collapsed to zero."
+  - "I want to show you what reality actually looks like when you face what is possible at this level for pocket change, compared to what the demo merchants sell."
+- **The Physical Field Condition**:
+  - "Last Friday morning, I walked under 345,000-volt transmission towers with a Motorola phone in a crosswind. The microphone recorded a brutal 60 Hz hum, electrostatic corona discharge clicks, and wind flutter. The video recorded clean 1080p."
+- **The Vague Prompt & The Instant Trap**:
+  - "I sat down at my machine and gave Gemini a simple, vague prompt: *'Fix the buzz and hum in this video, and fix the sync drift.'* Notice what I didn't give it: no DSP equations, no notch filters, no harmonic series, no spectral noise floor profiles. Just what 99% of people type into an LLM."
+  - "Within 30 seconds, it handed me a confident, mathematically absurd hallucination: `atempo=0.837`. It took a container duration gap and slowed my voice by 16.3% into slurred slow-motion, completely wrecking the master."
+- **The Synchronicity with The Sound Above**:
+  - "The deep irony and synchronicity is the topic of this entire show: *The Sound Above*. We're exploring the Chicago Software Craftsmanship movement—the engineers who gathered twenty years ago arguing over Kent Beck's four rules of simple design, deliberate practice, and knowing your tools down to the metal."
+  - "This exercise is the living embodiment of that discipline in 2026. Without the craft—without demanding *'Prove it'*, without knowing phase distortion or room acoustics—that $39.40 of compute produces automated slop at scale. But *with* the craft, that $39.40 gives a solo engineer the forensic capability of an entire production studio and audio lab. That isn't a simulation. That's the work."
 
 ### Segment 2: Video Reaction & Playback (Scene 03: 04:00 – 12:00)
 *Cue YouTube (`https://youtu.be/8LYHo1dOkMo`) in Chromium window.*
@@ -93,12 +100,14 @@ open -a OBS
   - Zero generation loss on the 1080p camera frames. Not a single pixel was re-encoded.
 
 ### Segment 5: Outro & The Sovereign Verification Challenge (Scene 08: 28:00 – 32:00)
-- **The "Skill Issue" Rebuttal**: "In contemporary tech discourse, when someone points out AI slop, people love to say *'skill issue'*. But true mastery isn't accepting an LLM's first smooth lie. True craftsmanship is testing the scaffolding and giving the raw source code to the public so they can audit it themselves."
-- **The Links**: Point viewers to:
+- **Facing What Is Possible at This Cost**:
+  - "We have to be honest about what is possible at this level for $39.40. You don't need a venture round or a fleet of consultants to do high-precision forensics and systems engineering anymore. But you do need the taste, the discipline, and the refusal to accept slop."
+  - "When the industry tries to dismiss failures as a 'skill issue', remember: real skill isn't prompt whispering. Real skill is knowing when the system is lying to you, demanding the proof, and standing in front of the audience with the raw files."
+- **The Call to Audit**: Point viewers to:
   - YouTube Master: `https://youtu.be/8LYHo1dOkMo`
   - Case Study: `https://www.just3ws.com`
   - LinkedIn Pulse: `https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc`
-  - GitHub Repo: `https://github.com/just3ws/dehum`
+  - GitHub Repo: `https://github.com/just3ws/dehum` (Fully public: run the script on your own recordings)
 
 ---
 
