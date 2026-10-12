@@ -106,6 +106,10 @@ open -a OBS
 - **Mjolnir & The Air of Legitimacy**:
   - "Notice how easy it is today to manufacture the air of legitimacy: the shields.io badges, the JSON-LD schemas, the high-res social banners, the formatted man pages, the decimal-point telemetry. We have built an ecosystem where the symbols of authority are cheaper to generate than the rigor itself."
   - "It’s like someone walking up to Mjolnir and grabbing the handle. Today, anyone with a browser can grab the hammer of complex DSP, systems programming, or legal briefs. But the God of Thunder still asks: *Are you worthy?* Do you know what happens when the lightning actually arcs through the ground?"
+- **The VC AI Buyout Pitch & "Should This Be in Rust?"**:
+  - "People are already asking: *'Why isn't this rewritten in Rust? Or Mojo? How are you going to get that $50M seed valuation from Andreessen Horowitz with a 150-line Bash script?'*"
+  - "Here's the honest VC pitch: If I wanted a $50M seed round, I'd rebrand this tomorrow as **Dehum.ai: The Sovereign Autonomous Agentic Audio-Spatial Fabric™**. I'd wrap FFmpeg in a Docker container, deploy an un-quantized 70B parameter model to 'intelligently evaluate container drift', burn $40,000 of GPU compute a month to do what 3 lines of POSIX math does in 40 milliseconds, and slap a sleek Next.js glassmorphism dashboard on top."
+  - "That is the current economic grift of modern AI tooling: taking a problem that requires 20 lines of simple, deterministic signal processing and wrapping it in layers of nondeterministic compute so you can justify an enterprise SaaS license."
 - **Facing the Uncertainty ("Maybe this all sucks")**:
   - "Maybe this all sucks. Maybe it's nothing. I don't know. And honestly, that’s the best part. Because if you already think you know, you’re just a promoter buying your own press release. True craftsmanship is doing the work in the open, exposing the seams, and welcoming people to critique the compromises."
 - **The Call to Audit**: Point viewers to:
