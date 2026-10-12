@@ -160,7 +160,7 @@ To measure the downstream impact on automated transcription (`recipes/yt-transcr
 | `00:00:00` | Going back on some kind of video soon | **Coming back on some kind of video soon** | Initial speech attack unmasked |
 | `00:00:11` | being on camera and having to speak | **looking on camera and having to speak** | Consonant clarity resolved |
 | `00:00:25` | that's my perspective | **my perspective** | Background drone misattribution removed |
-| `00:01:21` | uh eubatastic channel and | **the eubot astic channel** | Channel name articulation unmasked |
+| `00:01:21` | uh eubatastic channel and | **the UGtastic channel** | Canonical brand recovery from acoustic degradation |
 | `00:01:40` | 200 or so interviews | **200-show interviews** | Accurate acoustic identification |
 | `00:02:15` | imp ulsive | **impulsive** | De-clicking eliminates syllable splitting |
 | `00:03:00` | one of you even | **wanting to be** | Formant recovery in low-mid band |

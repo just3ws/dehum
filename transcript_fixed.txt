@@ -20,8 +20,7 @@ aftermaths of the mowing process here
 to large mammals in this area.
 And it's kind of, I'm looking at here as I'm walking back
 this path,
-looking back in time to where I started this off, the eubot
-astic channel,
+looking back in time to where I started this off, the UGtastic channel,
 And then in the beginning, I did these 200-show interviews
 and kind of got buried underneath.
 And I had to make a choice at one point.
@@ -38,7 +37,7 @@ to the bit when I start some, you know, and I'll see it
 through. And here we are. It started
 in 2011 and I've got a series queued up that I've been
 working on that's going to be walking
-back through the history of the software craftsmanship
+back through the history of the Software Craftsmanship
 movement as it started not
 too far from where I live and it wasn't on the inside but I
 was there many of
@@ -96,7 +95,7 @@ what you know maybe over the years people did kind of go
 into the personality of it but i guess i was
 blessed to be there in the beginning so i'm going back and
 i'm looking at what was what were we
-trying to do in the software craftsmanship movement those
+trying to do in the Software Craftsmanship movement those
 of us who you know identified
 it as as a part of that community that was trying to say
 how do we get better how do we help the
@@ -226,7 +225,7 @@ where appearances are
 would get five million dollar budgets and that's uh
 not being an engineer holding the line like you were called
 to do yes by bob martin or robert
-martin in his uh presentation at uh software craftsmanship
+martin in his uh presentation at uh Software Craftsmanship
 which was i want to say 2012 2013
 but uh it doesn't matter the point was he talked about it
 and this is what i think the ultimate crux of of self-ag
@@ -280,7 +279,7 @@ the time and uh
 and where do we go from here where are we now and where do
 we go from here and
 it's like one super iteration you know you know we got a
-agile we do iterative
+Agile we do iterative
 development as it works I don't get mucked up in details
 just work and yeah
 i know super vague but uh i'm i've been talking quite a
@@ -298,11 +297,11 @@ yeah not so much um
 but uh yeah so I'm going to be re-watching you test
 starting with the first interview I did
 SCNA 2011, Sergio Pereira, who was the leader of the
-Chicago alt.net user group, and also
+Chicago Alt.NET user group, and also
 the first user group, and I will mention this in the
 interview, the first user group I spoke
 at, and I thought it was really interesting to look back at
-alt.net, so I'll be publishing
+Alt.NET, so I'll be publishing
 that in the next few days and I hope it's worthwhile thank
 you
 Thank you.

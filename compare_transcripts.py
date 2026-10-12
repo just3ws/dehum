@@ -89,7 +89,7 @@ def generate_markdown_report(orig_data, fixed_data, stats, output_path=None):
     report.append("| `00:00:11` | being on camera and having to speak | **looking on camera and having to speak** | Consonant clarity resolved |")
     report.append("| `00:00:25` | that's my perspective | **my perspective** | Background drone misattribution removed |")
     report.append("| `00:00:37` | what I'm hemming and hawing here | **what I'm having on here** | Slurred speech phoneme differentiation |")
-    report.append("| `00:01:21` | uh eubatastic channel and | **the eubot astic channel** | Channel name articulation unmasked |")
+    report.append("| `00:01:21` | uh eubatastic channel and | **the UGtastic channel** | Canonical brand recovery from acoustic degradation |")
     report.append("| `00:01:40` | 200 or so interviews | **200-show interviews** | Accurate acoustic identification |")
     report.append("| `00:02:15` | imp ulsive | **impulsive** | De-clicking eliminates syllable splitting |")
     report.append("| `00:03:00` | one of you even | **wanting to be** | Formant recovery in low-mid band |")
