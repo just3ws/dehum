@@ -132,6 +132,7 @@ dehum/
 ├── .gitignore                      # Git rules (excludes heavy *.mp4 and temporary audio)
 ├── AGENTS.md                       # PVL Agent profile and subagent registration specification
 ├── CONTEXT.md                      # Physical and mathematical acoustics specification
+├── CONVERSATION_TIMELINE.md        # Chronological 41-turn, 1,793-step execution audit across 64 hours
 ├── ECONOMIC_AND_TECHNICAL_AUDIT.md # Comprehensive forensic audit: token telemetry vs human labor equivalence
 ├── FORENSICS.md                    # Detailed engineering forensics, EXIF telemetry, & signal analysis
 ├── PROMPT.md                       # Original task prompt and operational bounds
@@ -155,6 +156,7 @@ dehum/
 
 - **YouTube Master Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo) (part of the [Ramblin' & Amblin' Playlist](https://www.youtube.com/playlist?list=PLNtb969T2-l0))
 - **Companion Architecture Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)
+- **Chronological Timeline**: [`CONVERSATION_TIMELINE.md`](CONVERSATION_TIMELINE.md)
 - **Comprehensive Audit Report**: [`ECONOMIC_AND_TECHNICAL_AUDIT.md`](ECONOMIC_AND_TECHNICAL_AUDIT.md)
 - **Raw vs. Restored Video Mirror**: Google Drive directory `ai / dehum/` (`VID_20261009_111445043.mp4` raw vs `VID_20261009_111445043_fixed.mp4` restored).
 
