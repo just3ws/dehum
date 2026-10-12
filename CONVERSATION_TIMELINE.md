@@ -87,7 +87,8 @@ flowchart LR
 
 - **Turn 7 (Step 453) [00:39:59Z]**  
   **User**: `Handoff` / `commit` / `use gh to create a dehum repo at github.com/just3ws/dehum`  
-  *Action*: Initializing permanent source control for the toolchain.
+  *Action*: Initializing permanent source control for the toolchain.  
+  *Account Quota Event*: Primary developer account quota reached exhaustion after the initial heavy exploration pass. Execution transitioned to a secondary long-term account operating under free-tier starter quota.
 - **Turn 10 (Step 489) [00:46:17Z]**  
   **User**: *"Describe everything that was done here in a README.md with full context..."*  
   *Action*: First pass technical writeup documenting the initial DSP attempts.
@@ -159,7 +160,8 @@ flowchart LR
   *Action*: Parsed transcript telemetry: 818 turns, 4.6M prompt tokens, 103.7M cached reads ($39.40 API spend) vs $10,010 commercial human labor across 5 disciplines (254:1 leverage ratio). Authored `ECONOMIC_AND_TECHNICAL_AUDIT.md` and Section 5.6. Synced YouTube description via API.
 - **Turn 40 (Step 1729) [18:41:44Z]**  
   **User**: *"Add Google Analytics to just3ws. Leverage Google Drive for the 'original' unedited source file..."*  
-  *Action*: Added GA4 (gtag.js) support to Jekyll, pushed to master (`40e97890`), mirrored raw & fixed masters to Google Drive.
+  *Action*: Added GA4 (gtag.js) support to Jekyll, pushed to master (`40e97890`), mirrored raw & fixed masters to Google Drive.  
+  *Account Quota Event*: Secondary free-tier account exhausted its weekly quota allowance (dropping to 0.24% remaining with a 159-hour reset timer). As the rolling quota window on the primary account replenished, execution shifted back to the main developer account for final publication and repository infrastructure.
 - **Turn 41 (Step 1793) [18:46:28Z]**  
   **User**: *"Hell, I want a timeline on this conversation just let's go nuts. What is possible here? Go."*  
   *Action*: Complete forensic chronography across 41 turns and 1,793 execution steps.

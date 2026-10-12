@@ -59,12 +59,21 @@ Because the entire investigation ran within the instrumented Gemini CLI / Antigr
 | **Direct Prompt Input** | 4,615,676 tokens | $1.25 / 1M tokens | $5.77 |
 | **Context Cache Reads** | 103,716,714 tokens | $0.3125 / 1M tokens | $32.41 |
 | **Output / Thinking** | 244,279 tokens | $5.00 / 1M tokens | $1.22 |
-| **Total Model Inference** | — | — | **$39.40** |
+| **Total Model Inference (API Equivalence)** | — | — | **$39.40** |
 | **Local Hardware Electricity** | Apple M4 Media Engine (15W avg) | $0.16 / kWh (36 hrs) | ~$0.09 |
-| **Total Real Out-of-Pocket** | — | — | **$39.49** |
-| **Standard Pro Subscription**| Flat Developer Tier ($20/mo) | Prorated 3 days | **~$2.00** |
+| **Total Real Out-of-Pocket Cash** | Account Subscription & Quota Pools | Multi-Account Free Tier / Starter | **~$0.00 – $2.00** |
 
-The entire multi-day forensic cycle, including audio DSP synthesis, container demuxing, video encoding, transcription alignment, OBS Studio scaffolding, and essay publishing, consumed **less than $40 in compute**.
+### 1.3 The Account Migration & Actual Out-of-Pocket Investment
+
+The computational volume was not run against a single unlimited corporate credit card or boundless enterprise enterprise quota. It reflected the real, gritty reality of a working engineer moving across quota boundaries:
+
+1. **Phase 1 (The Initial Sprint)**: Began with the remainder of the developer's primary personal subscription quota.
+2. **Phase 2 (The Midday Exhaustion)**: When the primary quota depleted during the heavy iterative DSP filtering passes and container probe loops, execution migrated to a secondary long-term account operating on free-tier starter allowances.
+3. **Phase 3 (The Multi-Account Cap)**: That secondary account was pushed until its weekly free-tier allowance was fully exhausted (dropping to 0.24% remaining with a 159-hour reset timer).
+4. **Phase 4 (The Return & Convergence)**: As the primary account's rolling quota window replenished, execution migrated back to the main account to synthesize the audits, build the OBS scaffolding, publish the companion essays, and establish the permanent git repositories.
+
+**The Economic Reality**:
+While the raw API token market value was **$39.40**, the actual out-of-pocket cash expenditure for the engineer was essentially **$0.00 to ~$2.00** of prorated monthly subscription. That represents an astonishing level of leverage: an individual developer stitching together standard developer quotas and free-tier pools to extract **$10,500 of commercial-grade technical labor**.
 
 ---
 
