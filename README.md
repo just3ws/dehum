@@ -91,17 +91,24 @@ All achieved on a standard, accessible **Gemini 3.8 Flash subscription**.
 
 ### 5.1 CLI Script: `fix_video.sh`
 ```bash
+# Display full built-in help and option flags:
+./fix_video.sh --help
+
 # Standard automated restoration:
 ./fix_video.sh VID_20261009_111445043.mp4
 
 # Preview calculated filters without writing files:
 ./fix_video.sh --dry-run VID_20261009_111445043.mp4
 
-# European 50 Hz grid:
+# Specify custom output path:
+./fix_video.sh -o cleaned.mp4 VID_20261009_111445043.mp4
+
+# Target European 50 Hz electrical grid:
 ./fix_video.sh --base-freq 50 recording.mp4
 ```
 
 ### 5.2 UNIX Manual Page
+A complete groff/troff man page is bundled and documented for POSIX systems:
 ```bash
 man ./fix_video.1
 ```
@@ -135,12 +142,17 @@ dehum/
 ├── CONVERSATION_TIMELINE.md        # Chronological 41-turn, 1,793-step execution audit across 64 hours
 ├── ECONOMIC_AND_TECHNICAL_AUDIT.md # Comprehensive forensic audit: token telemetry vs human labor equivalence
 ├── FORENSICS.md                    # Detailed engineering forensics, EXIF telemetry, & signal analysis
+├── LINKEDIN_POST.md                # Clean Markdown publication copy for LinkedIn Articles / Pulse
 ├── PROMPT.md                       # Original task prompt and operational bounds
 ├── README.md                       # Complete engineering forensics and restoration guide
 ├── TRANSCRIPT_DIFF.md              # Empirical transcript comparison and word-error telemetry
+├── YOUTUBE_COMMUNITY_POST.md       # Long-form YouTube Community update linking to audits
 ├── compare_transcripts.py          # Reproducible transcript comparison and diff tooling
+├── copy_to_clipboard.sh            # macOS RTF clipboard exporter for rich-text article editors
 ├── fix_video.sh                    # Production executable restoration tool (Bash 3.2 / macOS)
 ├── fix_video.1                     # Troff/groff UNIX manual page
+├── linkedin_article.html           # Standalone browser HTML source document for copy-pasting
+├── linkedin_banner.png             # 1200x644 high-res LinkedIn article cover banner image
 ├── archive/
 │   ├── README.md                   # Archive manifest of prompt research
 │   └── google_search_research/     # Archival web research assets
@@ -156,6 +168,7 @@ dehum/
 
 - **YouTube Master Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo) (part of the [Ramblin' & Amblin' Playlist](https://www.youtube.com/playlist?list=PLNtb969T2-l0))
 - **Companion Architecture Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)
+- **LinkedIn Companion Article**: [`LINKEDIN_POST.md`](LINKEDIN_POST.md) / [`linkedin_article.html`](linkedin_article.html) with 1200x644 banner [`linkedin_banner.png`](linkedin_banner.png)
 - **Chronological Timeline**: [`CONVERSATION_TIMELINE.md`](CONVERSATION_TIMELINE.md)
 - **Comprehensive Audit Report**: [`ECONOMIC_AND_TECHNICAL_AUDIT.md`](ECONOMIC_AND_TECHNICAL_AUDIT.md)
 - **Raw vs. Restored Video Mirror**: Google Drive directory `ai / dehum/` (`VID_20261009_111445043.mp4` raw vs `VID_20261009_111445043_fixed.mp4` restored).
