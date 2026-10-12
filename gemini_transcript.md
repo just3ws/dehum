@@ -1,6 +1,6 @@
 
       ▄▀▀▄        Antigravity CLI 1.3.2
-     ▀▀▀▀▀▀       zalewhol@gmail.com (Antigravity Starter Quota)
+     ▀▀▀▀▀▀       developer@just3ws.com (Antigravity Starter Quota)
     ▀▀▀▀▀▀▀▀      Gemini 3.8 Flash (Medium)
    ▄▀▀    ▀▀▄     ~/ai/dehum
   ▄▀▀      ▀▀▄
@@ -333,7 +333,7 @@
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 └ Models & Quota
 
-  Account: zalewhol@gmail.com
+  Account: developer@just3ws.com
 
 GEMINI MODELS
   Models within this group: Gemini Flash, Gemini Pro
