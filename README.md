@@ -168,7 +168,8 @@ dehum/
 
 - **YouTube Master Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo) (part of the [Ramblin' & Amblin' Playlist](https://www.youtube.com/playlist?list=PLNtb969T2-l0))
 - **Companion Architecture Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)
-- **LinkedIn Companion Article**: [`LINKEDIN_POST.md`](LINKEDIN_POST.md) / [`linkedin_article.html`](linkedin_article.html) with 1200x644 banner [`linkedin_banner.png`](linkedin_banner.png)
+- **Published LinkedIn Article**: [Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop, and Real Mastery](https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc)
+- **LinkedIn Workspace Copy**: [`LINKEDIN_POST.md`](LINKEDIN_POST.md) / [`linkedin_article.html`](linkedin_article.html) with 1200x644 banner [`linkedin_banner.png`](linkedin_banner.png)
 - **Chronological Timeline**: [`CONVERSATION_TIMELINE.md`](CONVERSATION_TIMELINE.md)
 - **Comprehensive Audit Report**: [`ECONOMIC_AND_TECHNICAL_AUDIT.md`](ECONOMIC_AND_TECHNICAL_AUDIT.md)
 - **Raw vs. Restored Video Mirror**: Google Drive directory `ai / dehum/` (`VID_20261009_111445043.mp4` raw vs `VID_20261009_111445043_fixed.mp4` restored).
