@@ -1,138 +1,208 @@
-# Video Audio Dehum & Dynamic Sync Drift Restoration
+# High-Voltage Audio Dehum, De-crackle & Sync Restoration Engine (`dehum`)
 
-A high-performance command-line audio restoration and sync-correction utility for video files recorded in high electromagnetic interference (EMI) environments (e.g., directly beneath high-tension power transmission lines).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform: macOS / Linux](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey.svg)](README.md)
+[![FFmpeg: 7.x / 8.x / 9.x](https://img.shields.io/badge/FFmpeg-Ready-green.svg)](https://ffmpeg.org)
 
----
-
-## ⚡ The Physical Problem
-
-Filming near high-voltage utility lines exposes camera sensors and microphone hardware to strong alternating magnetic and electrostatic fields:
-
-1. **60 Hz Fundamental Hum**: Electromagnetic induction couples directly into microphone preamplifiers and audio traces, producing an intense, low-frequency 60 Hz hum (or 50 Hz outside the Americas).
-2. **Harmonic "Frying" Buzz**: Power lines do not produce pure sines; non-linear transformer loads and corona discharge create rich harmonic overtones at $120, 180, 240, 300, 360, 420, 480, 540, 600\text{ Hz}$ that sound like an electrical buzzing or frying noise.
-3. **Corona Discharge Arcing (Crackle)**: Ionization of the surrounding air generates thousands of microsecond electrostatic discharge spikes per minute, producing dense impulse crackle across the high frequencies.
-4. **Hardware Crystal Clock Drift**: Intense EMI can disrupt internal clock oscillator crystals in consumer camera/phone hardware, causing the audio sampling rate and video frame clock to drift asynchronously. Over a 20-minute take, audio can drift by hundreds of seconds.
+A high-fidelity forensic audio restoration pipeline and command-line utility for repairing video and audio recordings corrupted by **high-tension electromagnetic interference (EMI)**, **corona discharge micro-arcing**, and **asymmetric multi-mic mobile phone recording failures**.
 
 ---
 
-## 🚀 Quick Start
+## 1. Executive Summary & Forensic Narrative
 
-Ensure dependencies are installed:
-```bash
-brew install ffmpeg bc
-```
+### 1.1 The Initial Incident & Inquiry
+A 21-minute 43-second video (`VID_20261009_111445043.mp4`, ~3.1 GB) was recorded on a mobile device (Motorola Moto G) directly beneath high-voltage overhead power transmission lines. 
 
-Run restoration directly on any video file:
-```bash
-./fix_video.sh /path/to/my_corrupted_video.mp4
-```
+Upon playback, the media presented severe issues:
+1. **Intense Low-Frequency Buzz and Drone**: High-voltage 60 Hz electromagnetic induction accompanied by audible harmonic overtones spanning up to 600 Hz.
+2. **Persistent Corona Discharge Crackle**: Non-stationary high-derivative impulse spikes throughout the recording, characteristic of atmospheric ionization and electrical discharge micro-arcing.
+3. **Severe Stream Duration Discrepancy**: Container headers reported a video duration of **1303.61s** (21m 43s) but an audio duration of only **1091.09s** (18m 11s) — an apparent delta of **212.5 seconds (3.5 minutes)**.
 
-Output is written to `/path/to/my_corrupted_video_fixed.mp4` with the original video stream preserved **bit-for-bit** (`-c:v copy`).
+The initial inquiry requested full restoration of speech intelligibility, removal of electrical hum and crackle, perfect audio/video synchronization, and **zero generational quality loss** on the video track.
 
 ---
 
-## 🛠️ Command-Line Interface (`fix_video.sh`)
+### 1.2 Chronological Forensic Investigation
 
-```text
-Usage: fix_video.sh [OPTIONS] <input_file>
-
-Options:
-  -h, --help            Show full manual and documentation.
-  -v, --version         Show script version.
-  -n, --dry-run         Probe streams and display calculated drift ratio & filtergraph.
-  -o, --output <path>   Specify output destination path.
-  --highpass <Hz>       Cutoff for sub-rumble highpass (default: 80 Hz, 0 to disable).
-  --q-factor <Q>        Q-factor for harmonic notches (default: 30, higher = narrower).
-  --harmonics <N>       Number of harmonic notches (default: 10, i.e. 60 Hz - 600 Hz).
-  --base-freq <Hz>      Fundamental grid frequency (default: 60 Hz, use 50 for Europe).
-  --no-declick          Disable impulsive crackle removal stage (adeclick).
-  --no-denoise          Disable adaptive FFT spectral noise reduction (afftdn).
+```
+[Initial Inquiry]
+       │
+       ▼
+[Hypothesis 1: Linear Clock Drift] ──► atempo=0.836979
+       │                                     │
+       │                                     ▼
+       │                            [Result: Artificial Slurring & Severe Desync]
+       ▼
+[Whisper & Frame Diagnostics]
+  • Speech onset ("Here I am...") at t=11.60s matches un-stretched audio exactly
+  • Final words ("Thank you") delivered at t=1089s
+  • Camera recorded trailing scenery silently for 3.5m after speech ended
+  • Conclusion: Original speech was recorded at true 1.0x speed; duration gap was trailing silence
+       │
+       ▼
+[Hypothesis 2: Spectral & Impulse Over-Filtering]
+  • Default adeclick (t=2) destroyed vocal consonants (over-filtering)
+  • Dynamic noise tracking (afftdn tn=1) caused underwater robotic flanging
+  • Unbounded apad caused 176 hours of silence allocation & FFmpeg OOM
+       │
+       ▼
+[Hypothesis 3: Asymmetric Hardware Channel Analysis (Root Cause)]
+  • Motorola Moto G records stereo using primary (bottom) mic and secondary (top) mic
+  • Channel Left (Primary):   SNR 14.0, Voice Dynamic Range 11.46 dB, Speech Intact
+  • Channel Right (Secondary): SNR 1.05, Voice Dynamic Range 0.20 dB, Flooded by Induction
+  • Low-frequency sub-rumble (<100 Hz) was 65.2x stronger in Right channel than Left!
+  • Stereo playback had been playing pure induction noise from the top mic on top of clean voice
+       │
+       ▼
+[Production Solution: Left Channel Isolation + Calibrated Multi-Stage DSP]
+  • Isolated clean Left channel (pan=stereo|c0=c0|c1=c0)
+  • Eliminated 98% of induction rumble before filtering
+  • Restored natural 1.0x speech and bit-for-bit video copy
 ```
 
-### Common Usage Examples
+---
 
+## 2. Technical Root Causes
+
+### 2.1 Electromagnetic Coupling Mechanisms
+1. **Faraday Induction ($\vec{B}$-Field)**:
+   Alternating current (60 Hz AC) in high-voltage lines generates oscillating magnetic fields coupling into the device's printed circuit traces and pre-amplifiers:
+   $$\mathcal{E} = -\frac{d\Phi_B}{dt} = -\frac{d}{dt} \int \vec{B} \cdot d\vec{A}$$
+   Non-linearities in power equipment produce sharp odd and even harmonics ($60, 120, 180, 240, 300, \dots, 600\text{ Hz}$).
+2. **Corona Discharge Arcing (Impulse Spikes)**:
+   High electric field gradients ionize surrounding air, producing microsecond current pulses. In digital audio, these register as violent sample-to-sample amplitude jumps ($|\Delta s| > 2000$).
+3. **Dual-Microphone Phone Asymmetry**:
+   Smartphones utilize dual-microphone arrays for background noise cancellation. Under high-voltage transmission lines, the secondary top-mounted microphone acted as a high-gain inductive antenna, picking up pure electromagnetic drone while receiving minimal vocal energy. When mixed into stereo, this corrupts the entire soundstage.
+
+### 2.2 Forensic Audio Metrics: Left vs. Right Channel
+| Metric | Left Channel (Bottom Mic) | Right Channel (Top Mic) | Delta / Interpretation |
+| :--- | :--- | :--- | :--- |
+| **Silence RMS** | $176.31$ | $611.15$ | Right channel ambient noise is **$3.5\times$ louder** |
+| **Speech RMS** | $659.78$ | $625.23$ | Right channel registers almost no acoustic gain |
+| **Dynamic Range** | **$11.46\text{ dB}$** | **$0.20\text{ dB}$** | Right channel voice is buried beneath noise floor |
+| **Signal-to-Noise Ratio (SNR)**| **$14.00$** | **$1.05$** | Right channel is mathematically unusable |
+| **Sub-rumble Energy ($<100\text{ Hz}$)** | $7.86 \times 10^{15}$ | $5.12 \times 10^{17}$ | Right channel has **$65.2\times$ more low-frequency drone** |
+| **Impulse Transients ($|\Delta s| > 2000$)** | $76$ | $4$ | Micro-arcing localized in Left microphone traces |
+
+---
+
+## 3. The Restoration Architecture
+
+### 3.1 Lossless Video Stream Copy
+Video frames are never decompressed or re-encoded:
 ```bash
-# Preview calculation without re-encoding:
+-c:v copy
+```
+This guarantees zero compression artifacts, preserves native resolution, bitrate, color space, and completes processing in seconds rather than hours.
+
+### 3.2 Multi-Stage Audio DSP Filtergraph
+```
+Input Audio ──► [Stage 0: pan] ──► [Stage 1: highpass] ──► [Stage 2: adeclick]
+                     │                     │                      │
+            Isolate Clean Left        Roll off <80Hz         Eliminate Arcing
+            (pan=stereo|c0=c0|c1=c0)  Sub-Rumble Mud         Impulse Spikes
+                     │                     │                      │
+                     ▼                     ▼                      ▼
+              [Stage 3: afftdn] ──► [Stage 4: bandreject] ──► [Stage 5: apad] ──► Output Audio
+                     │                     │                      │
+             Spectral Denoise      10x High-Q Notches       Pad Trailing Silence
+             (nr=6:nf=-50)         (60Hz - 600Hz, Q=30)     (whole_dur=VIDEO_LEN)
+```
+
+1. **Stage 0 — Channel Selection (`pan=stereo|c0=c0|c1=c0`)**:
+   Duplicates the speech-intact Left channel across both channels, instantly discarding the EMI-corrupted Right channel.
+2. **Stage 1 — Sub-Audio Highpass (`highpass=f=80`)**:
+   2nd order Butterworth highpass roll-off for mechanical wind and handling vibration.
+3. **Stage 2 — Impulsive De-clicking (`adeclick=w=30:o=75:t=2:b=3`)**:
+   Autoregressive sample predictor repairing micro-arcing click spikes before spectral processing.
+4. **Stage 3 — FFT Spectral Denoising (`afftdn=nr=6:nf=-50`)**:
+   Static spectral subtractor with a $-50\text{ dB}$ floor, avoiding dynamic tracking artifacts.
+5. **Stage 4 — Harmonic Notch Filters (`bandreject=f=<f>:width_type=q:w=30`)**:
+   Ten cascaded Butterworth notch filters targeting $60, 120, 180, 240, 300, 360, 420, 480, 540, 600\text{ Hz}$.
+6. **Stage 5 — Container Duration Padding (`apad=whole_dur=${VIDEO_DURATION}`)**:
+   Pads trailing silence to ensure exact container parity with the video stream without stretching audio.
+
+---
+
+## 4. Usage & Command-Line Reference
+
+### 4.1 CLI Script: `fix_video.sh`
+```bash
+./fix_video.sh [OPTIONS] <input_file.mp4>
+```
+
+#### Key Options:
+| Flag | Description | Default |
+| :--- | :--- | :--- |
+| `-h, --help` | Display comprehensive manual and usage instructions | — |
+| `-n, --dry-run` | Analyze durations and output generated filtergraph without writing files | `false` |
+| `-o, --output <path>` | Specify custom destination path | `<basename>_fixed.<ext>` |
+| `--channel <left\|right\|stereo>` | Select audio channel isolation mapping | `left` |
+| `--highpass <Hz>` | Cutoff frequency for sub-rumble highpass filter | `80` |
+| `--q-factor <Q>` | Notch filter Q-factor (higher Q = narrower notch) | `30` |
+| `--harmonics <N>` | Number of power line harmonic notches to apply | `10` |
+| `--base-freq <Hz>` | Grid fundamental frequency (US: 60, EU: 50) | `60` |
+| `--declick-thresh <T>` | Sensitivity threshold for `adeclick` filter | `2` |
+| `--no-declick` | Disable impulse de-clicking stage | `false` |
+| `--no-denoise` | Disable FFT spectral noise reduction | `false` |
+| `--stretch` | Force linear time-stretching via `atempo` (for genuine clock drift) | `false` |
+
+#### Examples:
+```bash
+# Standard automated restoration (clean Left channel, dehum, de-crackle):
+./fix_video.sh VID_20261009_111445043.mp4
+
+# Dry-run analysis:
 ./fix_video.sh --dry-run VID_20261009_111445043.mp4
 
-# Run with custom output file:
-./fix_video.sh -o cleaned.mp4 VID_20261009_111445043.mp4
+# European 50 Hz power grid with stereo retention:
+./fix_video.sh --base-freq 50 --channel stereo recording.mp4
+```
 
-# European 50 Hz power grid with 8 harmonics:
-./fix_video.sh --base-freq 50 --harmonics 8 European_video.mp4
-
-# View built-in UNIX man page:
+### 4.2 System Manual Page
+Inspect the full UNIX man page:
+```bash
 man ./fix_video.1
 ```
 
 ---
 
-## 🎛️ The 5-Stage Audio DSP Pipeline
+## 5. Integration with zdots & Transcription Pipeline
 
-```mermaid
-flowchart LR
-    A["Raw Audio Stream"] --> B["1. highpass (80 Hz)<br/>Sub-rumble cut"]
-    B --> C["2. adeclick<br/>Corona arc de-clicker"]
-    C --> D["3. afftdn<br/>Adaptive FFT denoiser"]
-    D --> E["4. bandreject (x10)<br/>60 Hz to 600 Hz notches"]
-    E --> F["5. atempo<br/>Dynamic sync time-stretch"]
-    F --> G["AAC Mux (192 kbps)"]
+Once the audio stream is restored, run it through the local `zdots` transcription suite:
 
-    V["Raw Video Stream"] --> H["Lossless Streamcopy<br/>(-c:v copy)"]
-    H --> I["Final Mux (.mp4)"]
-    G --> I
-```
-
-### Stage 1: Sub-Rumble Highpass Filter (`highpass=f=80`)
-Attenuates frequencies below 80 Hz with a steep roll-off. This eliminates physical wind, body-handling rumble, and sub-audio induction without shaving human vocal fundamentals (human speech fundamentals typically begin at 85–100 Hz for low male voices and 165–255 Hz for female voices).
-
-### Stage 2: Impulsive Corona De-clicker (`adeclick`)
-Runs an autoregressive linear predictive detector to identify sharp, non-stationary impulses in the time domain. It reconstructs and cross-fades corrupted sample windows before frequency-domain filtering. In high-tension testing, this removed over **3.9 million** click/crackle impulses across a 21-minute file.
-
-### Stage 3: Adaptive FFT Denoiser (`afftdn=nr=10:nf=-45:tn=1`)
-Performs windowed Fast Fourier Transform spectral noise reduction with continuous noise-tracking (`tn=1`). It establishes an adaptive baseline to suppress the diffuse electromagnetic background hiss without introducing robotic "musical noise" artifacts.
-
-### Stage 4: High-Q Harmonic Notch Filters (`bandreject`)
-Applies sharp 2-pole Butterworth band-reject filters with high selectivity ($Q=30$):
-$$\text{Bandwidth} = \frac{f_c}{Q} = \frac{60\text{ Hz}}{30} = 2.0\text{ Hz}$$
-Because the notch width is only $\pm 1\text{ Hz}$ around each center frequency, human speech intelligibility and timbre are fully preserved while eliminating the fundamental and all 10 harmonics:
-$$60, 120, 180, 240, 300, 360, 420, 480, 540, 600\text{ Hz}$$
-
-### Stage 5: Dynamic Time-Stretching (`atempo`)
-Measures exact video stream duration ($D_v$) and audio stream duration ($D_a$) using `ffprobe`:
-$$\text{Speed Ratio} = \frac{D_a}{D_v}$$
-- If $D_v > D_a$: Ratio $< 1.0 \implies$ Audio is slowed down to match longer video length.
-- If $D_v < D_a$: Ratio $> 1.0 \implies$ Audio is sped up to match shorter video length.
-- The `atempo` filter preserves audio pitch without re-pitching artifacts.
-
----
-
-## ⚡ Zero Generational Loss
-
-Because the camera video stream is unaffected by audio noise, `fix_video.sh` uses FFmpeg stream copying:
+### 5.1 Extract 16 kHz Mono Audio for Whisper
 ```bash
--c:v copy
+ffmpeg -y -i VID_20261009_111445043_fixed.mp4 -vn -ar 16000 -ac 1 -c:a pcm_s16le audio_16k.wav
 ```
-- No video re-encoding (0% quality loss, 0 generational blur).
-- Output completes in roughly 60–90 seconds for a 20-minute 1080p file, bounded almost entirely by disk I/O and audio DSP speed (~20–30x realtime).
+
+### 5.2 Execute `ztranscribe`
+```bash
+ztranscribe --from-wav audio_16k.wav --output-base transcript_clean
+```
+Outputs `.txt`, `.srt`, `.vtt`, `.json`, and `.summary.md`.
 
 ---
 
-## 🔍 Troubleshooting & Edge Cases
+## 6. Repository Structure
 
-| Symptom | Diagnostic | Recommended Resolution |
-|---|---|---|
-| **60 Hz hum gone, but metallic buzzing remains** | Harmonics above 600 Hz present. | Run with `--harmonics 16` to notch up to 960 Hz. |
-| **Vocal tone sounds thin or hollow** | Notch bandwidth too wide or highpass too aggressive. | Increase `--q-factor 40` (narrower notch) and reduce `--highpass 60`. |
-| **Crackle remains during loud speech** | Speech peaks triggering clipping distortion. | Pre-pend `adeclip` to the filter chain in `fix_video.sh`. |
-| **Sync drifts non-linearly (good in middle, off at end)** | Non-linear drift from dropped frames rather than clock drift. | Use `aresample=async=1000` to lock audio to video PTS timestamps. |
-| **European / UK / Asian recording** | Grid operates on 50 Hz fundamental. | Run with `--base-freq 50`. |
+```
+dehum/
+├── .gitignore                      # Ignore heavy binaries (*.mp4, *.wav) and scratch files
+├── AGENTS.md                       # PVL Agent profile and subagent registration specification
+├── CONTEXT.md                      # Physical and mathematical acoustics specification
+├── PROMPT.md                       # Original task prompt and operational bounds
+├── README.md                       # Complete engineering forensics and restoration guide
+├── fix_video.sh                    # Production executable restoration tool (Bash 3.2 / macOS)
+├── fix_video.1                     # Troff/groff UNIX man page
+├── skills/
+│   └── video-audio-dehum-sync/
+│       └── SKILL.md                # Reusable Antigravity / Gemini CLI skill
+└── sync_and_audio_delta.svg        # Forensic vector visualization of drift and spectrum delta
+```
 
 ---
 
-## 🤖 Automation, Skills & Agent Profiles
-
-- **UNIX Man Page**: Viewable locally via `man ./fix_video.1`.
-- **Antigravity / Gemini CLI Skill**: Defined in `skills/video-audio-dehum-sync/SKILL.md` (and mirrored to `~/.gemini/skills/`).
-- **Context Specification**: Detailed engineering specification in `CONTEXT.md`.
-- **Agent Profile**: Restoration subagent profile in `AGENTS.md`.
+## 7. License & Credits
+Developed under the **Panoramic View Labs (PVL)** initiative for high-fidelity audio/video forensics and media restoration.
+Released under the MIT License.

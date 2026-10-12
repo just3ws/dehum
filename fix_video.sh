@@ -12,7 +12,9 @@ Q_FACTOR=30
 HARMONICS_COUNT=10
 BASE_FREQ=60
 ENABLE_DECLICK=true
+DECLICK_THRESH=2
 ENABLE_DENOISE=true
+CHANNEL_MODE="left"
 DRY_RUN=false
 CUSTOM_OUTPUT=""
 INPUT_FILE=""
@@ -78,6 +80,12 @@ OPTIONS
 
     --no-denoise
         Disable adaptive FFT spectral noise reduction (afftdn).
+
+    --channel <left|right|stereo>
+        Select audio channel mapping (default: left). Phones record with dual
+        mics where the secondary/top mic is frequently overwhelmed by EMI
+        induction (SNR ~1.0). Selecting 'left' duplicates the clean primary
+        channel to both stereo channels (pan=stereo|c0=c0|c1=c0).
 
     --stretch
         Force dynamic time-stretching via atempo (default is to preserve natural
@@ -148,6 +156,14 @@ while [[ $# -gt 0 ]]; do
         --no-denoise)
             ENABLE_DENOISE=false
             shift
+            ;;
+        --channel)
+            CHANNEL_MODE="$2"
+            shift 2
+            ;;
+        --declick-thresh)
+            DECLICK_THRESH="$2"
+            shift 2
             ;;
         --stretch)
             DO_STRETCH=true
@@ -263,14 +279,31 @@ esac
 # Build filtergraph dynamically
 FILTER_PARTS=()
 
+# Stage 0: Channel selection / isolation
+case "$CHANNEL_MODE" in
+    left)
+        FILTER_PARTS+=("pan=stereo|c0=c0|c1=c0")
+        ;;
+    right)
+        FILTER_PARTS+=("pan=stereo|c0=c1|c1=c1")
+        ;;
+    stereo)
+        # Leave original stereo channels
+        ;;
+    *)
+        echo "❌ Invalid --channel option: $CHANNEL_MODE (expected: left, right, stereo)" >&2
+        exit 1
+        ;;
+esac
+
 # Stage 1: Highpass filter for sub-audio mud/rumble
 if [ "$HIGHPASS_FREQ" -gt 0 ]; then
     FILTER_PARTS+=("highpass=f=${HIGHPASS_FREQ}")
 fi
 
-# Stage 2: Impulsive click/crackle removal (adeclick with speech-safe threshold t=8)
+# Stage 2: Impulsive click/crackle removal (adeclick with tuned window & overlap)
 if [ "$ENABLE_DECLICK" = true ]; then
-    FILTER_PARTS+=("adeclick=t=8")
+    FILTER_PARTS+=("adeclick=w=30:o=75:t=${DECLICK_THRESH}:b=3")
 fi
 
 # Stage 3: FFT denoiser (afftdn without destructive tracking tn=1 to avoid underwater robotic voice)
