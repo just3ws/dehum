@@ -6,15 +6,16 @@
 
 set -euo pipefail
 
-VERSION="1.2.0"
-HIGHPASS_FREQ=80
-Q_FACTOR=30
+VERSION="1.3.0"
+HIGHPASS_FREQ=90
+Q_FACTOR=15
 HARMONICS_COUNT=10
 BASE_FREQ=60
 ENABLE_DECLICK=true
 DECLICK_THRESH=2
 ENABLE_DENOISE=true
-LOWPASS_FREQ=5000
+ENABLE_GATE=true
+LOWPASS_FREQ=4000
 CHANNEL_MODE="left"
 DRY_RUN=false
 CUSTOM_OUTPUT=""
@@ -311,12 +312,12 @@ if [ "$ENABLE_DECLICK" = true ]; then
     FILTER_PARTS+=("adeclick=w=30:o=75:t=${DECLICK_THRESH}:b=3")
 fi
 
-# Stage 3: FFT denoiser (afftdn without destructive tracking tn=1 to avoid underwater robotic voice)
+# Stage 3: FFT denoiser (afftdn with gain smoothing)
 if [ "$ENABLE_DENOISE" = true ]; then
-    FILTER_PARTS+=("afftdn=nr=6:nf=-50")
+    FILTER_PARTS+=("afftdn=nr=18:nf=-45:nt=c:gs=10")
 fi
 
-# Stage 4: High-Q Notch filters for base frequency and harmonics
+# Stage 4: High-Q Notch filters for base frequency and harmonics (Q=15)
 for (( i=1; i<=HARMONICS_COUNT; i++ )); do
     f_harmonic=$(( BASE_FREQ * i ))
     FILTER_PARTS+=("bandreject=f=${f_harmonic}:width_type=q:w=${Q_FACTOR}")
@@ -327,7 +328,12 @@ if [ "$LOWPASS_FREQ" -gt 0 ]; then
     FILTER_PARTS+=("lowpass=f=${LOWPASS_FREQ}")
 fi
 
-# Stage 6: Sync Alignment: stretch only if explicitly requested, otherwise pad to video length
+# Stage 6: Downward Expander Gate (suppresses background hum and induction during speech pauses)
+if [ "$ENABLE_GATE" = true ]; then
+    FILTER_PARTS+=("agate=threshold=0.012:ratio=2.5:attack=15:release=150:range=0.1")
+fi
+
+# Stage 7: Sync Alignment: stretch only if explicitly requested, otherwise pad to video length
 if [ "$DO_STRETCH" = true ]; then
     FILTER_PARTS+=("atempo=${SPEED_RATIO}")
 else

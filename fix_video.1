@@ -1,4 +1,4 @@
-.TH FIX_VIDEO 1 "October 2026" "fix_video 1.2.0" "User Commands"
+.TH FIX_VIDEO 1 "October 2026" "fix_video 1.3.0" "User Commands"
 .SH NAME
 fix_video \- automated audio dehum, de-crackle, and linear AV sync drift correction
 .SH SYNOPSIS
@@ -10,30 +10,39 @@ is a high-performance shell utility for macOS and Linux designed to repair video
 .PP
 When filming under high-tension utility transmission lines, two major classes of audio corruption typically occur:
 .IP 1. 4
-\fBElectromagnetic Interference (Hum & Crackle):\fR A fundamental 60 Hz (or 50 Hz) sinusoidal current induces deep audible hum. Additionally, high-voltage corona discharges produce continuous microsecond electrical arcing impulses (crackle) and dense harmonic overtones (120 Hz through 600+ Hz) perceived as an intense frying or buzzing noise.
+\fBElectromagnetic Interference (Hum, Buzz & Crackle):\fR A fundamental 60 Hz (or 50 Hz) sinusoidal current induces deep audible hum. Additionally, high-voltage corona discharges produce continuous microsecond electrical arcing impulses (crackle) and dense harmonic overtones (120 Hz through 600+ Hz) perceived as an intense frying or buzzing noise. Dual-mic mobile arrays also suffer severe inductive asymmetric corruption on secondary microphones.
 .IP 2. 4
 \fBClock Misalignment (Linear Sync Drift):\fR Intense EMI can induce timing jitter in internal hardware clock crystals, causing audio and video sampling clocks to record at slightly different rates. Over a multi-minute recording, audio slowly leads or lags behind the video.
 .PP
 .B fix_video.sh
-solves both problems in a single automated pass without generational video loss by passing the video stream through untouched (\fB\-c:v copy\fR) while applying a 5-stage digital signal processing (DSP) filtergraph to the audio track.
+solves both problems in a single automated pass without generational video loss by passing the video stream through untouched (\fB\-c:v copy\fR) while applying a 7-stage digital signal processing (DSP) filtergraph to the audio track.
 
 .SH DSP PIPELINE
 The audio filtergraph is executed in the following strict order:
 .TP
-.B 1. Highpass Filter (\fIhighpass=f=80\fR)
-Attenuates frequencies below 80 Hz with zero effect on human vocal fundamentals. Eliminates low-frequency electromagnetic mud, handling noise, and wind rumble.
+.B 0. Channel Selection / Isolation (\fIpan=stereo|c0=c0|c1=c0\fR)
+Duplicates the speech-intact primary channel (Left) across both stereo channels, eliminating the EMI-flooded secondary noise-cancelling microphone channel.
+.TP
+.B 1. Highpass Filter (\fIhighpass=f=90\fR)
+Attenuates frequencies below 90 Hz with zero effect on human vocal fundamentals. Eliminates low-frequency electromagnetic mud, handling noise, and wind rumble.
 .TP
 .B 2. Impulsive Noise Filter (\fIadeclick\fR)
-Scans for abrupt non-harmonic waveform discontinuities caused by electrostatic arcing and corona discharges. Interpolates corrupted samples prior to frequency domain processing.
+Scans for abrupt non-harmonic waveform discontinuities caused by electrostatic arcing and corona discharges (\fIw=30:o=75:t=2:b=3\fR). Interpolates corrupted samples prior to frequency domain processing.
 .TP
-.B 3. Adaptive Spectral Denoiser (\fIafftdn=nr=10:nf=\-45:tn=1\fR)
-Applies Fast Fourier Transform (FFT) noise reduction with continuous real-time noise tracking to suppress the broadband induction floor.
+.B 3. Spectral Denoiser with Gain Smoothing (\fIafftdn=nr=18:nf=\-45:nt=c:gs=10\fR)
+Applies Fast Fourier Transform (FFT) noise reduction with custom noise profiling and gain smoothing to suppress the broadband induction floor without robotic voice flutter.
 .TP
-.B 4. High-Q Harmonic Notch Filters (\fIbandreject\fR)
-Applies sharp Butterworth band-reject filters with narrow Q-factor (\fIQ=30\fR) at the fundamental line frequency and all multiples through the 10th harmonic (60, 120, 180, 240, 300, 360, 420, 480, 540, 600 Hz).
+.B 4. Harmonic Notch Filters (\fIbandreject\fR)
+Applies calibrated Butterworth band-reject filters with Q-factor (\fIQ=15\fR) at the fundamental line frequency and all multiples through the 10th harmonic (60, 120, 180, 240, 300, 360, 420, 480, 540, 600 Hz).
 .TP
-.B 5. Dynamic Time Stretch (\fIatempo\fR)
-Extracts exact container/stream durations down to the millisecond using \fBffprobe\fR, calculates the duration ratio using arbitrary-precision math (\fBbc\fR), and speeds or slows the audio to match the video duration without shifting pitch.
+.B 5. Voice Lowpass Smoothing (\fIlowpass=f=4000\fR)
+Rolls off high-frequency electrical sizzle above 4 kHz while retaining full consonant intelligibility.
+.TP
+.B 6. Downward Expander Gate (\fIagate\fR)
+Gently attenuates background induction buzz by 90%+ during pauses between spoken phrases while preserving full voice presence.
+.TP
+.B 7. Container Sync Alignment (\fIapad / atempo\fR)
+Maintains 1.0x natural speech speed and lip-sync, padding trailing silence to match the container video duration.
 
 .SH OPTIONS
 .TP
@@ -49,11 +58,17 @@ Probe streams, calculate the speed stretch ratio, and print the resulting filter
 .BR \-o ", " \-\-output " \fIPATH\fR"
 Explicit path for output file. By default, appends \fI_fixed\fR to the input filename in the same directory.
 .TP
+.BI \-\-channel " <left|right|stereo>"
+Select audio channel mapping (default: left).
+.TP
 .BI \-\-highpass " HZ"
-Set the cutoff frequency for sub-rumble highpass filter in Hz (default: 80). Pass 0 to disable.
+Set the cutoff frequency for sub-rumble highpass filter in Hz (default: 90). Pass 0 to disable.
 .TP
 .BI \-\-q-factor " Q"
-Set the Q-factor for harmonic notch filters (default: 30). Higher values produce narrower notches, preserving surrounding vocal content.
+Set the Q-factor for harmonic notch filters (default: 15). Lower values produce wider notches to catch drifting grid harmonics.
+.TP
+.BI \-\-lowpass " HZ"
+Set cutoff frequency for high-frequency sizzle lowpass smoothing (default: 4000). Pass 0 to disable.
 .TP
 .BI \-\-harmonics " N"
 Number of harmonics to notch starting from the base frequency (default: 10, i.e. 60 Hz to 600 Hz).
