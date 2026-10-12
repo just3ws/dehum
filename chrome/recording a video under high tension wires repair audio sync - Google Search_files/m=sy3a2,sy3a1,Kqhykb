@@ -1,0 +1,10 @@
+loaded_h_0(function(_){var window=this;
+_.f0g=class extends _.m{constructor(a){super(a)}};_.g0g=class extends _.m{constructor(a){super(a)}};
+_.a0g=function(a,b){return _.Ci(a,3,b)};_.b0g=function(a,b){return _.di(a,2,b)};_.d0g=function(a){var b=_.Em?.oz();return _.vk(a,6,_.c0g,b)};_.e0g=class extends _.m{constructor(a){super(a)}oa(a){return _.sj(this,5,_.c0g,a)}};_.c0g=[5,6];
+_.v("Kqhykb");
+var j_y=function(a,b){a=_.Boa(a.getContext(0));try{let c=b();if(c)return _.Epa(c)}finally{_.Gf(a)}},k_y=class extends _.m{constructor(a){super(a)}},l_y=class extends _.m{constructor(a){super(a)}},m_y=function(){var a=new _.g0g;var b=new l_y;b=_.ei(b,2,!0);return _.uj(a,1,[b])};var n_y=!!(_.Li[83]>>15&1);
+_.ig(class{constructor(){this.wa=_.Qf();this.ka=!1;this.logger=null}async canShowPromotion(a,b){return n_y&&this.ka?Promise.resolve(!1):this.oa([{promoId:a,variantId:b}]).then(c=>{c=_.qj(c,l_y,1);return c.length?!_.z(c[0],2):!1})}dFc(){this.ka=!0}async oa(a){var b=(0,_.Wf)(),c=b();b=b(1);try{try{let d=b(await c(j_y(this.wa,()=>_.$oa(_.$f(_.T0a))))),e=new _.f0g,f=a.map(g=>{var h=new k_y;h=_.Ci(h,1,g.promoId);g.variantId!==void 0&&_.fh(h,2,g.variantId);return h});_.uj(e,3,f);return d.oa(e)}catch(d){b()}return m_y()}finally{c()}}async QXa(a,
+b,c){var d=(0,_.Wf)(),e=d();d=d(1);try{try{let f=d(await e(j_y(this.wa,()=>_.$oa(_.$f(_.T0a))))),g=_.d0g(_.b0g(_.a0g(new _.e0g,a),b));c&&_.fh(g,10,c);return f.QXa(g)}catch(f){d()}}finally{e()}}async recordPromoShown(a,b){this.ka=!0;return this.QXa(a,1,b)}async recordPromoDismissed(a,b){return this.QXa(a,3,b)}async recordPromoAccept(a,b){return this.QXa(a,2,b)}async renderPromo(a,b){_.$g(document.body,"xgssSc",{promoId:a,variantId:b})}},_.W0a);
+_.w();
+});
+// Google Inc.

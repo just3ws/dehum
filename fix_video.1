@@ -1,0 +1,112 @@
+.TH FIX_VIDEO 1 "October 2026" "fix_video 1.2.0" "User Commands"
+.SH NAME
+fix_video \- automated audio dehum, de-crackle, and linear AV sync drift correction
+.SH SYNOPSIS
+.B fix_video.sh
+[\fIOPTIONS\fR] \fIFILE\fR
+.SH DESCRIPTION
+.B fix_video.sh
+is a high-performance shell utility for macOS and Linux designed to repair video and audio recordings corrupted by high-voltage electromagnetic interference (EMI) and asynchronous recording clock drift.
+.PP
+When filming under high-tension utility transmission lines, two major classes of audio corruption typically occur:
+.IP 1. 4
+\fBElectromagnetic Interference (Hum & Crackle):\fR A fundamental 60 Hz (or 50 Hz) sinusoidal current induces deep audible hum. Additionally, high-voltage corona discharges produce continuous microsecond electrical arcing impulses (crackle) and dense harmonic overtones (120 Hz through 600+ Hz) perceived as an intense frying or buzzing noise.
+.IP 2. 4
+\fBClock Misalignment (Linear Sync Drift):\fR Intense EMI can induce timing jitter in internal hardware clock crystals, causing audio and video sampling clocks to record at slightly different rates. Over a multi-minute recording, audio slowly leads or lags behind the video.
+.PP
+.B fix_video.sh
+solves both problems in a single automated pass without generational video loss by passing the video stream through untouched (\fB\-c:v copy\fR) while applying a 5-stage digital signal processing (DSP) filtergraph to the audio track.
+
+.SH DSP PIPELINE
+The audio filtergraph is executed in the following strict order:
+.TP
+.B 1. Highpass Filter (\fIhighpass=f=80\fR)
+Attenuates frequencies below 80 Hz with zero effect on human vocal fundamentals. Eliminates low-frequency electromagnetic mud, handling noise, and wind rumble.
+.TP
+.B 2. Impulsive Noise Filter (\fIadeclick\fR)
+Scans for abrupt non-harmonic waveform discontinuities caused by electrostatic arcing and corona discharges. Interpolates corrupted samples prior to frequency domain processing.
+.TP
+.B 3. Adaptive Spectral Denoiser (\fIafftdn=nr=10:nf=\-45:tn=1\fR)
+Applies Fast Fourier Transform (FFT) noise reduction with continuous real-time noise tracking to suppress the broadband induction floor.
+.TP
+.B 4. High-Q Harmonic Notch Filters (\fIbandreject\fR)
+Applies sharp Butterworth band-reject filters with narrow Q-factor (\fIQ=30\fR) at the fundamental line frequency and all multiples through the 10th harmonic (60, 120, 180, 240, 300, 360, 420, 480, 540, 600 Hz).
+.TP
+.B 5. Dynamic Time Stretch (\fIatempo\fR)
+Extracts exact container/stream durations down to the millisecond using \fBffprobe\fR, calculates the duration ratio using arbitrary-precision math (\fBbc\fR), and speeds or slows the audio to match the video duration without shifting pitch.
+
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Display summary help text and exit.
+.TP
+.BR \-v ", " \-\-version
+Print version information and exit.
+.TP
+.BR \-n ", " \-\-dry-run
+Probe streams, calculate the speed stretch ratio, and print the resulting filtergraph without executing audio re-encoding.
+.TP
+.BR \-o ", " \-\-output " \fIPATH\fR"
+Explicit path for output file. By default, appends \fI_fixed\fR to the input filename in the same directory.
+.TP
+.BI \-\-highpass " HZ"
+Set the cutoff frequency for sub-rumble highpass filter in Hz (default: 80). Pass 0 to disable.
+.TP
+.BI \-\-q-factor " Q"
+Set the Q-factor for harmonic notch filters (default: 30). Higher values produce narrower notches, preserving surrounding vocal content.
+.TP
+.BI \-\-harmonics " N"
+Number of harmonics to notch starting from the base frequency (default: 10, i.e. 60 Hz to 600 Hz).
+.TP
+.BI \-\-base-freq " HZ"
+Fundamental power grid frequency in Hz (default: 60 for North America; set to 50 for European 50 Hz power grids).
+.TP
+.B \-\-no-declick
+Disable stage 2 impulsive de-clicking.
+.TP
+.B \-\-no-denoise
+Disable stage 3 adaptive FFT noise suppression.
+
+.SH ENVIRONMENT & DEPENDENCIES
+Requires standard macOS or Linux POSIX environment with:
+.TP
+.B ffmpeg
+Audio/video multiplexing and DSP filtering engine.
+.TP
+.B ffprobe
+Stream header duration extractor.
+.TP
+.B bc
+Arbitrary precision floating point calculator.
+
+.SH EXIT STATUS
+.TP
+.B 0
+Success. Output file written.
+.TP
+.B 1
+Error (missing arguments, missing input file, or missing dependencies).
+
+.SH EXAMPLES
+.PP
+Standard automated repair:
+.RS
+.B ./fix_video.sh /Users/mike/ai/dehum/VID_20261009_111445043.mp4
+.RE
+.PP
+Preview stream ratio and filter chain:
+.RS
+.B ./fix_video.sh \-\-dry\-run input.mp4
+.RE
+.PP
+Process European 50 Hz recording:
+.RS
+.B ./fix_video.sh \-\-base\-freq 50 \-\-harmonics 8 input.mp4
+.RE
+
+.SH SEE ALSO
+.BR ffmpeg (1),
+.BR ffprobe (1),
+.BR bc (1)
+.SH AUTHORS
+Panoramic View Labs (PVL) / Antigravity Audio Engineering Assistant.

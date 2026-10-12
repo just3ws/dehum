@@ -1,0 +1,15 @@
+# Media binaries and heavy video files
+*.mp4
+*.wav
+*.jpg
+*.png
+*.svg.bak
+
+# Transcripts & temp artifacts from scratch testing
+sample_*
+chan_*
+test_*
+vframes_*
+
+# OS artifacts
+.DS_Store
