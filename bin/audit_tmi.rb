@@ -4,6 +4,7 @@
 require "find"
 
 GUARDS = [
+  { id: :pii_home_path, pattern: /\/Users\/[a-zA-Z0-9_-]+/, note: "Hardcoded absolute user home path found; use ~ or relative alias" },
   { id: :pii_phone, pattern: /(?<![\/\w])(\+?1[\s.-]?)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}(?!\d)/, note: "Phone number pattern" },
   { id: :pii_email, pattern: /\b[a-zA-Z0-9._%+-]+@(?!just3ws\.com|wwworkremote\.com)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b/, note: "Personal email address" },
   { id: :pii_address, pattern: /\b\d{3,5}\s+[A-Z][a-z]+\s+(St|Ave|Blvd|Dr|Rd|Ln|Way|Ct|Pl)\b/, note: "Street address pattern" },

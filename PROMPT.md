@@ -102,7 +102,7 @@ echo "✅ Success! Processed file saved to: $OUTPUT_FILE"
    4. Execute it:
    Pass your raw video file straight into the script:
    
-   ./fix_video.sh /Users/yourname/Movies/my_drifted_video.mp4
+   ./fix_video.sh ~/Movies/my_drifted_video.mp4
    
    
 If you notice that the 60Hz hum is gone but you still hear a crackling or buzzing sound, let me know. I can modify the filter chain to target a wider bandwidth or add a high-pass filter to roll off lower muddy frequencies completely.
