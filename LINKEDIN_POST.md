@@ -156,17 +156,26 @@ When every subsystem is built with "good enough" borrowed competence, system rel
 
 ---
 
-### The Verdict: Sovereign Verification
+### The Question: How Do We Inoculate Ourselves Against "AI Psychosis"?
 
-Is this a skill issue? Is it a miracle? Or is it slop?
+This isn't written to call anyone out or give folks a hard time. If anything, **I am diagnosing myself first.**
 
-The only honest answer is: **decide for yourself.**
+When you sit at a terminal and watch a complex, multi-variable engineering problem get chewed through in an afternoon for the price of a takeout lunch, a very real psychological shift occurs. It is easy to slip into what some engineers are calling "AI psychosis"—a state of euphoric detachment where you start believing that because the model can generate plausible answers at lightning speed, *the friction of reality has been solved.*
 
-That is why both the raw 3.1 GB corrupted master (`VID_20261009_111445043.mp4`) and the restored master (`VID_20261009_111445043_fixed.mp4`) are stored side-by-side in public storage and linked in the project repo.
+You start believing your own hype. You mistake the machine’s encyclopedic breadth for your own foundational understanding.
 
-An amateur hides the raw file because they fear comparison. A craftsman puts the unvarnished problem next to the automated solution, publishes the code, discloses the compromises, and invites the engineering community to inspect the seams.
+So how do we inoculate ourselves against that?
+1. **By anchoring in the physical baseline**: Never throw away the raw recording, the raw trace, or the failing test. Keep the unvarnished reality close at hand.
+2. **By measuring the compromises, not just the speed**: For every win the AI gives you, actively look for what it broke, blurred, or approximated to get there.
+3. **By inviting open peer review**: Don’t hide behind polished demos. Share the seams, share the prompts, and let other humans verify what holds up and what doesn't.
 
-AI is not a magic wish-granting machine, and it is not useless slop. It is an industrial extruder for intellectual prototypes. Your job as an engineer is to measure the ledger, know what you borrowed, and build deterministic tools you truly understand.
+I don't have all the answers here—this is an active experiment in public learning. I’m genuinely curious how other engineers, practitioners, and leaders are navigating this:
+
+- **How do you keep yourself and your teams grounded when the leverage is this high?**
+- **How do you separate genuine domain breakthroughs from flattering, plausible approximations?**
+- **What practices are you using to inoculate yourself against mistaking rented AI competence for real craftsmanship?**
+
+I’d love to hear your thoughts and lived experiences in the comments.
 
 ---
 
@@ -177,8 +186,4 @@ AI is not a magic wish-granting machine, and it is not useless slop. It is an in
 - 💻 **Open-Source Shell Harness (`fix_video.sh`)**: [github.com/just3ws/dehum](https://github.com/just3ws/dehum)
 - 🎥 **Restored Video (YouTube)**: [Watch & Listen (8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo)
 
----
-
-*How are you evaluating the boundary between rapid AI leverage and silent technical debt in your own engineering teams? Let's discuss below.*
-
-#SoftwareEngineering #GenerativeAI #SystemsArchitecture #AudioDSP #EngineeringLeadership #TechDebt #SoftwareCraftsmanship
+#SoftwareEngineering #GenerativeAI #SystemsArchitecture #SoftwareCraftsmanship #EngineeringLeadership #TechEthics #ContinuousLearning
