@@ -54,6 +54,12 @@ assert_success "Transcript diff tool syntax" python3 compare_transcripts.py --he
 # Test 7: TMI Guard passes cleanly
 assert_success "TMI/PII Guard validation" ruby bin/audit_tmi.rb
 
+# Test 8: Markdown Header quality gate passes cleanly
+assert_success "Markdown Header quality gate" ruby bin/validate_markdown_headers.rb
+
+# Test 9: ShellCheck quality gate passes cleanly
+assert_success "ShellCheck quality gate" ./bin/validate_shellcheck.sh
+
 echo "========================================================="
 echo "Summary: $PASS passed, $FAIL failed."
 if [ "$FAIL" -gt 0 ]; then

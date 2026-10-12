@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ==============================================================================
 # fix_video.sh - Audio restoration & linear drift sync for macOS/Linux
 # Removes 60 Hz hum, high-voltage corona crackle, and dynamic clock drift.

@@ -35,6 +35,16 @@ jobs:
           chmod +x fix_video.sh
           ./fix_video.sh --help
 
+      - name: Run Markdown Header & Anchor Quality Gate
+        run: |
+          ruby bin/validate_markdown_headers.rb
+
+      - name: Run ShellCheck Static Analysis
+        run: |
+          sudo apt-get install -y shellcheck
+          chmod +x bin/validate_shellcheck.sh
+          ./bin/validate_shellcheck.sh
+
       - name: Run Automated Test Suite
         run: |
           chmod +x bin/test_fix_video.sh
