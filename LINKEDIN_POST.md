@@ -1,43 +1,47 @@
 # LinkedIn Article Publishing Guide & Clean Copy
 
-This document is formatted specifically for **LinkedIn Articles** (Pulse editor).
+This guide and copy-paste text is calibrated specifically for the **LinkedIn Article Editor** (the "Write article" publishing environment on desktop).
 
-> **Why standard Markdown tables fail on LinkedIn**:  
-> The LinkedIn Article WYSIWYG editor does not support Markdown pipe tables (`| Col | Col |`). When pasted, they turn into unreadable text garbage or collapse into a broken single column on mobile.  
-> LinkedIn Articles instead use **Title**, **Headings (H1/H2)**, **Bold / Italics**, **Blockquotes (Pull Quotes)**, **Bulleted/Numbered Lists**, and **Embedded Media (Images, Video Links)**. 
-> Below is the article structured natively for LinkedIn's typography and layout engine.
-
----
-
-## Cover Image / Banner Brief (1200 x 644 px)
-
-- **Main Image**: High-contrast split visual: 345 kV electrical transmission towers in fog on one side; audio spectrogram showing frequency cuts on the other.
-- **Header Text Overlay**:  
-  `UNDER THE HIGH-TENSION WIRES`
-- **Sub-header Text Overlay**:  
-  `250:1 AI Economic Leverage vs. The Illusion of Competence`
+> ### LinkedIn Article Editor Typography & Formatting Rules:
+> 1. **Title Field**: Paste into the top designated Title box (LinkedIn applies H1 formatting automatically).
+> 2. **Heading 1 [H1]**: In LinkedIn Articles, highlight the text and select **Heading 1** from the style dropdown (large section header).
+> 3. **Heading 2 [H2]**: Highlight the text and select **Heading 2** from the style dropdown (sub-section header).
+> 4. **Quotes / Callouts**: Highlight the paragraph and click the **Quote icon (`"`)** in the toolbar.
+> 5. **Bullets**: Native bullet lists created via `•` or by typing `- ` and hitting Space.
+> 6. **No Tables**: LinkedIn Articles have no native table grid support. Data is formatted below as high-contrast scannable bullet blocks.
 
 ---
 
-## Article Title (LinkedIn Title Field)
+## Cover Banner Specification (1200 x 644 px)
+
+- **Visual Concept**: Split composition: 345 kV high-tension electrical towers disappearing into mist on the left; an audio waterfall spectrogram showing hum cut-offs on the right.
+- **Top Overlay Text**: `UNDER THE HIGH-TENSION WIRES`
+- **Bottom Overlay Text**: `250:1 AI Economic Leverage vs. The Illusion of Competence`
+
+---
+
+## 1. LinkedIn Article Title (Paste in Title Box)
 
 **Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop vs. Mastery, and Inoculating Against "AI Psychosis"**
 
 ---
 
-## Article Body (Copy & Paste into LinkedIn Article Editor)
+## 2. Copy-Paste Body Text for LinkedIn Article Editor
 
-### Editorial Disclosure: Radical Transparency
-
-> Every line of code, DSP filtergraph, mathematical diagram, and analytical breakdown in this case study was synthesized by an AI (Google DeepMind's Gemini 3.8 Flash via the Antigravity pairing agent).
-> 
-> The *only* biological human in this entire loop is me: the guy who walked out beneath 345 kV high-tension lines yammering into a Motorola phone, and the guy sitting at the terminal continually challenging, interrogating, and prodding the model. 
-> 
-> Everything else—the scripts, the documentation, the timeline, and this very article—is synthetic extrusion. We are not hiding the machine; we are laying it bare.
+*(Each header below is labeled with its corresponding LinkedIn formatting style: **[Heading 1]**, **[Heading 2]**, or **[Quote]**.)*
 
 ---
 
-### The Incident: An Unlistenable Field Recording
+[Quote]
+Every line of code, DSP filtergraph, mathematical diagram, and analytical breakdown in this case study was synthesized by an AI (Google DeepMind's Gemini 3.8 Flash via the Antigravity pairing agent).
+
+The *only* biological human in this entire loop is me: the guy who walked out beneath 345 kV high-tension lines yammering into a Motorola phone, and the guy sitting at the terminal continually challenging, interrogating, and prodding the model. 
+
+Everything else—the scripts, the documentation, the timeline, and this very article—is synthetic extrusion. We are not hiding the machine; we are laying it bare.
+
+---
+
+[Heading 1] An Unlistenable Field Recording
 
 A few days ago, I recorded an oral history reflection while walking through a utility transmission corridor in Northern Illinois. 
 
@@ -53,7 +57,7 @@ Instead, I opened the terminal and initiated an agentic pairing session with Gem
 
 ---
 
-### The Game We Are Playing
+[Heading 1] The Game We Are Playing
 
 We are living through an unprecedented moment where anyone with a prompt can summon a choir of synthetic specialists. 
 
@@ -67,7 +71,7 @@ We aren't doing synthetic coding puzzles or canned benchmarks. We took a corrupt
 
 ---
 
-### What Is Genuinely Possible: The Perceptual Miracle
+[Heading 1] What Is Genuinely Possible: The Perceptual Miracle
 
 Over the course of an afternoon, the model and I dismantled the root causes:
 
@@ -77,22 +81,22 @@ Over the course of an afternoon, the model and I dismantled the root causes:
 • **Speech Intelligibility Restored**: Feeding the restored audio to automated speech recognition (`whisper.cpp`) improved lexical recovery from broken gibberish to 93.3% word accuracy.  
 • **Lossless Stream Muxing**: The video stream was copied bit-for-bit (`-c:v copy`), preserving 1080p visual quality with zero generational re-encoding.
 
-The restored video is live today on YouTube: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo).
+The restored video is live today on YouTube: https://youtu.be/8LYHo1dOkMo
 
 ---
 
-### The Economic Ledger: $39.40 vs. $10,010
+[Heading 1] The Economic Ledger: $39.40 vs. $10,010
 
 Because this entire investigation was instrumented through agent telemetry, we tracked the exact resource balance sheet:
 
-**The Autonomous Machine Ledger:**
+[Heading 2] The Autonomous Machine Ledger
 • Model turns: 818 agentic reasoning turns  
 • Execution steps: 1,793 steps across 64 hours  
 • Prompt tokens: 4,615,676 input tokens  
 • Cached context reads: 103,716,714 tokens  
 • **Total raw compute cost: $39.40** (or ~$20/month flat subscription)
 
-**The Equivalent Commercial Human Team:**
+[Heading 2] The Equivalent Commercial Human Team
 • Forensic Audio Engineer: 16 hours @ $175/hr = $2,800  
 • Video Codec Specialist: 8 hours @ $160/hr = $1,280  
 • Systems Automation Engineer: 12 hours @ $150/hr = $1,800  
@@ -101,7 +105,7 @@ Because this entire investigation was instrumented through agent telemetry, we t
 • Inter-team coordination & PR reviews: 10 hours @ $125/hr = $1,250  
 • **Total human equivalent effort: 70 billable hours across 5 specialists = ~$10,010.00**
 
-**The Resulting Ratios:**
+[Heading 2] The Compression Ratios
 • **Cost Compression**: 254 to 1  
 • **Speed Compression**: 10 to 1 (from 2 calendar weeks down to an afternoon of continuous flow)
 
@@ -109,7 +113,7 @@ This is why people are seduced by generative AI. You spend less than forty dolla
 
 ---
 
-### What Is Just "Slop"? (The Hidden Damage)
+[Heading 1] What Is Just "Slop"? (The Hidden Damage)
 
 So is this actually a miracle, or is it just sophisticated slop?
 
@@ -130,11 +134,12 @@ If you call this output "finished production quality" without understanding thes
 
 ---
 
-### The Competence Fallacy: The High-Thrown Ball
+[Heading 1] The Competence Fallacy: The High-Thrown Ball
 
 The central psychological risk of generative AI is what I call the **Dunning-Kruger Catapult**:
 
-> *"How high can I throw the ball before I lose sight of it, drop it, or have it come crashing straight down on my head?"*
+[Quote]
+"How high can I throw the ball before I lose sight of it, drop it, or have it come crashing straight down on my head?"
 
 When a model gives you $10,000 of specialized output for $40, your subconscious tricks you into believing that *you* possess that competence. You feel invincible. You feel like an omnicompetent staff architect capable of simultaneously mastering Maxwellian physics, digital IIR filter topologies, H.264 container timing, and neural speech decoders.
 
@@ -146,19 +151,19 @@ If you don't know where the model's math degrades, you will throw the ball so hi
 
 ---
 
-### The Compounding Fragility of "Good Enough" Tooling
+[Heading 1] The Compounding Fragility of "Good Enough" Tooling
 
 Beyond the audio file itself lies an even bigger lesson for engineering leaders: **evaluating "good enough" in isolation is a trap**.
 
 When people look at an AI demo, they evaluate the final artifact: *"The audio sounds good enough on an iPhone! Ship it."*
 
 They ignore the surrounding scaffolding:
-• The transcription harness that hallucinates on non-speech gaps.
-• The bash automation script that assumes GNU flags and breaks on macOS BSD.
-• The publishing pipeline where unescaped syntax silently breaks site builds.
-• The broadcast configurations that desync under display scaling.
+• The transcription harness that hallucinates on non-speech gaps.  
+• The bash automation script that assumes GNU flags and breaks on macOS BSD.  
+• The publishing pipeline where unescaped syntax silently breaks site builds.  
+• The broadcast configurations that desync under display scaling.  
 
-**The Math of Compounding Fragility:**
+[Heading 2] The Math of Compounding Fragility
 • Component 1: Media DSP Engine (Passable phone speaker quality) [85% reliability]  
 • Component 2: Transcription Harness (Hallucinates on non-speech gaps) [85% reliability]  
 • Component 3: Automation Shell Script (Brittle cross-platform regex) [85% reliability]  
@@ -172,7 +177,7 @@ When every subsystem is built with "good enough" borrowed competence, system rel
 
 ---
 
-### Inoculating Ourselves Against "AI Psychosis"
+[Heading 1] Inoculating Ourselves Against "AI Psychosis"
 
 This isn't written to call anyone out or give folks a hard time. If anything, **I am diagnosing myself first.**
 
@@ -192,7 +197,7 @@ An amateur hides the raw file because they fear comparison. A craftsman puts the
 
 ---
 
-### Let's Discuss
+[Heading 1] Let's Discuss
 
 I don't have all the answers here—this is an active experiment in public learning. I’m genuinely curious how other engineers, practitioners, and leaders are navigating this:
 
@@ -204,11 +209,11 @@ Share your thoughts and lived experiences in the comments below.
 
 ---
 
-### Open Artifacts & Code
-• 📖 **Full 6,000-Word Deep Dive**: https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/  
-• 📊 **Complete Economic & Technical Audit ($40 vs. $10,010)**: https://github.com/just3ws/dehum/blob/main/ECONOMIC_AND_TECHNICAL_AUDIT.md  
-• ⏳ **64-Hour Chronological Conversation Timeline**: https://github.com/just3ws/dehum/blob/main/CONVERSATION_TIMELINE.md  
-• 💻 **Open-Source Shell Harness (`fix_video.sh`)**: https://github.com/just3ws/dehum  
-• 🎥 **Restored Video (YouTube)**: https://youtu.be/8LYHo1dOkMo  
+[Heading 1] Open Artifacts & Code
+• Full 6,000-Word Deep Dive: https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/  
+• Complete Economic & Technical Audit ($40 vs. $10,010): https://github.com/just3ws/dehum/blob/main/ECONOMIC_AND_TECHNICAL_AUDIT.md  
+• 64-Hour Chronological Conversation Timeline: https://github.com/just3ws/dehum/blob/main/CONVERSATION_TIMELINE.md  
+• Open-Source Shell Harness (`fix_video.sh`): https://github.com/just3ws/dehum  
+• Restored Video (YouTube): https://youtu.be/8LYHo1dOkMo  
 
 #SoftwareEngineering #GenerativeAI #SystemsArchitecture #SoftwareCraftsmanship #EngineeringLeadership #TechEthics #ContinuousLearning
