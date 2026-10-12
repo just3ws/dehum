@@ -45,13 +45,12 @@ hr {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-.caption-box {
+.meta-box {
     background: #fdfdfd;
     border: 1px solid #e1e4e8;
     border-radius: 6px;
-    padding: 12px;
-    margin-top: 12px;
-    text-align: left;
+    padding: 14px;
+    margin-bottom: 20px;
     font-size: 0.9em;
 }
 .instructions {
@@ -59,21 +58,35 @@ hr {
     border: 1px solid #c2e0f9;
     padding: 15px;
     border-radius: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+code {
+    background: #f0f3f6;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 </style>
 </head>
 <body>
 <div class="instructions">
-<strong>Instructions:</strong> Press <code>Cmd + A</code> to select all, then <code>Cmd + C</code> to copy. In the LinkedIn Article editor, upload <code>linkedin_banner.png</code> as the cover image, paste the short caption below into LinkedIn's caption field, then paste the article body directly into the editor.
+<strong>Instructions:</strong>
+<ol>
+  <li>Copy the <strong>Title</strong> below into LinkedIn's top Title field.</li>
+  <li>Upload <code>linkedin_banner.png</code> as the cover image, and paste the <strong>Caption</strong> below into LinkedIn's caption field.</li>
+  <li>Select and copy (<code>Cmd + C</code>) the article body below the divider line and paste (<code>Cmd + V</code>) directly into LinkedIn's editor.</li>
+</ol>
+</div>
+
+<div class="meta-box">
+  <strong>1. LinkedIn Article Title (80 chars — no cutoff):</strong><br>
+  <code>Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop, and Real Mastery</code>
+  <br><br>
+  <strong>2. Cover Image Caption &amp; Credit (79 chars — under 150 limit):</strong><br>
+  <code>Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL</code>
 </div>
 
 <div class="banner-preview">
   <img src="linkedin_banner.png" alt="LinkedIn Banner">
-  <div class="caption-box">
-    <strong>LinkedIn Caption &amp; Credit (79 chars, under 150 limit):</strong><br>
-    <code>Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL</code>
-  </div>
 </div>
 
 <hr>

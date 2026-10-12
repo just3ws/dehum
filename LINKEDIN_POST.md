@@ -1,4 +1,11 @@
-# LinkedIn Article: Under the High-Tension Wires
+### Title (Paste into LinkedIn Title Field):
+**Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop, and Real Mastery**
+*(80 characters — fits well under LinkedIn's 100-character mobile title truncation limit)*
+
+*Alternative (matches canonical post):*  
+`Under the High-Tension Wires: Building Deterministic Tools from Nondeterministic Systems` (88 chars)
+
+---
 
 ### Cover Banner Image:
 - File: `linkedin_banner.png` (1200 x 644 px, in repo)
