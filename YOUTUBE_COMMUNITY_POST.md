@@ -65,8 +65,19 @@ https://github.com/just3ws/dehum/blob/main/ECONOMIC_AND_TECHNICAL_AUDIT.md
 ⏳ Read the 64-Hour Chronological Conversation Timeline:
 https://github.com/just3ws/dehum/blob/main/CONVERSATION_TIMELINE.md
 
-💻 Open-source restoration toolchain (`fix_video.sh`):
+💻 Open-source restoration toolchain (`fix_video.sh` on GitHub):
 https://github.com/just3ws/dehum
+
+---
+
+**And here is the unvarnished truth about where we are with AI:**
+
+1. **The Epistemic Warning**: I cannot independently verify or validate many of the wild claims and figures being spun up by the AI in this repository. The human is prompting the machine; the machine is generating assertions with profound, unyielding confidence. We are acquiring the ability to will complex systems into existence that we do not understand—and then trust them with our data, our infrastructure, and our lives. Exercise extreme skepticism.
+2. **"Should This Be in Rust?" (The AI Said No)**: People keep asking why this wasn't written in Rust to chase a VC buyout. The AI explicitly recommended against it: FFmpeg's filters are already hand-tuned C and SIMD assembly; wrapping them in Rust adds zero throughput while ballooning dependencies. Rewriting a 150-line POSIX shell script in Rust purely for status is the essence of "Classic Loki" green-light artifice.
+3. **The Gold 2013 Toyota Sienna Bugatti**: While the AI hype merchants are stuck on the side of the road waiting for their $40,000/month GPU cluster to boot, a 150-line Bash script is like a 2013 Sienna with 180k miles—it starts every morning, hauls the lumber, and gets the job done for free.
+4. **And Yet... It IS Real**: That is the deepest paradox. The 345,000-volt power lines are real. The 60 Hz hum was real. The Motorola phone in the crosswind was real. And the output master video—with all 39,069 original camera frames preserved bit-for-bit without generational loss, and human speech restored to frame-accurate lip-sync—**is real**. 
+
+Maybe this all sucks? Maybe it's nothing. I don't know. That's the best part.
 
 Watch the restored video, listen to the background hum before and after, and tell me: How high are you throwing the ball in your own work?
 
