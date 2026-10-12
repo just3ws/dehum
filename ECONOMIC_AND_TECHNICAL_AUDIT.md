@@ -15,6 +15,8 @@ On October 9, 2026, an outdoor oral history field recording was made beneath hig
 
 Over the course of three days, an autonomous pairing loop between a human software craftsman and an AI agent (Gemini CLI / Antigravity) diagnosed the electromagnetic failure mode, proved false clock drift hypotheses, engineered a 5-stage digital signal processing (DSP) pipeline, compiled automated shell harnesses (`fix_video.sh`), authored UNIX man pages (`fix_video.1`), achieved a 93.3% transcription lexical recovery, published an architectural post-mortem, and scaffolded an OBS Studio multi-track broadcast studio configured for Apple Silicon.
 
+**The Pre-CLI Genesis**: The engineering task did not originate on the command line. It began in Google Chrome via a Google Search query on high-tension wire interference and audio sync repair. The Gemini search overview synthesized what appeared to be an authoritative engineering specification, which was saved locally as [`PROMPT.md`](PROMPT.md) (and archived in `archive/google_search_research/`). Bringing that browser-generated prompt into the terminal agent immediately triggered the naive clock-drift trap (`atempo=0.837`), proving how early in the pipeline plausible AI hallucinations take root.
+
 This audit documents three critical realities that traditional AI narratives obscure:
 1. **The Technical Anatomy of Borrowed Expertise**: The exact cross-cutting scientific disciplines required to execute this recovery manually, alongside an unsparing autopsy of the subtle engineering compromises and blind spots introduced by the AI.
 2. **The Compute & Token Telemetry Ledger**: The precise API metrics, context-caching efficiency, and commodity dollar cost of the effort.
