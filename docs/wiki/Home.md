@@ -1,3 +1,13 @@
+---
+title: "Home"
+description: "Forensic analysis and open knowledge documentation for just3ws/dehum"
+license: "CC-BY-SA-4.0"
+open_knowledge_foundation: "Open Definition 2.1 Conforming"
+maintainer: "Mike Hall"
+project: "just3ws/dehum"
+date: "2026-10-12"
+---
+
 # Project Wiki: Under the High-Tension Wires
 
 > *"I come from a subculture of Chicago software craftspeople who believe code should be written cleanly, tested ruthlessly, and that when you find something wrong, you stop and make it right."*  

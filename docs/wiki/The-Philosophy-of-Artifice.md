@@ -1,3 +1,13 @@
+---
+title: "The Philosophy of Artifice"
+description: "Forensic analysis and open knowledge documentation for just3ws/dehum"
+license: "CC-BY-SA-4.0"
+open_knowledge_foundation: "Open Definition 2.1 Conforming"
+maintainer: "Mike Hall"
+project: "just3ws/dehum"
+date: "2026-10-12"
+---
+
 # The Philosophy of Artifice: Classic Loki & Mjolnir
 
 > *"Glorious Purpose!"*  

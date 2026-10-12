@@ -1,3 +1,13 @@
+---
+title: "Reproduction and Field Runbook"
+description: "Forensic analysis and open knowledge documentation for just3ws/dehum"
+license: "CC-BY-SA-4.0"
+open_knowledge_foundation: "Open Definition 2.1 Conforming"
+maintainer: "Mike Hall"
+project: "just3ws/dehum"
+date: "2026-10-12"
+---
+
 # Reproduction & Field Runbook
 
 This guide enables any engineer to reproduce the forensic restoration on macOS or Linux with zero proprietary software dependencies.

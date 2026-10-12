@@ -1,3 +1,13 @@
+---
+title: "The Hallucination Anatomy"
+description: "Forensic analysis and open knowledge documentation for just3ws/dehum"
+license: "CC-BY-SA-4.0"
+open_knowledge_foundation: "Open Definition 2.1 Conforming"
+maintainer: "Mike Hall"
+project: "just3ws/dehum"
+date: "2026-10-12"
+---
+
 # The Hallucination Anatomy: The `atempo=0.837` Clock-Drift Trap
 
 > *"The container reported a 212.5-second gap. The model reported a mathematical certainty. Both were completely wrong about physical reality."*
