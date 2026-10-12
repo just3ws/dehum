@@ -8,7 +8,8 @@
 # Transcripts & temp artifacts from scratch testing
 sample_*
 chan_*
-test_*
+test_*.mp4
+test_*.wav
 vframes_*
 
 # OS artifacts

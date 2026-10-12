@@ -37,5 +37,5 @@ jobs:
 
       - name: Run Automated Test Suite
         run: |
-          chmod +x test_fix_video.sh
-          ./test_fix_video.sh
+          chmod +x bin/test_fix_video.sh
+          ./bin/test_fix_video.sh
