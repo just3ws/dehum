@@ -10,16 +10,20 @@
 
 ### Copy-Paste Text for YouTube Community Post
 
-What happens when an outdoor recording gets completely ruined by high-voltage electromagnetic interference, and an AI tool saves it in an afternoon?
+What happens when an outdoor recording gets ruined by high-voltage electromagnetic interference, and an AI tool fixes it in an afternoon?
 
-A few days ago, I recorded an oral history reflection while walking through a utility right-of-way directly beneath 345 kV transmission lines in Northern Illinois. When I opened the master file on my laptop, the audio was an unlistenable disaster:
-• A roaring 60 Hz hum with 10 audible harmonic overtones spanning up to 600 Hz.
-• Corona discharge clicks from atmospheric ionization.
-• A bizarre 212-second container discrepancy (18m 11s audio vs 21m 43s video).
+A few days ago, I recorded an oral history reflection while walking through a utility transmission corridor beneath 345 kV lines in Northern Illinois. When I opened the footage on my workstation, the audio was an unlistenable disaster: 60 Hz hum, 10 harmonics buzzing up to 600 Hz, corona discharge clicks, and an apparent 212-second container discrepancy.
 
-Using Gemini 3.8 Flash and the Antigravity CLI, we didn’t just apply a generic denoiser. We tore open the acoustics, isolated the phone’s dual-microphone traces, proved that speech was actually 1.0x natural speed (the camera had simply kept rolling after I said "Thank you"), engineered a 7-stage DSP restoration pipeline in Bash (`fix_video.sh`), and recovered the audio at 18.8x real-time speed with bit-for-bit video passthrough. Downstream speech recognition (whisper.cpp) went from broken gibberish to 93.3% lexical accuracy.
+I opened a terminal with an AI coding assistant and started with a prompt as blunt as it gets:
+"Fix the buzz and hum in this video, and fix the sync drift."
 
-The video is live now on the channel: https://youtu.be/8LYHo1dOkMo
+At first, the model fell into a naive trap: it divided the audio duration by the video duration, applied `atempo=0.837`, stretched my voice into robotic slow motion, and declared victory.
+
+It took human skepticism to push back: "The sync really doesn't work. Prove it."
+
+When we actually verified lip-sync frame-by-frame and aligned it with Whisper, the truth came out: the speech was at natural 1.0x speed all along (I had simply stopped talking at 18 minutes), and the phone's top noise-cancelling microphone was acting as an inductive antenna. Isolating the clean bottom channel eliminated 95% of the drone instantly. From there, we built an open-source Bash restoration pipeline (`fix_video.sh`) that brought speech accuracy in Whisper up to 93.3% while copying the 1080p video bit-for-bit.
+
+The restored video is live now on the channel: https://youtu.be/8LYHo1dOkMo
 
 **But here is the real story—and the reason I wrote an extensive post-mortem about it:**
 
