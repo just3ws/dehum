@@ -1,6 +1,7 @@
 # High-Voltage Audio Dehum, De-crackle & Sync Restoration Engine (`dehum`)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.md)
 [![Platform: macOS / Linux](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey.svg)](README.md)
 [![FFmpeg: 7.x / 8.x / 9.x](https://img.shields.io/badge/FFmpeg-Ready-green.svg)](https://ffmpeg.org)
 [![Assisted By: Gemini 3.8 Flash](https://img.shields.io/badge/AI%20Assisted-Gemini%203.8%20Flash%20Medium-purple.svg)](https://deepmind.google)
@@ -180,6 +181,9 @@ dehum/
 
 ---
 
-## 8. License
-Developed under the **Panoramic View Labs (PVL)** initiative. Released under the MIT License.
+## 8. Dual Licensing & Disclaimers
+- **Code & Scripts**: Released under the **[MIT License](LICENSE.md)**.
+- **Documentation, Audits & Media**: Licensed under **[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE.md)**.
+- **High-Voltage Safety Disclaimer**: The recordings analyzed here were captured from public rights-of-way beneath 345 kV transmission lines. Do not trespass on utility property or approach high-voltage electrical installations. High-voltage infrastructure presents lethal electrical arc-flash and electrocution hazards. This is an acoustic and DSP forensic exercise, not electrical engineering or safety instruction.
+- **Experimental Inquiry Disclaimer**: Offered as an open, educational case study in forensic verification, prompt hallucinations, and empirical craftsmanship. See [`LICENSE.md`](LICENSE.md) for full terms and non-commercial disclaimers.
 
