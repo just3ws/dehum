@@ -1,0 +1,3486 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"mels": 128,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/mike/.local/share/whisper-cpp/models/ggml-large-v3.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,220"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4220
+			},
+			"text": " Coming back on some kind of video soon. Not that I've had"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,220",
+				"to": "00:00:07,610"
+			},
+			"offsets": {
+				"from": 4220,
+				"to": 7610
+			},
+			"text": " much of an issue with it at work. I've been working remote"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,610",
+				"to": "00:00:11,670"
+			},
+			"offsets": {
+				"from": 7610,
+				"to": 11670
+			},
+			"text": " for a while now. And you know, a lot of times where I've"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,670",
+				"to": "00:00:15,800"
+			},
+			"offsets": {
+				"from": 11670,
+				"to": 15800
+			},
+			"text": " been on calls where there's hundreds of people and looking"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,800",
+				"to": "00:00:19,600"
+			},
+			"offsets": {
+				"from": 15800,
+				"to": 19600
+			},
+			"text": " on camera and having to speak, it's one thing to have a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,600",
+				"to": "00:00:21,080"
+			},
+			"offsets": {
+				"from": 19600,
+				"to": 21080
+			},
+			"text": " prepared thing."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,080",
+				"to": "00:00:25,200"
+			},
+			"offsets": {
+				"from": 21080,
+				"to": 25200
+			},
+			"text": " But here I am, and I'm going to be talking about kind of"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,200",
+				"to": "00:00:26,720"
+			},
+			"offsets": {
+				"from": 25200,
+				"to": 26720
+			},
+			"text": " like my story about how we got here."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,580",
+				"to": "00:00:30,900"
+			},
+			"offsets": {
+				"from": 27580,
+				"to": 30900
+			},
+			"text": " Just what I saw, not really my story per se, but my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,900",
+				"to": "00:00:32,040"
+			},
+			"offsets": {
+				"from": 30900,
+				"to": 32040
+			},
+			"text": " perspective."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,720",
+				"to": "00:00:36,160"
+			},
+			"offsets": {
+				"from": 32720,
+				"to": 36160
+			},
+			"text": " I'm out here underneath these fires here because I wanted"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,160",
+				"to": "00:00:37,780"
+			},
+			"offsets": {
+				"from": 36160,
+				"to": 37780
+			},
+			"text": " to kind of break the ice"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,780",
+				"to": "00:00:41,680"
+			},
+			"offsets": {
+				"from": 37780,
+				"to": 41680
+			},
+			"text": " and do a first kind of skit thing."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,840",
+				"to": "00:00:45,730"
+			},
+			"offsets": {
+				"from": 41840,
+				"to": 45730
+			},
+			"text": " Just when I was thinking about what I'm having on here is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,730",
+				"to": "00:00:48,740"
+			},
+			"offsets": {
+				"from": 45730,
+				"to": 48740
+			},
+			"text": " that this is, we're in a weird time right now."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,300",
+				"to": "00:00:52,250"
+			},
+			"offsets": {
+				"from": 49300,
+				"to": 52250
+			},
+			"text": " And I know that I walk this path to get here, and I'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,250",
+				"to": "00:00:52,980"
+			},
+			"offsets": {
+				"from": 52250,
+				"to": 52980
+			},
+			"text": " turning back to return."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:53,840",
+				"to": "00:00:57,990"
+			},
+			"offsets": {
+				"from": 53840,
+				"to": 57990
+			},
+			"text": " And in the path, I'm going to be passing over unpleasant"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:57,990",
+				"to": "00:01:02,560"
+			},
+			"offsets": {
+				"from": 57990,
+				"to": 62560
+			},
+			"text": " aftermaths of the mowing process here"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,560",
+				"to": "00:01:07,580"
+			},
+			"offsets": {
+				"from": 62560,
+				"to": 67580
+			},
+			"text": " to large mammals in this area."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:08,540",
+				"to": "00:01:11,510"
+			},
+			"offsets": {
+				"from": 68540,
+				"to": 71510
+			},
+			"text": " And it's kind of, I'm looking at here as I'm walking back"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,510",
+				"to": "00:01:12,140"
+			},
+			"offsets": {
+				"from": 71510,
+				"to": 72140
+			},
+			"text": " this path,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:12,880",
+				"to": "00:01:16,770"
+			},
+			"offsets": {
+				"from": 72880,
+				"to": 76770
+			},
+			"text": " looking back in time to where I started this off, the eubot"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,770",
+				"to": "00:01:17,380"
+			},
+			"offsets": {
+				"from": 76770,
+				"to": 77380
+			},
+			"text": "astic channel,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:18,000",
+				"to": "00:01:21,890"
+			},
+			"offsets": {
+				"from": 78000,
+				"to": 81890
+			},
+			"text": " And then in the beginning, I did these 200-show interviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,890",
+				"to": "00:01:24,820"
+			},
+			"offsets": {
+				"from": 81890,
+				"to": 84820
+			},
+			"text": " and kind of got buried underneath."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:24,920",
+				"to": "00:01:25,940"
+			},
+			"offsets": {
+				"from": 84920,
+				"to": 85940
+			},
+			"text": " And I had to make a choice at one point."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:26,100",
+				"to": "00:01:28,390"
+			},
+			"offsets": {
+				"from": 86100,
+				"to": 88390
+			},
+			"text": " I put it down, and then it was just almost impossible to"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:28,390",
+				"to": "00:01:29,400"
+			},
+			"offsets": {
+				"from": 88390,
+				"to": 89400
+			},
+			"text": " ever pick back up."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,460",
+				"to": "00:01:32,660"
+			},
+			"offsets": {
+				"from": 89460,
+				"to": 92660
+			},
+			"text": " I tried several times, but just too much data, transcript"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:32,660",
+				"to": "00:01:35,740"
+			},
+			"offsets": {
+				"from": 92660,
+				"to": 95740
+			},
+			"text": "ions, all of that stuff was just more than fair."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:35,900",
+				"to": "00:01:37,340"
+			},
+			"offsets": {
+				"from": 95900,
+				"to": 97340
+			},
+			"text": " And then also, even people trying to help me."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:38,060",
+				"to": "00:01:40,560"
+			},
+			"offsets": {
+				"from": 98060,
+				"to": 100560
+			},
+			"text": " I did have people reach out and offer to help, but I just"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:40,560",
+				"to": "00:01:42,400"
+			},
+			"offsets": {
+				"from": 100560,
+				"to": 102400
+			},
+			"text": " didn't know how to engage them."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:42,400",
+				"to": "00:01:49,860"
+			},
+			"offsets": {
+				"from": 102400,
+				"to": 109860
+			},
+			"text": " it wasn't. It was also the way I started doing those"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:49,860",
+				"to": "00:01:54,400"
+			},
+			"offsets": {
+				"from": 109860,
+				"to": 114400
+			},
+			"text": " interviews was so impulsive, but I commit"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,400",
+				"to": "00:01:59,190"
+			},
+			"offsets": {
+				"from": 114400,
+				"to": 119190
+			},
+			"text": " to the bit when I start some, you know, and I'll see it"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:59,190",
+				"to": "00:02:02,200"
+			},
+			"offsets": {
+				"from": 119190,
+				"to": 122200
+			},
+			"text": " through. And here we are. It started"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:02,200",
+				"to": "00:02:07,500"
+			},
+			"offsets": {
+				"from": 122200,
+				"to": 127500
+			},
+			"text": " in 2011 and I've got a series queued up that I've been"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:07,500",
+				"to": "00:02:11,000"
+			},
+			"offsets": {
+				"from": 127500,
+				"to": 131000
+			},
+			"text": " working on that's going to be walking"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:11,000",
+				"to": "00:02:15,000"
+			},
+			"offsets": {
+				"from": 131000,
+				"to": 135000
+			},
+			"text": " back through the history of the software craftsmanship"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:15,000",
+				"to": "00:02:16,580"
+			},
+			"offsets": {
+				"from": 135000,
+				"to": 136580
+			},
+			"text": " movement as it started not"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:16,580",
+				"to": "00:02:21,350"
+			},
+			"offsets": {
+				"from": 136580,
+				"to": 141350
+			},
+			"text": " too far from where I live and it wasn't on the inside but I"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:21,350",
+				"to": "00:02:23,240"
+			},
+			"offsets": {
+				"from": 141350,
+				"to": 143240
+			},
+			"text": " was there many of"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:23,240",
+				"to": "00:02:30,060"
+			},
+			"offsets": {
+				"from": 143240,
+				"to": 150060
+			},
+			"text": " the people and it was a real experience and now as we're"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:30,060",
+				"to": "00:02:33,200"
+			},
+			"offsets": {
+				"from": 150060,
+				"to": 153200
+			},
+			"text": " looking at AI and all"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:33,200",
+				"to": "00:02:37,460"
+			},
+			"offsets": {
+				"from": 153200,
+				"to": 157460
+			},
+			"text": " of these things that still have to work themselves out"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:37,460",
+				"to": "00:02:39,800"
+			},
+			"offsets": {
+				"from": 157460,
+				"to": 159800
+			},
+			"text": " completely in time they"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:39,800",
+				"to": "00:02:43,690"
+			},
+			"offsets": {
+				"from": 159800,
+				"to": 163690
+			},
+			"text": " are game changers um you know but who's playing a game is a"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:43,690",
+				"to": "00:02:44,760"
+			},
+			"offsets": {
+				"from": 163690,
+				"to": 164760
+			},
+			"text": " question for another conversation"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:45,400",
+				"to": "00:02:50,180"
+			},
+			"offsets": {
+				"from": 165400,
+				"to": 170180
+			},
+			"text": " but uh you know as a person who truly identified as wanting"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:50,180",
+				"to": "00:02:52,120"
+			},
+			"offsets": {
+				"from": 170180,
+				"to": 172120
+			},
+			"text": " to be more than a software developer"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:52,120",
+				"to": "00:02:54,560"
+			},
+			"offsets": {
+				"from": 172120,
+				"to": 174560
+			},
+			"text": " wanted to come in you know i was self-taught and i started"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:54,560",
+				"to": "00:02:56,360"
+			},
+			"offsets": {
+				"from": 174560,
+				"to": 176360
+			},
+			"text": " really young and that would be part of"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:56,360",
+				"to": "00:03:01,680"
+			},
+			"offsets": {
+				"from": 176360,
+				"to": 181680
+			},
+			"text": " the story but uh just uh just looking at the industry right"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:01,680",
+				"to": "00:03:04,840"
+			},
+			"offsets": {
+				"from": 181680,
+				"to": 184840
+			},
+			"text": " now and i just see so many young"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:04,840",
+				"to": "00:03:09,780"
+			},
+			"offsets": {
+				"from": 184840,
+				"to": 189780
+			},
+			"text": " developers who've been so hey come in stem and uh yeah go"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:09,780",
+				"to": "00:03:11,480"
+			},
+			"offsets": {
+				"from": 189780,
+				"to": 191480
+			},
+			"text": " to a boot camp thirty thousand dollars"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:11,480",
+				"to": "00:03:14,450"
+			},
+			"offsets": {
+				"from": 191480,
+				"to": 194450
+			},
+			"text": " i saw the start of those too and i know people started them"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:14,450",
+				"to": "00:03:15,800"
+			},
+			"offsets": {
+				"from": 194450,
+				"to": 195800
+			},
+			"text": " and i'm gonna tell you most of them"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:15,800",
+				"to": "00:03:19,680"
+			},
+			"offsets": {
+				"from": 195800,
+				"to": 199680
+			},
+			"text": " i truly believe believed that this was the future and they"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:19,680",
+				"to": "00:03:23,800"
+			},
+			"offsets": {
+				"from": 199680,
+				"to": 203800
+			},
+			"text": " did this with the intention of me living"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:24,440",
+				"to": "00:03:28,550"
+			},
+			"offsets": {
+				"from": 204440,
+				"to": 208550
+			},
+			"text": " doing something that helps other people improve their lives"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:28,550",
+				"to": "00:03:30,440"
+			},
+			"offsets": {
+				"from": 208550,
+				"to": 210440
+			},
+			"text": " and they were seeing this as like a"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:30,440",
+				"to": "00:03:39,030"
+			},
+			"offsets": {
+				"from": 210440,
+				"to": 219030
+			},
+			"text": " a future trade school kind of structure. Here we are,"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:39,030",
+				"to": "00:03:43,320"
+			},
+			"offsets": {
+				"from": 219030,
+				"to": 223320
+			},
+			"text": " people have bet their lives on it and now"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:43,320",
+				"to": "00:03:48,970"
+			},
+			"offsets": {
+				"from": 223320,
+				"to": 228970
+			},
+			"text": " we're facing a kind of a crisis of identity I think and I"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:48,970",
+				"to": "00:03:50,820"
+			},
+			"offsets": {
+				"from": 228970,
+				"to": 230820
+			},
+			"text": " see the software engineering is dead"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:50,820",
+				"to": "00:03:54,340"
+			},
+			"offsets": {
+				"from": 230820,
+				"to": 234340
+			},
+			"text": " and I'm on LinkedIn too just like everybody else out here"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:54,340",
+				"to": "00:03:58,480"
+			},
+			"offsets": {
+				"from": 234340,
+				"to": 238480
+			},
+			"text": " and lay off land and walking with your"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:58,480",
+				"to": "00:04:04,820"
+			},
+			"offsets": {
+				"from": 238480,
+				"to": 244820
+			},
+			"text": " arm up like that. But yeah, I'm looking back at these"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:04,820",
+				"to": "00:04:05,680"
+			},
+			"offsets": {
+				"from": 244820,
+				"to": 245680
+			},
+			"text": " interviews I did during a"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:05,680",
+				"to": "00:04:08,670"
+			},
+			"offsets": {
+				"from": 245680,
+				"to": 248670
+			},
+			"text": " period where we were trying to identify, and at least I was"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:08,670",
+				"to": "00:04:10,100"
+			},
+			"offsets": {
+				"from": 248670,
+				"to": 250100
+			},
+			"text": ", I'll tell that story,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:10,100",
+				"to": "00:04:13,420"
+			},
+			"offsets": {
+				"from": 250100,
+				"to": 253420
+			},
+			"text": " but I didn't start it. You know, craftsmanship was a"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:13,420",
+				"to": "00:04:14,380"
+			},
+			"offsets": {
+				"from": 253420,
+				"to": 254380
+			},
+			"text": " movement that was in"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:14,380",
+				"to": "00:04:16,960"
+			},
+			"offsets": {
+				"from": 254380,
+				"to": 256960
+			},
+			"text": " flight, and I just documented some parts of it, an aspect,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:16,960",
+				"to": "00:04:19,480"
+			},
+			"offsets": {
+				"from": 256960,
+				"to": 259480
+			},
+			"text": " a perspective. But over"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:19,480",
+				"to": "00:04:23,370"
+			},
+			"offsets": {
+				"from": 259480,
+				"to": 263370
+			},
+			"text": " the course of the four years, I started a software craftsm"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:23,370",
+				"to": "00:04:25,560"
+			},
+			"offsets": {
+				"from": 263370,
+				"to": 265560
+			},
+			"text": "anship in North America,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:25,560",
+				"to": "00:04:33,480"
+			},
+			"offsets": {
+				"from": 265560,
+				"to": 273480
+			},
+			"text": " 2011, 2012, 2013, GoToCon, I think it was 2013, 2014, 2015,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:33,480",
+				"to": "00:04:34,860"
+			},
+			"offsets": {
+				"from": 273480,
+				"to": 274860
+			},
+			"text": " I can't remember, and a few other"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:34,860",
+				"to": "00:04:39,860"
+			},
+			"offsets": {
+				"from": 274860,
+				"to": 279860
+			},
+			"text": " conferences, but they were about really what does it mean"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:39,860",
+				"to": "00:04:41,100"
+			},
+			"offsets": {
+				"from": 279860,
+				"to": 281100
+			},
+			"text": " to be an engineer or"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:41,100",
+				"to": "00:04:45,380"
+			},
+			"offsets": {
+				"from": 281100,
+				"to": 285380
+			},
+			"text": " software engineer or software developer, and we didn't know"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:45,380",
+				"to": "00:04:47,040"
+			},
+			"offsets": {
+				"from": 285380,
+				"to": 287040
+			},
+			"text": " AI like it is now was"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:47,040",
+				"to": "00:04:52,860"
+			},
+			"offsets": {
+				"from": 287040,
+				"to": 292860
+			},
+			"text": " coming. Excuse me. So we are coming across another"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:52,860",
+				"to": "00:05:00,160"
+			},
+			"offsets": {
+				"from": 292860,
+				"to": 300160
+			},
+			"text": " consequence of mowing here. But we were trying to figure"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:00,160",
+				"to": "00:05:03,490"
+			},
+			"offsets": {
+				"from": 300160,
+				"to": 303490
+			},
+			"text": " out how to improve ourselves, improve our collaboration"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:03,490",
+				"to": "00:05:06,170"
+			},
+			"offsets": {
+				"from": 303490,
+				"to": 306170
+			},
+			"text": " with other people. Yeah, there was a manifesto. But these"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:06,170",
+				"to": "00:05:09,260"
+			},
+			"offsets": {
+				"from": 306170,
+				"to": 309260
+			},
+			"text": " things were more like throwing a flag in the ground, a"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:09,260",
+				"to": "00:05:11,510"
+			},
+			"offsets": {
+				"from": 309260,
+				"to": 311510
+			},
+			"text": " stake in the ground, something like that. And just saying"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:11,510",
+				"to": "00:05:17,020"
+			},
+			"offsets": {
+				"from": 311510,
+				"to": 317020
+			},
+			"text": " this is what we're going to call it here. Then a, I don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:17,020",
+				"to": "00:05:17,020"
+			},
+			"offsets": {
+				"from": 317020,
+				"to": 317020
+			},
+			"text": " know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:17,020",
+				"to": "00:05:19,270"
+			},
+			"offsets": {
+				"from": 317020,
+				"to": 319270
+			},
+			"text": " what you know maybe over the years people did kind of go"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:19,270",
+				"to": "00:05:21,580"
+			},
+			"offsets": {
+				"from": 319270,
+				"to": 321580
+			},
+			"text": " into the personality of it but i guess i was"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:21,580",
+				"to": "00:05:25,690"
+			},
+			"offsets": {
+				"from": 321580,
+				"to": 325690
+			},
+			"text": " blessed to be there in the beginning so i'm going back and"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:25,690",
+				"to": "00:05:32,860"
+			},
+			"offsets": {
+				"from": 325690,
+				"to": 332860
+			},
+			"text": " i'm looking at what was what were we"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:32,860",
+				"to": "00:05:37,190"
+			},
+			"offsets": {
+				"from": 332860,
+				"to": 337190
+			},
+			"text": " trying to do in the software craftsmanship movement those"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:37,190",
+				"to": "00:05:39,420"
+			},
+			"offsets": {
+				"from": 337190,
+				"to": 339420
+			},
+			"text": " of us who you know identified"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:39,420",
+				"to": "00:05:43,630"
+			},
+			"offsets": {
+				"from": 339420,
+				"to": 343630
+			},
+			"text": " it as as a part of that community that was trying to say"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:43,630",
+				"to": "00:05:46,300"
+			},
+			"offsets": {
+				"from": 343630,
+				"to": 346300
+			},
+			"text": " how do we get better how do we help the"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:46,300",
+				"to": "00:05:49,360"
+			},
+			"offsets": {
+				"from": 346300,
+				"to": 349360
+			},
+			"text": " people around us get better at doing this thing that is"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:49,360",
+				"to": "00:05:52,140"
+			},
+			"offsets": {
+				"from": 349360,
+				"to": 352140
+			},
+			"text": " more than just typing and getting paid a"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:52,140",
+				"to": "00:05:56,380"
+			},
+			"offsets": {
+				"from": 352140,
+				"to": 356380
+			},
+			"text": " bunch of money um you know and now that we're here where"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:56,380",
+				"to": "00:05:59,640"
+			},
+			"offsets": {
+				"from": 356380,
+				"to": 359640
+			},
+			"text": " you know the market is in turmoil and this"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:59,640",
+				"to": "00:06:02,800"
+			},
+			"offsets": {
+				"from": 359640,
+				"to": 362800
+			},
+			"text": " you know i reiterate again the identity crisis is what were"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:02,800",
+				"to": "00:06:05,700"
+			},
+			"offsets": {
+				"from": 362800,
+				"to": 365700
+			},
+			"text": " we trying to understand back then"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:05,700",
+				"to": "00:06:12,220"
+			},
+			"offsets": {
+				"from": 365700,
+				"to": 372220
+			},
+			"text": " and in the 10 plus years since what have we learned what"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:12,220",
+				"to": "00:06:14,660"
+			},
+			"offsets": {
+				"from": 372220,
+				"to": 374660
+			},
+			"text": " what what what do we know"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:14,660",
+				"to": "00:06:21,600"
+			},
+			"offsets": {
+				"from": 374660,
+				"to": 381600
+			},
+			"text": " but didn't articulate or couldn't, you know, it's not a"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:21,600",
+				"to": "00:06:22,040"
+			},
+			"offsets": {
+				"from": 381600,
+				"to": 382040
+			},
+			"text": " couldn't thing."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:22,380",
+				"to": "00:06:23,040"
+			},
+			"offsets": {
+				"from": 382380,
+				"to": 383040
+			},
+			"text": " It's not a couldn't thing."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:23,040",
+				"to": "00:06:38,610"
+			},
+			"offsets": {
+				"from": 383040,
+				"to": 398610
+			},
+			"text": " It's a, why did it become a kind of a joke online about"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:38,610",
+				"to": "00:06:42,160"
+			},
+			"offsets": {
+				"from": 398610,
+				"to": 402160
+			},
+			"text": " clean code"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:42,160",
+				"to": "00:06:46,100"
+			},
+			"offsets": {
+				"from": 402160,
+				"to": 406100
+			},
+			"text": " and we were arguing about distractions."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:47,000",
+				"to": "00:06:50,780"
+			},
+			"offsets": {
+				"from": 407000,
+				"to": 410780
+			},
+			"text": " And if you know me, I'm not one who ever backed down"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:50,780",
+				"to": "00:06:53,080"
+			},
+			"offsets": {
+				"from": 410780,
+				"to": 413080
+			},
+			"text": " from the ethical or moral fights."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:53,080",
+				"to": "00:06:57,740"
+			},
+			"offsets": {
+				"from": 413080,
+				"to": 417740
+			},
+			"text": " I'm not saying I don't know what happened"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:57,740",
+				"to": "00:07:00,160"
+			},
+			"offsets": {
+				"from": 417740,
+				"to": 420160
+			},
+			"text": " with that craftsmanship, craftspersonship."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:02,460",
+				"to": "00:07:06,140"
+			},
+			"offsets": {
+				"from": 422460,
+				"to": 426140
+			},
+			"text": " It was really unfortunate, and it became a real, I think,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:06,220",
+				"to": "00:07:10,300"
+			},
+			"offsets": {
+				"from": 426220,
+				"to": 430300
+			},
+			"text": " distraction where it was bringing in other issues"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:10,300",
+				"to": "00:07:14,720"
+			},
+			"offsets": {
+				"from": 430300,
+				"to": 434720
+			},
+			"text": " that were complex and, you know, we're trying to be in"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:14,720",
+				"to": "00:07:23,360"
+			},
+			"offsets": {
+				"from": 434720,
+				"to": 443360
+			},
+			"text": " truly, it's like, things got complicated."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:24,800",
+				"to": "00:07:29,790"
+			},
+			"offsets": {
+				"from": 444800,
+				"to": 449790
+			},
+			"text": " And it was, again, I don't know people's intentions. I"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:29,790",
+				"to": "00:07:32,120"
+			},
+			"offsets": {
+				"from": 449790,
+				"to": 452120
+			},
+			"text": " usually believe that people"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:32,120",
+				"to": "00:07:36,980"
+			},
+			"offsets": {
+				"from": 452120,
+				"to": 456980
+			},
+			"text": " do start with good intentions. You can get a little exuber"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:36,980",
+				"to": "00:07:39,540"
+			},
+			"offsets": {
+				"from": 456980,
+				"to": 459540
+			},
+			"text": "ant sometimes. But anyway,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:39,540",
+				"to": "00:07:40,620"
+			},
+			"offsets": {
+				"from": 459540,
+				"to": 460620
+			},
+			"text": " Going back to the interviews."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:41,700",
+				"to": "00:07:49,060"
+			},
+			"offsets": {
+				"from": 461700,
+				"to": 469060
+			},
+			"text": " 200 interviews over four years of progression and thoughts."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:49,320",
+				"to": "00:07:51,900"
+			},
+			"offsets": {
+				"from": 469320,
+				"to": 471900
+			},
+			"text": " And some interviews were repeats with individuals."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:52,120",
+				"to": "00:07:54,340"
+			},
+			"offsets": {
+				"from": 472120,
+				"to": 474340
+			},
+			"text": " Like I had multiple interviews with a few people."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:54,400",
+				"to": "00:07:55,480"
+			},
+			"offsets": {
+				"from": 474400,
+				"to": 475480
+			},
+			"text": " I'm not going to name names here because that's not the"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:55,480",
+				"to": "00:07:55,760"
+			},
+			"offsets": {
+				"from": 475480,
+				"to": 475760
+			},
+			"text": " point."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:56,180",
+				"to": "00:07:57,680"
+			},
+			"offsets": {
+				"from": 476180,
+				"to": 477680
+			},
+			"text": " It's not, you know, close to personality here."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:58,280",
+				"to": "00:08:00,080"
+			},
+			"offsets": {
+				"from": 478280,
+				"to": 480080
+			},
+			"text": " And these people have done important work."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:00,620",
+				"to": "00:08:03,580"
+			},
+			"offsets": {
+				"from": 480620,
+				"to": 483580
+			},
+			"text": " And I will talk about them in their rewatch episodes."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:03,580",
+				"to": "00:08:06,960"
+			},
+			"offsets": {
+				"from": 483580,
+				"to": 486960
+			},
+			"text": " And what I'm going to be doing is I'm going back through"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:06,960",
+				"to": "00:08:08,260"
+			},
+			"offsets": {
+				"from": 486960,
+				"to": 488260
+			},
+			"text": " all of these interviews."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:08,740",
+				"to": "00:08:13,780"
+			},
+			"offsets": {
+				"from": 488740,
+				"to": 493780
+			},
+			"text": " I'm going to re-watch them and I'm going to try to add"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:13,780",
+				"to": "00:08:16,900"
+			},
+			"offsets": {
+				"from": 493780,
+				"to": 496900
+			},
+			"text": " context about what was going on at the time"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:16,900",
+				"to": "00:08:22,320"
+			},
+			"offsets": {
+				"from": 496900,
+				"to": 502320
+			},
+			"text": " and a little bit about what I was seeing around me at the"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:22,320",
+				"to": "00:08:23,480"
+			},
+			"offsets": {
+				"from": 502320,
+				"to": 503480
+			},
+			"text": " time."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:24,400",
+				"to": "00:08:27,940"
+			},
+			"offsets": {
+				"from": 504400,
+				"to": 507940
+			},
+			"text": " And hopefully, you know, we can have a conversation."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:28,740",
+				"to": "00:08:30,390"
+			},
+			"offsets": {
+				"from": 508740,
+				"to": 510390
+			},
+			"text": " I don't know, he doesn't even have me, you guys have a"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:30,390",
+				"to": "00:08:31,260"
+			},
+			"offsets": {
+				"from": 510390,
+				"to": 511260
+			},
+			"text": " conversation."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:31,420",
+				"to": "00:08:33,870"
+			},
+			"offsets": {
+				"from": 511420,
+				"to": 513870
+			},
+			"text": " I mean, we as a, it's just as a community, it's going to be"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:33,870",
+				"to": "00:08:35,240"
+			},
+			"offsets": {
+				"from": 513870,
+				"to": 515240
+			},
+			"text": " in all of your pockets of space"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:35,240",
+				"to": "00:08:37,350"
+			},
+			"offsets": {
+				"from": 515240,
+				"to": 517350
+			},
+			"text": " because you've got to work locally before you can work"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:37,350",
+				"to": "00:08:37,920"
+			},
+			"offsets": {
+				"from": 517350,
+				"to": 517920
+			},
+			"text": " globally."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:38,080",
+				"to": "00:08:39,440"
+			},
+			"offsets": {
+				"from": 518080,
+				"to": 519440
+			},
+			"text": " You got to get one to work before you get many."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:40,360",
+				"to": "00:08:44,460"
+			},
+			"offsets": {
+				"from": 520360,
+				"to": 524460
+			},
+			"text": " And, you know, you get one to work in your local space,"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:44,480",
+				"to": "00:08:46,980"
+			},
+			"offsets": {
+				"from": 524480,
+				"to": 526980
+			},
+			"text": " and then you can find people around you and grow a network."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:47,440",
+				"to": "00:08:49,260"
+			},
+			"offsets": {
+				"from": 527440,
+				"to": 529260
+			},
+			"text": " But that's what I want to talk about."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:49,520",
+				"to": "00:08:52,160"
+			},
+			"offsets": {
+				"from": 529520,
+				"to": 532160
+			},
+			"text": " I want to talk about what was happening at the time,"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:53,280",
+				"to": "00:08:54,260"
+			},
+			"offsets": {
+				"from": 533280,
+				"to": 534260
+			},
+			"text": " what were the valuable lessons,"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:54,260",
+				"to": "00:08:58,100"
+			},
+			"offsets": {
+				"from": 534260,
+				"to": 538100
+			},
+			"text": " who in the fullness of time here a decade plus later"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:58,100",
+				"to": "00:09:03,500"
+			},
+			"offsets": {
+				"from": 538100,
+				"to": 543500
+			},
+			"text": " was talking about the things that are going to help carry"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:03,500",
+				"to": "00:09:08,550"
+			},
+			"offsets": {
+				"from": 543500,
+				"to": 548550
+			},
+			"text": " the next generation of developers through this crisis of"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:08,550",
+				"to": "00:09:10,420"
+			},
+			"offsets": {
+				"from": 548550,
+				"to": 550420
+			},
+			"text": " identity and"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:10,420",
+				"to": "00:09:13,920"
+			},
+			"offsets": {
+				"from": 550420,
+				"to": 553920
+			},
+			"text": " uncertainty about what the future of software engineering"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:13,920",
+				"to": "00:09:15,360"
+			},
+			"offsets": {
+				"from": 553920,
+				"to": 555360
+			},
+			"text": " is. I'm of the"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:15,360",
+				"to": "00:09:19,250"
+			},
+			"offsets": {
+				"from": 555360,
+				"to": 559250
+			},
+			"text": " mindset that the game has changed. It is. It has. I've"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:19,250",
+				"to": "00:09:20,660"
+			},
+			"offsets": {
+				"from": 559250,
+				"to": 560660
+			},
+			"text": " built things and I've"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:20,660",
+				"to": "00:09:22,950"
+			},
+			"offsets": {
+				"from": 560660,
+				"to": 562950
+			},
+			"text": " recovered these interviews and built the site around it."
+		},
+		{
+			"timestamps": {
+				"from": "00:09:22,950",
+				"to": "00:09:24,120"
+			},
+			"offsets": {
+				"from": 562950,
+				"to": 564120
+			},
+			"text": " Transcriptions and all."
+		},
+		{
+			"timestamps": {
+				"from": "00:09:24,120",
+				"to": "00:09:28,220"
+			},
+			"offsets": {
+				"from": 564120,
+				"to": 568220
+			},
+			"text": " Using AI tools and even then not using the biggest and best"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:28,220",
+				"to": "00:09:30,180"
+			},
+			"offsets": {
+				"from": 568220,
+				"to": 570180
+			},
+			"text": ". I'm talking Gemini,"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:30,180",
+				"to": "00:09:33,560"
+			},
+			"offsets": {
+				"from": 570180,
+				"to": 573560
+			},
+			"text": " codecs. Yes, I used, you know, whatever the latest models"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:33,560",
+				"to": "00:09:34,860"
+			},
+			"offsets": {
+				"from": 573560,
+				"to": 574860
+			},
+			"text": " were at the time, but this"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:34,860",
+				"to": "00:09:38,740"
+			},
+			"offsets": {
+				"from": 574860,
+				"to": 578740
+			},
+			"text": " was a progression since like February of 2026, and now we"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:38,740",
+				"to": "00:09:40,460"
+			},
+			"offsets": {
+				"from": 578740,
+				"to": 580460
+			},
+			"text": "'re sitting in October"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:40,460",
+				"to": "00:09:44,350"
+			},
+			"offsets": {
+				"from": 580460,
+				"to": 584350
+			},
+			"text": " 2026, and I've been able to build everything back up,"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:44,350",
+				"to": "00:09:45,840"
+			},
+			"offsets": {
+				"from": 584350,
+				"to": 585840
+			},
+			"text": " generate diarized"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:45,840",
+				"to": "00:09:49,450"
+			},
+			"offsets": {
+				"from": 585840,
+				"to": 589450
+			},
+			"text": " transcripts where there's turn, being able to have the"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:49,450",
+				"to": "00:09:50,940"
+			},
+			"offsets": {
+				"from": 589450,
+				"to": 590940
+			},
+			"text": " player stream and show"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:50,940",
+				"to": "00:09:59,140"
+			},
+			"offsets": {
+				"from": 590940,
+				"to": 599140
+			},
+			"text": " the back and forth. It was a lot of work, but the point is"
+		},
+		{
+			"timestamps": {
+				"from": "00:09:59,140",
+				"to": "00:10:01,060"
+			},
+			"offsets": {
+				"from": 599140,
+				"to": 601060
+			},
+			"text": " that these tools do"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:01,060",
+				"to": "00:10:06,880"
+			},
+			"offsets": {
+				"from": 601060,
+				"to": 606880
+			},
+			"text": " stuff, and I truly believe that the lessons and ideas that"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:06,880",
+				"to": "00:10:07,800"
+			},
+			"offsets": {
+				"from": 606880,
+				"to": 607800
+			},
+			"text": " we were talking"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:07,800",
+				"to": "00:10:11,900"
+			},
+			"offsets": {
+				"from": 607800,
+				"to": 611900
+			},
+			"text": " about back then are what need to come forward. We've been"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:11,900",
+				"to": "00:10:12,180"
+			},
+			"offsets": {
+				"from": 611900,
+				"to": 612180
+			},
+			"text": " through the"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:12,180",
+				"to": "00:10:16,180"
+			},
+			"offsets": {
+				"from": 612180,
+				"to": 616180
+			},
+			"text": " leetcode, we went through the Fang obsession, everything"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:16,180",
+				"to": "00:10:17,100"
+			},
+			"offsets": {
+				"from": 616180,
+				"to": 617100
+			},
+			"text": " being, you know, kind"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:17,100",
+				"to": "00:10:20,230"
+			},
+			"offsets": {
+				"from": 617100,
+				"to": 620230
+			},
+			"text": " tech pros got in and they kicked nerds out and then nerds"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:20,230",
+				"to": "00:10:22,060"
+			},
+			"offsets": {
+				"from": 620230,
+				"to": 622060
+			},
+			"text": " got kind of pushed to the side when"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:22,060",
+				"to": "00:10:25,940"
+			},
+			"offsets": {
+				"from": 622060,
+				"to": 625940
+			},
+			"text": " the budgets were management marketing and product and i'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:25,940",
+				"to": "00:10:28,140"
+			},
+			"offsets": {
+				"from": 625940,
+				"to": 628140
+			},
+			"text": " not saying this as a condemnation i'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:28,140",
+				"to": "00:10:31,110"
+			},
+			"offsets": {
+				"from": 628140,
+				"to": 631110
+			},
+			"text": " saying this is a fact this is just how it went"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:31,110",
+				"to": "00:10:32,860"
+			},
+			"offsets": {
+				"from": 631110,
+				"to": 632860
+			},
+			"text": " unfortunately different mindsets they're good"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:32,860",
+				"to": "00:10:38,440"
+			},
+			"offsets": {
+				"from": 632860,
+				"to": 638440
+			},
+			"text": " at their job maybe and i'm good at my job but i've seen it"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:38,440",
+				"to": "00:10:43,260"
+			},
+			"offsets": {
+				"from": 638440,
+				"to": 643260
+			},
+			"text": " go sideways so many times and uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:43,260",
+				"to": "00:10:48,290"
+			},
+			"offsets": {
+				"from": 643260,
+				"to": 648290
+			},
+			"text": " just because of priorities so we're looking now at a period"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:48,290",
+				"to": "00:10:49,420"
+			},
+			"offsets": {
+				"from": 648290,
+				"to": 649420
+			},
+			"text": " where a lot of people thought they"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:49,420",
+				"to": "00:10:51,010"
+			},
+			"offsets": {
+				"from": 649420,
+				"to": 651010
+			},
+			"text": " were going to be getting rid of software engineers just"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:51,010",
+				"to": "00:10:54,460"
+			},
+			"offsets": {
+				"from": 651010,
+				"to": 654460
+			},
+			"text": " like they did back in this cobalt and uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:55,660",
+				"to": "00:10:57,930"
+			},
+			"offsets": {
+				"from": 655660,
+				"to": 657930
+			},
+			"text": " the truth is is that i've watched what product people"
+		},
+		{
+			"timestamps": {
+				"from": "00:10:57,930",
+				"to": "00:11:00,460"
+			},
+			"offsets": {
+				"from": 657930,
+				"to": 660460
+			},
+			"text": " marketing people have been able to create"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:00,460",
+				"to": "00:11:03,440"
+			},
+			"offsets": {
+				"from": 660460,
+				"to": 663440
+			},
+			"text": " and it's made me really realize that the ability to"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:03,440",
+				"to": "00:11:03,980"
+			},
+			"offsets": {
+				"from": 663440,
+				"to": 663980
+			},
+			"text": " describe"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:06,140",
+				"to": "00:11:10,660"
+			},
+			"offsets": {
+				"from": 666140,
+				"to": 670660
+			},
+			"text": " what you need the system to do and what you need to know to"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:10,660",
+				"to": "00:11:12,780"
+			},
+			"offsets": {
+				"from": 670660,
+				"to": 672780
+			},
+			"text": " prove that it did what it was supposed"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:12,780",
+				"to": "00:11:17,370"
+			},
+			"offsets": {
+				"from": 672780,
+				"to": 677370
+			},
+			"text": " to do simple but like lifting weights are simple and going"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:17,370",
+				"to": "00:11:18,460"
+			},
+			"offsets": {
+				"from": 677370,
+				"to": 678460
+			},
+			"text": " for a walk is simple you got to do one"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:18,460",
+				"to": "00:11:20,560"
+			},
+			"offsets": {
+				"from": 678460,
+				"to": 680560
+			},
+			"text": " foot in front of the other a whole lot of times and uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:20,560",
+				"to": "00:11:22,460"
+			},
+			"offsets": {
+				"from": 680560,
+				"to": 682460
+			},
+			"text": " there's a big difference between picking"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:22,460",
+				"to": "00:11:27,100"
+			},
+			"offsets": {
+				"from": 682460,
+				"to": 687100
+			},
+			"text": " up a dumbbell that's uh 10 pounds and a dumbbell that's 100"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:27,100",
+				"to": "00:11:30,220"
+			},
+			"offsets": {
+				"from": 687100,
+				"to": 690220
+			},
+			"text": " pounds same action different energy"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:30,860",
+				"to": "00:11:32,540"
+			},
+			"offsets": {
+				"from": 690860,
+				"to": 692540
+			},
+			"text": " different system um but uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:36,300",
+				"to": "00:11:38,940"
+			},
+			"offsets": {
+				"from": 696300,
+				"to": 698940
+			},
+			"text": " it's gonna be hard it's gonna take a lot of time"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:41,420",
+				"to": "00:11:43,660"
+			},
+			"offsets": {
+				"from": 701420,
+				"to": 703660
+			},
+			"text": " and it's got to be a lot of me listening to my own voice"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:43,660",
+				"to": "00:11:47,500"
+			},
+			"offsets": {
+				"from": 703660,
+				"to": 707500
+			},
+			"text": " which is really hard and i'm rambling"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:47,500",
+				"to": "00:11:50,480"
+			},
+			"offsets": {
+				"from": 707500,
+				"to": 710480
+			},
+			"text": " because this is going to be my first video and i'm just"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:50,480",
+				"to": "00:11:52,460"
+			},
+			"offsets": {
+				"from": 710480,
+				"to": 712460
+			},
+			"text": " letting myself go here otherwise i'll"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:52,460",
+				"to": "00:11:59,280"
+			},
+			"offsets": {
+				"from": 712460,
+				"to": 719280
+			},
+			"text": " never start so i just i am going to eventually need to"
+		},
+		{
+			"timestamps": {
+				"from": "00:11:59,280",
+				"to": "00:12:03,660"
+			},
+			"offsets": {
+				"from": 719280,
+				"to": 723660
+			},
+			"text": " figure out a way to do some kind of"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:03,660",
+				"to": "00:12:06,150"
+			},
+			"offsets": {
+				"from": 723660,
+				"to": 726150
+			},
+			"text": " funding or something like that i don't know how it works i"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:06,150",
+				"to": "00:12:07,420"
+			},
+			"offsets": {
+				"from": 726150,
+				"to": 727420
+			},
+			"text": "'ve never been a money goddess"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:08,540",
+				"to": "00:12:09,260"
+			},
+			"offsets": {
+				"from": 728540,
+				"to": 729260
+			},
+			"text": " then my thing"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:13,260",
+				"to": "00:12:16,230"
+			},
+			"offsets": {
+				"from": 733260,
+				"to": 736230
+			},
+			"text": " i hope that this is valuable i believe this would be"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:16,230",
+				"to": "00:12:17,900"
+			},
+			"offsets": {
+				"from": 736230,
+				"to": 737900
+			},
+			"text": " valuable otherwise wouldn't do it and"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:17,900",
+				"to": "00:12:19,880"
+			},
+			"offsets": {
+				"from": 737900,
+				"to": 739880
+			},
+			"text": " people that know me know i don't do things that i don't"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:19,880",
+				"to": "00:12:21,740"
+			},
+			"offsets": {
+				"from": 739880,
+				"to": 741740
+			},
+			"text": " think are valuable um"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:25,180",
+				"to": "00:12:28,330"
+			},
+			"offsets": {
+				"from": 745180,
+				"to": 748330
+			},
+			"text": " that sounds pretentious but you know sometimes in a world"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:28,330",
+				"to": "00:12:31,900"
+			},
+			"offsets": {
+				"from": 748330,
+				"to": 751900
+			},
+			"text": " where appearances are"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:35,260",
+				"to": "00:12:39,660"
+			},
+			"offsets": {
+				"from": 755260,
+				"to": 759660
+			},
+			"text": " would get five million dollar budgets and that's uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:43,020",
+				"to": "00:12:48,610"
+			},
+			"offsets": {
+				"from": 763020,
+				"to": 768610
+			},
+			"text": " not being an engineer holding the line like you were called"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:48,610",
+				"to": "00:12:51,900"
+			},
+			"offsets": {
+				"from": 768610,
+				"to": 771900
+			},
+			"text": " to do yes by bob martin or robert"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:51,900",
+				"to": "00:12:58,420"
+			},
+			"offsets": {
+				"from": 771900,
+				"to": 778420
+			},
+			"text": " martin in his uh presentation at uh software craftsmanship"
+		},
+		{
+			"timestamps": {
+				"from": "00:12:58,420",
+				"to": "00:13:01,340"
+			},
+			"offsets": {
+				"from": 778420,
+				"to": 781340
+			},
+			"text": " which was i want to say 2012 2013"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:02,060",
+				"to": "00:13:05,020"
+			},
+			"offsets": {
+				"from": 782060,
+				"to": 785020
+			},
+			"text": " but uh it doesn't matter the point was he talked about it"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:07,500",
+				"to": "00:13:11,500"
+			},
+			"offsets": {
+				"from": 787500,
+				"to": 791500
+			},
+			"text": " and this is what i think the ultimate crux of of self-ag"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:11,500",
+				"to": "00:13:14,700"
+			},
+			"offsets": {
+				"from": 791500,
+				"to": 794700
+			},
+			"text": "gressionship really was and everything"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:14,700",
+				"to": "00:13:18,310"
+			},
+			"offsets": {
+				"from": 794700,
+				"to": 798310
+			},
+			"text": " else that happened was a distraction or a conversation that"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:18,310",
+				"to": "00:13:19,740"
+			},
+			"offsets": {
+				"from": 798310,
+				"to": 799740
+			},
+			"text": " just needed to happen so"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:19,740",
+				"to": "00:13:24,680"
+			},
+			"offsets": {
+				"from": 799740,
+				"to": 804680
+			},
+			"text": " we could have this conversation even if it wasn't pleasant"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:24,680",
+				"to": "00:13:27,660"
+			},
+			"offsets": {
+				"from": 804680,
+				"to": 807660
+			},
+			"text": " at the time people were angry at each"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:27,660",
+				"to": "00:13:36,420"
+			},
+			"offsets": {
+				"from": 807660,
+				"to": 816420
+			},
+			"text": " other. It was a call to... he just told the story about the"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:36,420",
+				"to": "00:13:37,260"
+			},
+			"offsets": {
+				"from": 816420,
+				"to": 817260
+			},
+			"text": " space shuttle. The"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:37,260",
+				"to": "00:13:40,440"
+			},
+			"offsets": {
+				"from": 817260,
+				"to": 820440
+			},
+			"text": " Challenger I believe it was. It's hard to remember"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:40,440",
+				"to": "00:13:47,760"
+			},
+			"offsets": {
+				"from": 820440,
+				"to": 827760
+			},
+			"text": " everything so much. But the engineer"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:47,760",
+				"to": "00:13:55,280"
+			},
+			"offsets": {
+				"from": 827760,
+				"to": 835280
+			},
+			"text": " that was working on that knew something about the"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:55,280",
+				"to": "00:13:57,540"
+			},
+			"offsets": {
+				"from": 835280,
+				"to": 837540
+			},
+			"text": " characteristics of that valve"
+		},
+		{
+			"timestamps": {
+				"from": "00:13:57,540",
+				"to": "00:14:02,020"
+			},
+			"offsets": {
+				"from": 837540,
+				"to": 842020
+			},
+			"text": " he was working on that the component he was working on and"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:02,020",
+				"to": "00:14:03,860"
+			},
+			"offsets": {
+				"from": 842020,
+				"to": 843860
+			},
+			"text": " that he knew that"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:03,860",
+				"to": "00:14:08,640"
+			},
+			"offsets": {
+				"from": 843860,
+				"to": 848640
+			},
+			"text": " there were certain operating parameters it could be only so"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:08,640",
+				"to": "00:14:10,040"
+			},
+			"offsets": {
+				"from": 848640,
+				"to": 850040
+			},
+			"text": " cold I mean only so"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:10,040",
+				"to": "00:14:13,020"
+			},
+			"offsets": {
+				"from": 850040,
+				"to": 853020
+			},
+			"text": " hot and can only be so cold it has to be somewhere in"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:13,020",
+				"to": "00:14:16,360"
+			},
+			"offsets": {
+				"from": 853020,
+				"to": 856360
+			},
+			"text": " between like a good SLO"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:16,360",
+				"to": "00:14:23,900"
+			},
+			"offsets": {
+				"from": 856360,
+				"to": 863900
+			},
+			"text": " but yeah he fought against and he tried to get the launch"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:23,900",
+				"to": "00:14:26,100"
+			},
+			"offsets": {
+				"from": 863900,
+				"to": 866100
+			},
+			"text": " canceled and then they"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:26,100",
+				"to": "00:14:28,570"
+			},
+			"offsets": {
+				"from": 866100,
+				"to": 868570
+			},
+			"text": " tried to launch anyway when they did launch and then that"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:28,570",
+				"to": "00:14:29,040"
+			},
+			"offsets": {
+				"from": 868570,
+				"to": 869040
+			},
+			"text": " you know the"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:29,040",
+				"to": "00:14:35,560"
+			},
+			"offsets": {
+				"from": 869040,
+				"to": 875560
+			},
+			"text": " tragedy happened but you know the story goes that the"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:35,560",
+				"to": "00:14:38,040"
+			},
+			"offsets": {
+				"from": 875560,
+				"to": 878040
+			},
+			"text": " engineer just for the"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:38,040",
+				"to": "00:14:46,250"
+			},
+			"offsets": {
+				"from": 878040,
+				"to": 886250
+			},
+			"text": " rest of his day it's just wish he fought harder you know he"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:46,250",
+				"to": "00:14:48,000"
+			},
+			"offsets": {
+				"from": 886250,
+				"to": 888000
+			},
+			"text": " did fight it wasn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:48,000",
+				"to": "00:14:54,650"
+			},
+			"offsets": {
+				"from": 888000,
+				"to": 894650
+			},
+			"text": " that he just rolled over but you just don't want to be the"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:54,650",
+				"to": "00:14:56,080"
+			},
+			"offsets": {
+				"from": 894650,
+				"to": 896080
+			},
+			"text": " one you don't want"
+		},
+		{
+			"timestamps": {
+				"from": "00:14:56,080",
+				"to": "00:15:02,600"
+			},
+			"offsets": {
+				"from": 896080,
+				"to": 902600
+			},
+			"text": " want to be the one that doesn't just break production but"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:02,600",
+				"to": "00:15:03,040"
+			},
+			"offsets": {
+				"from": 902600,
+				"to": 903040
+			},
+			"text": " you don't want to"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:03,040",
+				"to": "00:15:10,520"
+			},
+			"offsets": {
+				"from": 903040,
+				"to": 910520
+			},
+			"text": " be the one that caused that leak you know X blah blah blah"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:10,520",
+				"to": "00:15:14,020"
+			},
+			"offsets": {
+				"from": 910520,
+				"to": 914020
+			},
+			"text": " number records or"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:14,020",
+				"to": "00:15:20,860"
+			},
+			"offsets": {
+				"from": 914020,
+				"to": 920860
+			},
+			"text": " you need to figure out a way to to reconcile that and and"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:20,860",
+				"to": "00:15:21,960"
+			},
+			"offsets": {
+				"from": 920860,
+				"to": 921960
+			},
+			"text": " where is the"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:21,960",
+				"to": "00:15:26,170"
+			},
+			"offsets": {
+				"from": 921960,
+				"to": 926170
+			},
+			"text": " balance. And, you know, these are, I think, the open"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:26,170",
+				"to": "00:15:28,500"
+			},
+			"offsets": {
+				"from": 926170,
+				"to": 928500
+			},
+			"text": " questions that were raised in"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:28,500",
+				"to": "00:15:31,740"
+			},
+			"offsets": {
+				"from": 928500,
+				"to": 931740
+			},
+			"text": " the Southrop Crossmanship movement is that what is our"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:31,740",
+				"to": "00:15:33,860"
+			},
+			"offsets": {
+				"from": 931740,
+				"to": 933860
+			},
+			"text": " identity and where"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:33,860",
+				"to": "00:15:40,380"
+			},
+			"offsets": {
+				"from": 933860,
+				"to": 940380
+			},
+			"text": " will you draw the line and how hard will you hold it is"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:40,380",
+				"to": "00:15:45,240"
+			},
+			"offsets": {
+				"from": 940380,
+				"to": 945240
+			},
+			"text": " where we're at. And it's"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:45,240",
+				"to": "00:15:48,320"
+			},
+			"offsets": {
+				"from": 945240,
+				"to": 948320
+			},
+			"text": " taken a few years to really work everything out and for all"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:48,320",
+				"to": "00:15:48,600"
+			},
+			"offsets": {
+				"from": 948320,
+				"to": 948600
+			},
+			"text": " the"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:48,600",
+				"to": "00:15:55,860"
+			},
+			"offsets": {
+				"from": 948600,
+				"to": 955860
+			},
+			"text": " conversations and trials and experiments and I'm gonna try"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:55,860",
+				"to": "00:15:57,280"
+			},
+			"offsets": {
+				"from": 955860,
+				"to": 957280
+			},
+			"text": " to take all of those"
+		},
+		{
+			"timestamps": {
+				"from": "00:15:57,280",
+				"to": "00:16:01,280"
+			},
+			"offsets": {
+				"from": 957280,
+				"to": 961280
+			},
+			"text": " thoughts and I'm gonna apply those to re-watching the"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:01,280",
+				"to": "00:16:03,580"
+			},
+			"offsets": {
+				"from": 961280,
+				"to": 963580
+			},
+			"text": " videos and reconciling"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:03,580",
+				"to": "00:16:08,770"
+			},
+			"offsets": {
+				"from": 963580,
+				"to": 968770
+			},
+			"text": " against what was happening in the various communities at"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:08,770",
+				"to": "00:16:11,420"
+			},
+			"offsets": {
+				"from": 968770,
+				"to": 971420
+			},
+			"text": " the time and uh"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:11,420",
+				"to": "00:16:20,970"
+			},
+			"offsets": {
+				"from": 971420,
+				"to": 980970
+			},
+			"text": " and where do we go from here where are we now and where do"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:20,970",
+				"to": "00:16:23,140"
+			},
+			"offsets": {
+				"from": 980970,
+				"to": 983140
+			},
+			"text": " we go from here and"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:23,140",
+				"to": "00:16:28,650"
+			},
+			"offsets": {
+				"from": 983140,
+				"to": 988650
+			},
+			"text": " it's like one super iteration you know you know we got a"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:28,650",
+				"to": "00:16:30,360"
+			},
+			"offsets": {
+				"from": 988650,
+				"to": 990360
+			},
+			"text": " agile we do iterative"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:30,360",
+				"to": "00:16:36,180"
+			},
+			"offsets": {
+				"from": 990360,
+				"to": 996180
+			},
+			"text": " development as it works I don't get mucked up in details"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:36,180",
+				"to": "00:16:40,940"
+			},
+			"offsets": {
+				"from": 996180,
+				"to": 1000940
+			},
+			"text": " just work and yeah"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:40,940",
+				"to": "00:16:44,940"
+			},
+			"offsets": {
+				"from": 1000940,
+				"to": 1004940
+			},
+			"text": " i know super vague but uh i'm i've been talking quite a"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:44,940",
+				"to": "00:16:48,340"
+			},
+			"offsets": {
+				"from": 1004940,
+				"to": 1008340
+			},
+			"text": " while here but uh i'm gonna apply this"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:48,340",
+				"to": "00:16:53,960"
+			},
+			"offsets": {
+				"from": 1008340,
+				"to": 1013960
+			},
+			"text": " stuff to to watching these videos and and i and i hope i"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:53,960",
+				"to": "00:16:57,660"
+			},
+			"offsets": {
+				"from": 1013960,
+				"to": 1017660
+			},
+			"text": " hope that uh all the people that i did"
+		},
+		{
+			"timestamps": {
+				"from": "00:16:57,660",
+				"to": "00:17:01,550"
+			},
+			"offsets": {
+				"from": 1017660,
+				"to": 1021550
+			},
+			"text": " interview and some people have had some adventures and some"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:01,550",
+				"to": "00:17:03,920"
+			},
+			"offsets": {
+				"from": 1021550,
+				"to": 1023920
+			},
+			"text": " people i've stayed in touch with some"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:03,920",
+				"to": "00:17:07,350"
+			},
+			"offsets": {
+				"from": 1023920,
+				"to": 1027350
+			},
+			"text": " people i've worked with and some people you know how that"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:07,350",
+				"to": "00:17:10,580"
+			},
+			"offsets": {
+				"from": 1027350,
+				"to": 1030580
+			},
+			"text": " can end it's it isn't always happy um"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:10,580",
+				"to": "00:17:14,470"
+			},
+			"offsets": {
+				"from": 1030580,
+				"to": 1034470
+			},
+			"text": " I'm not saying one way or the other but party is you know"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:14,470",
+				"to": "00:17:17,080"
+			},
+			"offsets": {
+				"from": 1034470,
+				"to": 1037080
+			},
+			"text": " such sweet sorrow they say um"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:17,080",
+				"to": "00:17:21,790"
+			},
+			"offsets": {
+				"from": 1037080,
+				"to": 1041790
+			},
+			"text": " and sometimes what you think is a good idea at the time"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:21,790",
+				"to": "00:17:23,480"
+			},
+			"offsets": {
+				"from": 1041790,
+				"to": 1043480
+			},
+			"text": " yeah not so much um"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:23,480",
+				"to": "00:17:29,080"
+			},
+			"offsets": {
+				"from": 1043480,
+				"to": 1049080
+			},
+			"text": " but uh yeah so I'm going to be re-watching you test"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:29,080",
+				"to": "00:17:33,900"
+			},
+			"offsets": {
+				"from": 1049080,
+				"to": 1053900
+			},
+			"text": " starting with the first interview I did"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:33,900",
+				"to": "00:17:41,360"
+			},
+			"offsets": {
+				"from": 1053900,
+				"to": 1061360
+			},
+			"text": " SCNA 2011, Sergio Pereira, who was the leader of the"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:41,360",
+				"to": "00:17:44,860"
+			},
+			"offsets": {
+				"from": 1061360,
+				"to": 1064860
+			},
+			"text": " Chicago alt.net user group, and also"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:44,860",
+				"to": "00:17:48,980"
+			},
+			"offsets": {
+				"from": 1064860,
+				"to": 1068980
+			},
+			"text": " the first user group, and I will mention this in the"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:48,980",
+				"to": "00:17:52,700"
+			},
+			"offsets": {
+				"from": 1068980,
+				"to": 1072700
+			},
+			"text": " interview, the first user group I spoke"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:52,700",
+				"to": "00:17:58,610"
+			},
+			"offsets": {
+				"from": 1072700,
+				"to": 1078610
+			},
+			"text": " at, and I thought it was really interesting to look back at"
+		},
+		{
+			"timestamps": {
+				"from": "00:17:58,610",
+				"to": "00:18:02,160"
+			},
+			"offsets": {
+				"from": 1078610,
+				"to": 1082160
+			},
+			"text": " alt.net, so I'll be publishing"
+		},
+		{
+			"timestamps": {
+				"from": "00:18:02,160",
+				"to": "00:18:10,370"
+			},
+			"offsets": {
+				"from": 1082160,
+				"to": 1090370
+			},
+			"text": " that in the next few days and I hope it's worthwhile thank"
+		},
+		{
+			"timestamps": {
+				"from": "00:18:10,370",
+				"to": "00:18:11,060"
+			},
+			"offsets": {
+				"from": 1090370,
+				"to": 1091060
+			},
+			"text": " you"
+		},
+		{
+			"timestamps": {
+				"from": "00:18:32,160",
+				"to": "00:19:02,140"
+			},
+			"offsets": {
+				"from": 1112160,
+				"to": 1142140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:19:02,160",
+				"to": "00:19:32,140"
+			},
+			"offsets": {
+				"from": 1142160,
+				"to": 1172140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:19:32,160",
+				"to": "00:20:02,140"
+			},
+			"offsets": {
+				"from": 1172160,
+				"to": 1202140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:20:02,160",
+				"to": "00:20:32,140"
+			},
+			"offsets": {
+				"from": 1202160,
+				"to": 1232140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:20:32,160",
+				"to": "00:21:02,140"
+			},
+			"offsets": {
+				"from": 1232160,
+				"to": 1262140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:21:02,160",
+				"to": "00:21:32,140"
+			},
+			"offsets": {
+				"from": 1262160,
+				"to": 1292140
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:21:32,160",
+				"to": "00:22:02,140"
+			},
+			"offsets": {
+				"from": 1292160,
+				"to": 1322140
+			},
+			"text": " Thank you."
+		}
+	]
+}

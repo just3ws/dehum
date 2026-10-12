@@ -1,0 +1,338 @@
+Going back on some kind of video soon, not that I've had
+much of an issue with it at work, I've been working remote
+for a while now, and you know, a lot of times where I've
+been on calls where there's hundreds of people, and you
+know, being on camera and having to speak, it's one thing
+to have a prepared thing, but here I am and I'm going to be
+talking about kind of like my story about how we got here,
+just what I saw, not really my story,
+per se, but that's my perspective, and I'm out here
+underneath these fires here, because
+I wanted to kind of break the ice, and do a first kind of
+skit thing, just something
+I was thinking about, and what I'm hemming and hawing here
+is that this is, we're in
+a weird time right now, and I know that I walked this path
+to get here, and I'm turning
+back to return and in the path i'm going to be passing over
+some unpleasant aftermaths of
+the mowing process here to large mammals for this area and
+it's kind of i'm looking at here
+walking back this path looking back in time to where i
+started this uh eubatastic channel
+and then it became, I did these 200 or so interviews and
+kind of got buried underneath
+and I had to make a choice at one point. I put it down and
+then it was just almost impossible
+to ever pick back up. I tried several times, but just too
+much data, transcriptions, all
+of that stuff was just, and then also even people trying to
+help me is, I did have people
+reach out and offer to help, but I just didn't know how to
+engage them. It wasn't, it was
+Also, the way I started doing those interviews was so imp
+ulsive, but I commit to the bit
+when I start some, you know, and I'll see it through, and
+here we are.
+It started in 2011, and I've got a series queued up that I
+'ve been working on that's
+going to be walking back through the history of the
+software craftsmanship movement as it started
+not too far from where I live and uh you know I wasn't on
+the inside but I was there many of the
+people I worked with them and uh it was a real experience
+and uh now as we're looking at AI and
+all of these these things that are still yet to work
+themselves out completely in time
+they are game changers you know but who's playing the game
+is a question for another conversation
+but uh you know as a person who truly identified as one of
+you even more than a software developer
+wanted to come in even though i was self-taught but i
+started really young and that'll be part
+of the story but uh just uh just looking at the industry
+right now and i just see
+so many young developers who've been told hey come in stem
+stem and uh yeah go to a boot camp
+thirty thousand dollars i saw the start of those too and i
+know the people who started them and
+i'm gonna tell you most of them i truly believe believed
+that this was the future and they did
+this with the intention of making a living doing something
+that helps other people improve their
+lives and they were seeing this as like a future trade
+school kind of structure as i understand
+thoughts around what their motivations were, but here we
+are. People have bet their lives
+on it, and now we're facing a kind of a crisis of identity,
+I think, and I see that software
+engineering is dead, and I'm on LinkedIn, too, just like
+everybody else out here, and
+lay off land, and walking with your arm up like that. But,
+yeah, I'm looking back at
+these interviews I did during a period where we were trying
+to identify, and at least I was, I'll
+tell that story, but I didn't start it. You know, craftsm
+anship was a movement that was in flight,
+and I just documented some parts of it in aspect of
+perspective, but over the course of the four
+years, I started a software craftsmanship in North America,
+2011, 2012, 2013, go-to con, I think it was
+2013, 2014, 2015
+I can't remember
+And a few other conferences
+But they were
+About really
+What does it mean to be an engineer
+Or software engineer
+Or software developer
+And
+We didn't know
+AI
+Like it is now
+Was coming
+Excuse me
+So we
+We
+I'm coming across
+Another consequence of
+Mowing here
+But
+But we were trying to figure out how to improve ourselves,
+improve our collaboration with other people.
+Yeah, there was the manifesto,
+but these things were more like throwing a flag in the
+ground,
+a stake in the ground, something like that,
+and just saying this is what we're going to call it here
+than a, I don't know what, you know,
+maybe over the years people did kind of go into the
+personality of it,
+but I guess I was blessed to be there in the beginning.
+So, I'm going back, and I'm looking at what was,
+what were we trying to do in the software craftsmanship
+movement?
+Those of us who, you know, identified it as a part of that
+community
+that was trying to say, how do we get better,
+and how do we help the people around us get better
+at doing this thing that is more than just typing
+and getting paid a bunch of money?
+You know, and now that we're here, where, you know, the
+market is in turmoil and this, you know, I really had to
+raise again the identity crisis, is what were we trying to
+understand back then? And in the 10 plus years since, what
+have we learned?
+What do we know but didn't articulate or couldn't?
+It's not a couldn't thing.
+It's not a couldn't thing.
+It's a, why did it become a kind of a joke online about
+clean code, and we were arguing
+about distractions, and if you know me, I'm not one who
+ever backed down from the ethical
+or moral fights, I'm not saying, I don't know what happened
+with that craftsmanship,
+craftspersonship, it was really unfortunate, and it became
+a real, I think, distraction,
+where it was bringing in other issues that were complex,
+and, you know, we're trying
+to be in truly, it's like, things got complicated. And it
+was, again, I don't know people's intentions.
+I usually believe that people do start with good intentions
+. We can get a little exuberant
+Sometimes. But anyway, going back to the interviews. 200
+interviews over four years. Progression and thoughts and
+some interviews were repeats with individuals. Like I have
+multiple interviews with a few people. I'm not going to
+name names here because that's not the point. It's not, you
+know, cult of personality here. And these people have done
+important work and I will talk about them in their rewatch
+episodes.
+And what I'm going to be doing is I'm going back through
+all of these interviews, and I'm going to re-watch them,
+and I'm going to try to add context about what was going on
+at the time, and a little bit about what I was seeing
+around me at the time.
+And hopefully, you know, we can have a conversation.
+I don't know.
+It doesn't even have to be you guys have a conversation.
+But, I mean, we as a community, it's going to be in all of
+your pockets of space.
+Because you've got to work locally before you can work
+globally.
+You've got to get one to work before you can get many.
+And, you know, you get one to work in your local space,
+and then you can find people around you and grow and
+network.
+But that's what I want to talk about.
+I want to talk about what was happening at the time,
+What were the valuable lessons? Who, in the fullness of
+time, here a decade plus later, was talking about the
+things that are going to help carry the next generation of
+developers through this crisis of identity and uncertainty
+about what the future of software engineering is.
+I'm of the mindset that the game has changed.
+It is, it has.
+I've built things and I've recovered these interviews
+and built the site around it.
+Transcriptions and all, using AI tools
+and even then not using the biggest and best.
+I'm talking Gemini, Codex.
+Yes, I used whatever the latest models were at the time,
+but this was a progression since like February of 2026.
+And now we're sitting in October of 2026
+and I've been able to build everything back up
+generally diarized transcripts where there's turn being
+able to have the player stream and
+show the back and forth it was a lot of work but the point
+is that these tools do stuff
+and I truly believe that the lessons and ideas that we were
+talking about back then
+are what need to come forward.
+We've been through the leet code.
+We went through the FANG obsession.
+Everything being, you know,
+kind of the tech bros got in
+and they kicked nerds out.
+And the nerds got kind of pushed to the side
+when the budgets were managed
+by marketing and product.
+And I'm not saying this as a condemnation.
+I'm saying this is a fact.
+This is just how it went.
+Unfortunately, different mindsets.
+They're good at their job.
+Maybe.
+And I'm good at my job,
+but I've seen it go sideways so many times just because of
+priorities.
+So we're looking now at a period where a lot of people
+thought
+they were going to be getting rid of software engineers,
+just like they did back in Cobol.
+And the truth is that I've watched what product people and
+marketing people
+have been able to create, and it's made me really realize
+that the ability to describe
+what you need the system to do
+and what you need to know
+to prove that it did what it was supposed to do.
+Simple.
+But, like, lifting weights is simple
+and going for a walk is simple.
+You've got to do one foot in front of the other
+a whole lot of times.
+And, you know, there's a big difference
+between picking up a dumbbell that's 10 pounds
+and a dumbbell that's 100 pounds.
+Same action, different energy, different system.
+But, it's going to be hard.
+It's going to take a lot of time.
+And it's got to be a lot of me listening to my own voice,
+which is really hard.
+And I'm rambling, because this is going to be my first
+video.
+And I'm just letting myself go here, otherwise I'll never
+start.
+So, I just, I am going to eventually need to figure out a
+way to do some kind of funding or something like that.
+I don't know how that works.
+I've never been a money guy.
+That's been my thing.
+But, I hope that this is valuable.
+I believe this would be valuable.
+Otherwise, I wouldn't do it.
+And people that know me know I don't do things that I don't
+think are valuable.
+and that sounds pretentious but you know sometimes in a
+world where appearances
+are what gets five million dollar budgets and that's uh not
+being an
+engineer and holding the line like you were called to do
+yes by Bob Martin by
+Robert Martin and his presentation at software craftsm
+anship I forget which it was I want to say
+2012 2013 but uh doesn't matter the point was is he talks
+about and this is what I think the
+ultimate crux of of software craftsmanship movement really
+was and everything else that
+happened was a distraction or a conversation that just
+needed to happen so we could have this
+conversation, even if it wasn't pleasant at the time,
+people were angry at each other,
+but it was a call to, he just told the story about the
+space shuttle, Challenger I believe
+it was, it's hard to remember everything so much, but the
+engineer that was working
+on that knew something about the characteristics of that
+valve he was
+working on that the component he was working on and that he
+knew that there
+were certain operating parameters it could be only so cold
+I mean only so hot
+it can only be so cold it has to be somewhere in between
+like a good SLO but he he fought
+against and he tried to get the launch cancelled and then
+they tried to launch anyway and when they
+did launch and then it you know the tragedy happened but
+you know the story goes that the
+engineer just for the rest of his days just wished he
+fought harder you know he
+did fight it wasn't that he just rolled over but you just
+don't want to be the
+one you don't want to be the one that doesn't just break
+production but you
+You don't want to be the one that caused that leak of, you
+know, X blah, blah, blah number
+records, or you need to figure out a way to reconcile that.
+And where is the balance?
+And you know, these are, I think, the open questions that
+were raised in the self-acrossmanship
+movement it's that what what is our identity and where will
+you draw the line and how hard
+will you hold it um
+is where we're at
+and it's taken a few years to really work everything out
+and
+for all the conversations and trials and experiments
+and i'm gonna try to take all of those thoughts and i'm
+gonna apply those to re-watching the
+videos and reconciling against what was happening in the
+various communities at the time and uh
+and where do we go from here where are we now and where do
+we go from here and it's like one
+super iteration you know you know we got a agile we do iter
+ative development because it works if
+If you don't get mucked up in the details, just work.
+And, yeah, I know, super vague.
+But I've been talking quite a while here.
+But I'm going to apply this stuff to watching these videos.
+And I hope that all the people that I did interview and
+some people have had some adventures.
+Some people I've stayed in touch with.
+people I've worked with and some people you know how that
+can end it's it isn't always happy um
+I'm not saying one way or the other but party is you know
+such sweet sorrow they say um
+and sometimes what you think is a good idea at the time
+yeah not so much um
+but uh yeah so I'm going to be re-watching you testing
+starting with the first interview
+I did at SCNA 2011
+with Sergio Pereira
+who was
+the leader of the Chicago
+alt.net user group
+and also
+the first user group
+and I will mention this in the interview
+the first user group
+I spoke at
+and
+I thought it was really interesting
+to look back at alt.net
+so
+be publishing that in the next few days
+and
+I hope it's worthwhile
+thank you

@@ -106,7 +106,14 @@ All achieved on a standard, accessible **Gemini 3.8 Flash subscription**.
 man ./fix_video.1
 ```
 
-### 5.3 Transcribing via zdots Pipeline
+### 5.3 Automated Transcript Verification
+To evaluate the downstream impact on automated transcription (`recipes/yt-transcribe` / `whisper.cpp`):
+```bash
+# Compare original vs restored transcripts:
+./compare_transcripts.py transcript_orig.json transcript_fixed.json -o TRANSCRIPT_DIFF.md
+```
+
+### 5.4 Transcribing via zdots Pipeline
 To transcribe and generate aligned captions:
 ```bash
 # 1. Convert to 16 kHz mono wav:
@@ -125,10 +132,16 @@ dehum/
 ├── .gitignore                      # Git rules (excludes heavy *.mp4 and temporary audio)
 ├── AGENTS.md                       # PVL Agent profile and subagent registration specification
 ├── CONTEXT.md                      # Physical and mathematical acoustics specification
+├── FORENSICS.md                    # Detailed engineering forensics, EXIF telemetry, & signal analysis
 ├── PROMPT.md                       # Original task prompt and operational bounds
 ├── README.md                       # Complete engineering forensics and restoration guide
+├── TRANSCRIPT_DIFF.md              # Empirical transcript comparison and word-error telemetry
+├── compare_transcripts.py          # Reproducible transcript comparison and diff tooling
 ├── fix_video.sh                    # Production executable restoration tool (Bash 3.2 / macOS)
 ├── fix_video.1                     # Troff/groff UNIX manual page
+├── archive/
+│   ├── README.md                   # Archive manifest of prompt research
+│   └── google_search_research/     # Archival web research assets
 ├── skills/
 │   └── video-audio-dehum-sync/
 │       └── SKILL.md                # Reusable Antigravity / Gemini CLI skill
@@ -139,3 +152,4 @@ dehum/
 
 ## 7. License
 Developed under the **Panoramic View Labs (PVL)** initiative. Released under the MIT License.
+
