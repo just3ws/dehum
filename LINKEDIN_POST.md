@@ -1,11 +1,10 @@
 # LinkedIn Article: Under the High-Tension Wires
 
 ### Cover Banner Image:
-- File: `linkedin_banner.png` (1200 x 644 px, committed in `github.com/just3ws/dehum`)
-- **Caption**:
-  *Split-view diagnostic: Motorola Moto G 1080p video frame under 345 kV high-tension transmission conductors (left) and logarithmic audio spectrogram displaying 60 Hz electromagnetic induction harmonics (right).*
-- **Credit**:
-  *Image credit: Panoramic View Labs / Mike Hall. Forensic signal analysis generated via Gemini 3.8 Flash & FFmpeg.*
+- File: `linkedin_banner.png` (1200 x 644 px, in repo)
+- **Caption & Credit (fits LinkedIn's 150-character limit)**:
+  `Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL`
+  *(79 characters — guarantees no cutoff)*
 
 ---
 

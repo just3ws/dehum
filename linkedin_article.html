@@ -45,16 +45,14 @@ hr {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-.caption {
-    font-size: 0.88em;
-    color: #555;
-    margin-top: 8px;
-    font-style: italic;
-}
-.credit {
-    font-size: 0.82em;
-    color: #777;
-    margin-top: 4px;
+.caption-box {
+    background: #fdfdfd;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 0.9em;
 }
 .instructions {
     background: #e8f4fd;
@@ -67,13 +65,15 @@ hr {
 </head>
 <body>
 <div class="instructions">
-<strong>Instructions:</strong> Press <code>Cmd + A</code> to select all, then <code>Cmd + C</code> to copy. In the LinkedIn Article editor, upload <code>linkedin_banner.png</code> as the cover image with the caption below, then paste the article body directly into the editor.
+<strong>Instructions:</strong> Press <code>Cmd + A</code> to select all, then <code>Cmd + C</code> to copy. In the LinkedIn Article editor, upload <code>linkedin_banner.png</code> as the cover image, paste the short caption below into LinkedIn's caption field, then paste the article body directly into the editor.
 </div>
 
 <div class="banner-preview">
   <img src="linkedin_banner.png" alt="LinkedIn Banner">
-  <div class="caption">Split-view diagnostic: Motorola Moto G 1080p video frame under 345 kV high-tension transmission conductors (left) and logarithmic audio spectrogram displaying 60 Hz electromagnetic induction harmonics (right).</div>
-  <div class="credit">Image credit: Panoramic View Labs / Mike Hall. Forensic signal analysis generated via Gemini 3.8 Flash &amp; FFmpeg.</div>
+  <div class="caption-box">
+    <strong>LinkedIn Caption &amp; Credit (79 chars, under 150 limit):</strong><br>
+    <code>Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL</code>
+  </div>
 </div>
 
 <hr>
