@@ -1,9 +1,5 @@
-### Title (Paste into LinkedIn Title Field):
+### Canonical LinkedIn Article Title:
 **Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop, and Real Mastery**
-*(80 characters — fits well under LinkedIn's 100-character mobile title truncation limit)*
-
-*Alternative (matches canonical post):*  
-`Under the High-Tension Wires: Building Deterministic Tools from Nondeterministic Systems` (88 chars)
 
 ---
 
