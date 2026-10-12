@@ -1,0 +1,41 @@
+name: "Forensic CI: TMI/PHI & Mathematical Integrity"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  forensic-audit:
+    name: "Sovereign Audit & DSP Verification"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Run TMI / PII / PHI Boundary Security Guard
+        run: |
+          ruby bin/audit_tmi.rb
+
+      - name: Install FFmpeg & bc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg bc
+
+      - name: Verify POSIX CLI Syntactic Integrity
+        run: |
+          bash -n fix_video.sh
+          chmod +x fix_video.sh
+          ./fix_video.sh --help
+
+      - name: Run Automated Test Suite
+        run: |
+          chmod +x test_fix_video.sh
+          ./test_fix_video.sh

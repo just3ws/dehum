@@ -1,10 +1,13 @@
 # High-Voltage Audio Dehum, De-crackle & Sync Restoration Engine (`dehum`)
 
+[![CI: Forensic Audit](https://github.com/just3ws/dehum/actions/workflows/forensic-audit.yml/badge.svg)](https://github.com/just3ws/dehum/actions/workflows/forensic-audit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.md)
 [![Platform: macOS / Linux](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey.svg)](README.md)
 [![FFmpeg: 7.x / 8.x / 9.x](https://img.shields.io/badge/FFmpeg-Ready-green.svg)](https://ffmpeg.org)
 [![Assisted By: Gemini 3.8 Flash](https://img.shields.io/badge/AI%20Assisted-Gemini%203.8%20Flash%20Medium-purple.svg)](https://deepmind.google)
+[![Sponsor: GitHub](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg)](https://github.com/sponsors/just3ws)
+[![Wiki: Project Knowledge](https://img.shields.io/badge/Wiki-Knowledge%20Base-orange.svg)](docs/wiki/Home.md)
 
 > [!NOTE]
 > **Experimental Inquiry & Forensic Exercise, Not a Prescriptive Tool or Technique**  
