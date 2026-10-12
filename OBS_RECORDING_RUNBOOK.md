@@ -42,7 +42,7 @@ open -a OBS
 
 ## 3. Teleprompter & Talking Points Script
 
-### Segment 1: The Cold Open & Monologue (Scene 02: 00:00 – 04:30)
+### Segment 1: The Cold Open & Monologue (Scene 02: 00:00 – 05:00)
 - **The Visual Contrast with Commercial AI Demos**:
   - "When people watch polished commercial AI demos from venture-backed tech labs, they see miracles. They see ten-second prompt videos orchestrated by dedicated motion designers and marketing teams, and they think the gap between a vague idea and reality has collapsed to zero."
   - "I want to show you what reality actually looks like when you face what is possible at this level for pocket change, compared to what the demo merchants sell."
@@ -51,11 +51,14 @@ open -a OBS
 - **The Vague Prompt & The Instant Trap**:
   - "I sat down at my machine and gave Gemini a simple, vague prompt: *'Fix the buzz and hum in this video, and fix the sync drift.'* Notice what I didn't give it: no DSP equations, no notch filters, no harmonic series, no spectral noise floor profiles. Just what 99% of people type into an LLM."
   - "Within 30 seconds, it handed me a confident, mathematically absurd hallucination: `atempo=0.837`. It took a container duration gap and slowed my voice by 16.3% into slurred slow-motion, completely wrecking the master."
+- **Classic Loki, Glorious Purpose & The Artifice**:
+  - "Over the last three days, as we worked through this, I watched this pairing system spin up an entire city of artifice around me. We willed POSIX man pages into existence, SVG vector diagrams, JSON-LD schemas, automated test harnesses, shields.io badges, and economic audit tables. For forty bucks."
+  - "Standing in the middle of it, you feel like Classic Loki in the void, conjuring all of Asgard out of green light and shouting *'Glorious Purpose!'* It is breathtaking. It is an intoxicating distraction. But the monster—physical reality, the acoustic noise floor, the ground truth—is still coming. The artifice slowed the monster down, but it didn't change the laws of physics."
 - **The Synchronicity with The Sound Above**:
   - "The deep irony and synchronicity is the topic of this entire show: *The Sound Above*. We're exploring the Chicago Software Craftsmanship movement—the engineers who gathered twenty years ago arguing over Kent Beck's four rules of simple design, deliberate practice, and knowing your tools down to the metal."
   - "This exercise is the living embodiment of that discipline in 2026. Without the craft—without demanding *'Prove it'*, without knowing phase distortion or room acoustics—that $39.40 of compute produces automated slop at scale. But *with* the craft, that $39.40 gives a solo engineer the forensic capability of an entire production studio and audio lab. That isn't a simulation. That's the work."
 
-### Segment 2: Video Reaction & Playback (Scene 03: 04:00 – 12:00)
+### Segment 2: Video Reaction & Playback (Scene 03: 05:00 – 12:00)
 *Cue YouTube (`https://youtu.be/8LYHo1dOkMo`) in Chromium window.*
 - **00:00 – 00:11 (The Acoustic Baseline)**:
   - Play raw audio section.
@@ -70,7 +73,7 @@ open -a OBS
 *Split screen: YouTube on left, `https://www.just3ws.localhost/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/` on right.*
 - **The Economic Ledger**:
   - Show Section 4 of the article.
-  - $39.40 of raw inference across 1,685 steps.
+  - $39.40 of raw inference across 1,685 steps (actual out-of-pocket cash: ~$0.00–$2.00 across quota pools).
   - $10,010 of specialized human engineering labor across 5 disciplines (DSP acoustics, POSIX systems, static site infrastructure, editorial direction, sovereign verification).
   - The ratio: 250:1. "AI makes code generation free; it makes verification expensive."
 - **The Forensic Transcript Diff**:
@@ -100,9 +103,11 @@ open -a OBS
   - Zero generation loss on the 1080p camera frames. Not a single pixel was re-encoded.
 
 ### Segment 5: Outro & The Sovereign Verification Challenge (Scene 08: 28:00 – 32:00)
-- **Facing What Is Possible at This Cost**:
-  - "We have to be honest about what is possible at this level for $39.40. You don't need a venture round or a fleet of consultants to do high-precision forensics and systems engineering anymore. But you do need the taste, the discipline, and the refusal to accept slop."
-  - "When the industry tries to dismiss failures as a 'skill issue', remember: real skill isn't prompt whispering. Real skill is knowing when the system is lying to you, demanding the proof, and standing in front of the audience with the raw files."
+- **Mjolnir & The Air of Legitimacy**:
+  - "Notice how easy it is today to manufacture the air of legitimacy: the shields.io badges, the JSON-LD schemas, the high-res social banners, the formatted man pages, the decimal-point telemetry. We have built an ecosystem where the symbols of authority are cheaper to generate than the rigor itself."
+  - "It’s like someone walking up to Mjolnir and grabbing the handle. Today, anyone with a browser can grab the hammer of complex DSP, systems programming, or legal briefs. But the God of Thunder still asks: *Are you worthy?* Do you know what happens when the lightning actually arcs through the ground?"
+- **Facing the Uncertainty ("Maybe this all sucks")**:
+  - "Maybe this all sucks. Maybe it's nothing. I don't know. And honestly, that’s the best part. Because if you already think you know, you’re just a promoter buying your own press release. True craftsmanship is doing the work in the open, exposing the seams, and welcoming people to critique the compromises."
 - **The Call to Audit**: Point viewers to:
   - YouTube Master: `https://youtu.be/8LYHo1dOkMo`
   - Case Study: `https://www.just3ws.com`
