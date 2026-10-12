@@ -6,6 +6,9 @@
 [![Platform: macOS / Linux](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey.svg)](README.md)
 [![FFmpeg: 7.x / 8.x / 9.x](https://img.shields.io/badge/FFmpeg-Ready-green.svg)](https://ffmpeg.org)
 [![Assisted By: Gemini 3.8 Flash](https://img.shields.io/badge/AI%20Assisted-Gemini%203.8%20Flash%20Medium-purple.svg)](https://deepmind.google)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Security: Audited](https://img.shields.io/badge/Security-TMI%20Audited-success.svg)](SECURITY.md)
 [![Sponsor: GitHub](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg)](https://github.com/sponsors/just3ws)
 [![Wiki: Project Knowledge](https://img.shields.io/badge/Wiki-Knowledge%20Base-orange.svg)](docs/wiki/Home.md)
 
