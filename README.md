@@ -5,9 +5,13 @@
 [![FFmpeg: 7.x / 8.x / 9.x](https://img.shields.io/badge/FFmpeg-Ready-green.svg)](https://ffmpeg.org)
 [![Assisted By: Gemini 3.8 Flash](https://img.shields.io/badge/AI%20Assisted-Gemini%203.8%20Flash%20Medium-purple.svg)](https://deepmind.google)
 
+> [!NOTE]
+> **Experimental Inquiry & Forensic Exercise, Not a Prescriptive Tool or Technique**  
+> This repository is a personal engineering experiment, public learning exercise, and transparent forensic audit. It is **not** a polished commercial product, a general-purpose library, or a canonical technique being pushed as an industry standard. It documents a live, multi-day exploration into what is possible when pairing with commodity AI models on hard physical problems, exposing both the leverage and the unvarnished compromises. Use at your own discretion.
+
 A forensic audio restoration pipeline, CLI utility, and engineering case study for recovering video recordings corrupted by **high-voltage power line electromagnetic interference (EMI)**, **corona discharge micro-arcing**, and **dual-mic phone hardware asymmetry**.
 
-Developed and automated interactively using **Gemini 3.8 Flash (medium tier)** via Google Deepmind's **Antigravity CLI** pairing agent, this project proves that accessible, low-cost LLM assistance can resolve complex real-world forensic DSP, physics, and container-sync challenges that would otherwise force reshoots.
+Developed and automated interactively using **Gemini 3.8 Flash (medium tier)** via Google Deepmind's **Antigravity CLI** pairing agent, this project investigates how accessible, low-cost LLM assistance interacts with real-world forensic DSP, physics, and container-sync challenges.
 
 ---
 
