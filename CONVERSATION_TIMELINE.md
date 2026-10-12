@@ -11,33 +11,43 @@
 ## High-Level Visual Trajectory
 
 ```mermaid
-timeline
-    title 64-Hour Forensic Human-AI Evolution
-    section Phase 1: The Trap (Oct 10)
-        02:21 UTC : Initial Prompt on raw MP4
-                  : Model falls for 212s clock drift trap (atempo=0.837)
-                  : Human rejects robotic slow-motion
-        03:29 UTC : Sync still broken, crackle remains
-    section Phase 2: The Breakthrough (Oct 12 AM)
-        00:46 UTC : Human orders GitHub repo just3ws/dehum
-        17:22 UTC : "Prove it" directive
-                  : Lip-sync frame extraction at t=11.60s proves 1.0x natural speech
-                  : Dual-mic asymmetry discovered: Left=Clean, Right=Antenna
-    section Phase 3: The Verification (Oct 12 Midday)
-        17:34 UTC : Full ztranscribe pipeline run
-        17:41 UTC : PII redaction of utility corridor GPS
-        18:03 UTC : YouTube upload 8LYHo1dOkMo & 314 captions
-        18:10 UTC : Human: "Basically I was doing 'enhance. enhance. Enhance!'"
-    section Phase 4: The Meta-Critique (Oct 12 PM)
-        18:12 UTC : The Mirage of Competence & Dunning-Kruger Catapult
-                  : "How high can I throw the ball before it drops on my head?"
-        18:22 UTC : Anatomy of Borrowed Expertise (5 disciplines, 4 mistakes)
-        18:25 UTC : Shift recording browser from Orion to Chromium
-        18:32 UTC : Wish-Granting Machine vs. Monkey's Paw Paradox
-    section Phase 5: The Full Ledger & Sync (Oct 12 Close)
-        18:38 UTC : Compute token economics ($39.40 vs $10,010 commercial labor)
-        18:41 UTC : Economic Audit Report published & YouTube synced
-        18:46 UTC : "Sync the world" & Complete Forensic Chronology
+flowchart LR
+    subgraph P1 ["Phase 1: The Trap (Oct 10)"]
+        direction TB
+        P1_1["02:21 UTC: Initial Prompt on raw MP4<br/>Model falls for 212s clock drift trap (atempo=0.837)<br/>Human rejects robotic slow-motion"]
+        P1_2["03:29 UTC: Sync still broken, crackle remains"]
+        P1_1 --> P1_2
+    end
+
+    subgraph P2 ["Phase 2: The Breakthrough (Oct 12 AM)"]
+        direction TB
+        P2_1["00:46 UTC: Human orders GitHub repo just3ws/dehum"]
+        P2_2["17:22 UTC: 'Prove it' directive<br/>Lip-sync frame extraction at t=11.60s proves 1.0x natural speech<br/>Dual-mic asymmetry discovered: Left=Clean, Right=Antenna"]
+        P2_1 --> P2_2
+    end
+
+    subgraph P3 ["Phase 3: The Verification (Oct 12 Midday)"]
+        direction TB
+        P3_1["17:34 UTC: Full ztranscribe pipeline run<br/>17:41 UTC: PII redaction of utility corridor GPS"]
+        P3_2["18:03 UTC: YouTube upload 8LYHo1dOkMo & 314 captions<br/>18:10 UTC: Human: 'Basically I was doing enhance. enhance. Enhance!'"]
+        P3_1 --> P3_2
+    end
+
+    subgraph P4 ["Phase 4: The Meta-Critique (Oct 12 PM)"]
+        direction TB
+        P4_1["18:12 UTC: The Mirage of Competence & Dunning-Kruger Catapult<br/>'How high can I throw the ball before it drops on my head?'"]
+        P4_2["18:22 UTC: Anatomy of Borrowed Expertise (5 disciplines, 4 mistakes)<br/>18:25 UTC: Shift recording browser from Orion to Chromium<br/>18:32 UTC: Wish-Granting Machine vs. Monkey's Paw Paradox"]
+        P4_1 --> P4_2
+    end
+
+    subgraph P5 ["Phase 5: The Full Ledger & Sync (Oct 12 Close)"]
+        direction TB
+        P5_1["18:38 UTC: Compute token economics ($39.40 vs $10,010 commercial labor)"]
+        P5_2["18:41 UTC: Economic Audit Report published & YouTube synced<br/>18:46 UTC: 'Sync the world' & Complete Forensic Chronology"]
+        P5_1 --> P5_2
+    end
+
+    P1 --> P2 --> P3 --> P4 --> P5
 ```
 
 ---
