@@ -1,6 +1,7 @@
 # High-Voltage Audio Dehum, De-crackle & Sync Restoration Engine (`dehum`)
 
 [![CI: Forensic Audit](https://github.com/just3ws/dehum/actions/workflows/forensic-audit.yml/badge.svg)](https://github.com/just3ws/dehum/actions/workflows/forensic-audit.yml)
+[![Release: v1.0.0](https://img.shields.io/github/v/release/just3ws/dehum?color=brightgreen&label=Release)](https://github.com/just3ws/dehum/releases/tag/v1.0.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/Docs-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE.md)
 [![Platform: macOS / Linux](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-lightgrey.svg)](README.md)
