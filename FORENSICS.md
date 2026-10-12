@@ -32,8 +32,8 @@ Creation Timestamp:       2026-10-09T16:36:30.000000Z (11:36:30 CDT)
 Hardware Manufacturer:    Motorola
 Hardware Model:           moto g - 2026
 Operating System:         Android 16
-Location (ISO-6709):      +42.2567-088.3184/
-Coordinates:              42° 15' 24.1" N, 88° 19' 06.2" W (Crystal Lake / McHenry County, IL)
+Location (ISO-6709):      +42.2xxx-088.3xxx/ [REDACTED_GPS]
+Coordinates:              [REDACTED_GPS: Northern Illinois Utility Corridor]
 --------------------------------------------------------------------------------
 VIDEO STREAM (Stream #0:0, id: 0x1)
 Codec:                    H.264 / AVC (High Profile, level 4.0, progressive)
@@ -55,7 +55,7 @@ Stream Delta:             -212.514811 seconds (-3 minutes, 32.51 seconds)
 
 ### 2.1 Critical Insights from EXIF Metadata
 1. **The Physical Location (High-Tension Power Right-of-Way)**:
-   The embedded ISO-6709 coordinate (`+42.2567-088.3184/`) places the recording along a major utility transmission corridor running through natural prairie near Crystal Lake, Illinois. This confirms the physical proximity of multi-phase overhead conductors carrying hundreds of kilovolts.
+   The embedded ISO-6709 coordinate (`+42.2xxx-088.3xxx/`, redacted for privacy) places the recording along a major high-voltage transmission right-of-way corridor in Northern Illinois. This confirms the physical proximity of multi-phase overhead utility conductors carrying hundreds of kilovolts.
 2. **Device Hardware Architecture (`moto g - 2026`)**:
    The Motorola Moto G uses an asymmetric dual-microphone setup:
    - **Primary Microphone (Bottom Port)**: Directed toward the speaker's mouth during hand-held video recording.
