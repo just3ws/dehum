@@ -1,20 +1,17 @@
-# Forensic Engineering Report: High-Voltage Audio Recovery & EXIF Telemetry
+# Engineering Forensics: Audio Recovery, Container EXIF & Signal Analysis
 
-**Project**: `just3ws/dehum`  
-**Target Asset**: `VID_20261009_111445043.mp4` (~3.28 GB, 21m 43s)  
-**Author / Engineering Reviewer**: Panoramic View Labs (PVL) / Antigravity Specialist  
-**Assisting AI Model**: Gemini 3.8 Flash (Medium Tier)  
-**Standard**: Software Craftsmanship Review & Forensic Audit Standards  
+**Target**: `VID_20261009_111445043.mp4` (~3.28 GB, 21m 43s)  
+**Environment**: Field recording beneath high-voltage transmission lines  
+**Platform**: macOS / Linux (FOSS tools: `ffmpeg`, `ffprobe`, `bc`, Python, `whisper.cpp`)  
+**Repository**: `just3ws/dehum`  
 
 ---
 
-## 1. Executive Summary & Craftsmanship Statement
+## 1. Context & Problem Statement
 
-Software craftsmanship demands that when an engineer encounters an anomaly, they do not mask it with blunt approximations or superficial fixes; they investigate root causes, isolate variables, verify hypotheses empirically, and leave behind automated, reproducible tools for their peers.
+This document provides a factual technical breakdown of the failure modes, forensic diagnosis, and reproducible restoration pipeline for a 21-minute field recording affected by high-voltage electromagnetic interference (EMI).
 
-This report documents the forensic investigation, physics analysis, signal processing, and EXIF telemetry of a video recorded under extreme physical conditions: walking beneath **high-voltage electrical utility transmission lines** in Northern Illinois. 
-
-The recording suffered from severe acoustic degradation, perceived linear sync drift, electrical buzz, corona discharge micro-arcing, and mobile phone microphone failure. Leveraging **Gemini 3.8 Flash (medium tier)** as an active pair programmer, this initiative bypassed the need for expensive proprietary audio plugins or reshoots, producing a **lossless, reproducible open-source toolchain (`fix_video.sh` v1.3.0)** that recovered pristine speech intelligibility with **0.0% video generational loss**.
+The objective was simple: restore clean, intelligible speech suitable for automated transcription and captioning without re-encoding the video track, and automate the pipeline so any subsequent field recording under similar power transmission lines can be repaired deterministically.
 
 ---
 
@@ -124,21 +121,21 @@ The smartphone's top microphone was oriented directly toward the transmission co
 
 ---
 
-## 4. The Craftsmanship & AI-Assisted Engineering Angle
+## 4. Engineering Decisions & Tooling Architecture
 
-This project demonstrates the difference between **superficial AI utilization** and **craftsmanship-level AI pair programming**:
+Key engineering decisions implemented in this repository:
 
-1. **Accessible, Low-Cost Tooling**:
-   The entire investigation was driven by **Gemini 3.8 Flash (medium tier)** via Google Deepmind's Antigravity CLI. No multi-thousand-dollar proprietary DAW plugins, enterprise subscriptions, or cloud GPU clusters were used.
-2. **Empirical Verification Over Blind Trust**:
-   When the AI's initial mathematical calculation suggested clock drift, the engineer and agent challenged the result through auditory testing, Whisper speech transcription, and frame-by-frame visual lip-reading. 
-3. **Leaving a Clean Camp**:
-   Rather than treating the fix as a one-off patch, the initiative left behind:
-   - A fully parameterized UNIX shell utility (`fix_video.sh` v1.3.0).
-   - A complete troff manual page (`man ./fix_video.1`).
-   - A global reusable skill (`~/.gemini/skills/video-audio-dehum-sync/SKILL.md`).
-   - Full integration with the local `zdots` transcription pipeline (`yt-transcribe`).
-   - Complete git history in [`just3ws/dehum`](https://github.com/just3ws/dehum).
+1. **Lossless Video Pipeline**:
+   Re-encoding 1080p video incurs generational compression artifacts, shifts color spaces, and consumes heavy CPU/GPU time. By isolating the audio pipeline via `-c:v copy`, the video stream passes through untouched with bit-for-bit parity.
+2. **Deterministic CLI Scripting**:
+   All restoration stages are encoded in a POSIX/Bash 3.2-compatible shell script (`fix_video.sh`) requiring only standard system utilities (`ffmpeg`, `ffprobe`, `bc`).
+3. **Reproducible Telemetry**:
+   Signal quality is evaluated objectively via:
+   - Python/NumPy FFT power spectral density checks.
+   - Sample-to-sample transient derivative counts ($|\Delta s| > 2000$).
+   - `compare_transcripts.py`: Automated Word Error Rate (WER) and lexical alignment benchmarking between raw and restored transcripts.
+4. **Toolchain Integration**:
+   Direct compatibility with the host system's `ztranscribe` recipe (`whisper.cpp`) to generate `.txt`, `.srt`, `.vtt`, and `.json` outputs immediately following audio muxing.
 
 ---
 
