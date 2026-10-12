@@ -150,6 +150,29 @@ If five components in your chain each have an 85 percent reliability rate, your 
 More than half the time, an unverified AI stack fails in production. The money saved upfront is deferred into continuous operational fires.
 
 
+## When Implementation Is Free, What Does "Done" Mean?
+
+I have worked with so many teams in so many companies that could not provide a coherent "Definition of Done."
+
+For decades, we hid behind mechanical processes: JIRA tickets, passing linters, and green unit tests on staging. We got away with that because writing the code was 80 percent of the sprint friction. Implementation difficulty acted as a proxy for engineering rigor.
+
+Now, an LLM acts like a metaphorical 3D printer: it extrudes thousands of lines of syntax in thirty seconds for forty cents.
+
+When implementation is free, what does "Done" even mean?
+
+It can no longer mean that the code exists and compiles without errors. If an AI hands you a script that executes cleanly with exit code 0, but slows down a human voice by 16 percent because it took an unverified shortcut, the task is not done.
+
+In this new era, "Done" means **negotiating the boundary between the machine’s closed world and physical reality**. Inside the model, everything is tokens, syntax, and self-consistent probabilities. Outside the machine, there are physical microphone asymmetries, wind gusts, and human ears.
+
+The skill of software engineering is shifting from authoring syntax to discretionary judgment: knowing what can be abstracted behind the "new compiler" and what demands hands-on human wiring.
+
+This is where Software Craftsmanship—the ideas born out of the 2008 Chicago gatherings (SCMC, 8th Light, Obtiva)—becomes essential again. It was never about dogmatic purity or corporate ceremonies. It was simply a shared anchor for practitioners facing uncertainty and pressure, to keep from becoming cynical.
+
+Facing generative AI, it is easy to become cynical: either the credulous amateur who ships unverified slop, or the defensive curmudgeon who dismisses every model on sight.
+
+The antidote is **Emptying the Cup** (*Apprenticeship Patterns*, 2009). An experienced engineer has to approach the terminal with a beginner's mindset—eager to explore what is possible for $39.40, without contempt—while keeping the hard-won craftsmanship required to say "Prove it" and verify the machine down to the metal.
+
+
 ## Inoculating Ourselves Against AI Psychosis
 
 This isn't written to call anyone out or give folks a hard time. If anything, I am diagnosing myself first.

@@ -37,7 +37,7 @@ Inspect the audio and video stream durations without modifying the file:
 Check:
 - `Video Duration` vs `Audio Duration`.
 - Calculated speed ratio (e.g. `0.836979`).
-- Ensure speed ratio is within `0.5` to `2.0`.
+- **CAUTION (The Clock-Drift Trap)**: Do NOT apply time-stretching (`atempo`) merely because audio duration differs from video duration. Check whether the audio stream simply ended early while the camera kept rolling, or whether trailing silence accounts for the gap. Verify lip-sync at speech onset before stretching audio.
 
 ### 2. Execute Restoration
 Run standard restoration:
@@ -50,13 +50,14 @@ This generates `/path/to/video_fixed.mp4` with:
 - Corona impulse de-clicking (`adeclick`).
 - Adaptive FFT noise reduction (`afftdn=nr=10:nf=-45:tn=1`).
 - 10 harmonic notch filters at 60 Hz increments (`bandreject`, Q=30).
-- Dynamic time-stretching (`atempo=<ratio>`).
+- Dynamic time-stretching (`atempo=<ratio>`, only applied if delta > 50ms AND physical drift is confirmed).
 
 ### 3. Verify Output
-Verify the output audio duration matches the video duration to within ~20 milliseconds:
+Verify the output audio duration and perceptual integrity:
 ```bash
 ffprobe -v error -show_streams /path/to/video_fixed.mp4 | grep -E "codec_name|duration="
 ```
+Listen to the output. "Done" requires verifying that speech timing is unaltered, phase is intact, and intelligibility is restored without unnatural robotic artifacts.
 
 ## Parameter Customization & Edge Cases
 
