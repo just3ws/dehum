@@ -53,6 +53,15 @@ hr {
     margin-bottom: 20px;
     font-size: 0.9em;
 }
+.network-post-box {
+    background: #fff8f0;
+    border: 1px solid #fed7aa;
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 25px;
+    font-size: 0.92em;
+    line-height: 1.5;
+}
 .instructions {
     background: #e8f4fd;
     border: 1px solid #c2e0f9;
@@ -70,11 +79,12 @@ code {
 </head>
 <body>
 <div class="instructions">
-<strong>Instructions:</strong>
+<strong>Publishing Sequence:</strong>
 <ol>
   <li>Paste the <strong>Title</strong> below into LinkedIn's top Title field.</li>
-  <li>Upload <code>linkedin_banner.png</code> as the cover image, and paste the <strong>Caption</strong> below into LinkedIn's caption field.</li>
-  <li>Select and copy (<code>Cmd + C</code>) the article body below the divider line and paste (<code>Cmd + V</code>) directly into LinkedIn's editor.</li>
+  <li>Upload <code>linkedin_banner.png</code> as the cover image, and paste the <strong>Caption</strong> into the caption field.</li>
+  <li>Select and copy (<code>Cmd + C</code>) the article body below the divider line and paste (<code>Cmd + V</code>) directly into LinkedIn's article editor.</li>
+  <li>Click <strong>Publish</strong> in LinkedIn. When the <em>"Tell your network what your article is about"</em> pop-up appears, paste the companion post text below.</li>
 </ol>
 </div>
 
@@ -84,6 +94,24 @@ code {
   <br><br>
   <strong>2. Cover Image Caption &amp; Credit:</strong><br>
   <code>Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL</code>
+</div>
+
+<div class="network-post-box">
+  <strong>3. "Tell Your Network" Companion Feed Post (paste into the Publish pop-up):</strong><br><br>
+  What happens when an outdoor recording gets ruined by high-voltage power lines, and an AI fixes it in an afternoon?<br><br>
+  I started with a prompt as vague as it gets:<br>
+  "Fix the buzz and hum in this video, and fix the sync drift."<br><br>
+  At first, the model jumped to a naive trap: it thought the audio clock had drifted by 212 seconds, stretched my voice into slow motion, and declared victory.<br><br>
+  It took human skepticism to push back: "Prove it."<br><br>
+  That pushback led to the real breakthroughs: discovering the phone's top mic was acting as an inductive antenna, building an open-source Bash DSP pipeline, and raising speech recognition to 93.3% while copying 1080p video bit-for-bit.<br><br>
+  The economic ledger was wild: .40 of raw compute vs. ,010 of specialized human labor. A 250:1 leverage ratio.<br><br>
+  In this article, I break down:<br>
+  • What is genuinely possible vs. what is sophisticated slop<br>
+  • The Dunning-Kruger Catapult: mistaking rented AI competence for real mastery<br>
+  • Why five "good enough" tools compound into a 44% reliability trap<br>
+  • How to inoculate ourselves against "AI psychosis"<br><br>
+  Read the full deep dive below. How are you keeping your teams grounded when the leverage is this high?<br><br>
+  #SoftwareEngineering #GenerativeAI #SystemsArchitecture #SoftwareCraftsmanship #EngineeringLeadership
 </div>
 
 <div class="banner-preview">
