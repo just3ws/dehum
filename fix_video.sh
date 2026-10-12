@@ -14,6 +14,7 @@ BASE_FREQ=60
 ENABLE_DECLICK=true
 DECLICK_THRESH=2
 ENABLE_DENOISE=true
+LOWPASS_FREQ=5000
 CHANNEL_MODE="left"
 DRY_RUN=false
 CUSTOM_OUTPUT=""
@@ -156,6 +157,10 @@ while [[ $# -gt 0 ]]; do
         --no-denoise)
             ENABLE_DENOISE=false
             shift
+            ;;
+        --lowpass)
+            LOWPASS_FREQ="$2"
+            shift 2
             ;;
         --channel)
             CHANNEL_MODE="$2"
@@ -317,7 +322,12 @@ for (( i=1; i<=HARMONICS_COUNT; i++ )); do
     FILTER_PARTS+=("bandreject=f=${f_harmonic}:width_type=q:w=${Q_FACTOR}")
 done
 
-# Stage 5: Sync Alignment: stretch only if explicitly requested, otherwise pad to video length
+# Stage 5: Voice Lowpass smoothing (removes residual high-frequency electrical hiss/sizzle)
+if [ "$LOWPASS_FREQ" -gt 0 ]; then
+    FILTER_PARTS+=("lowpass=f=${LOWPASS_FREQ}")
+fi
+
+# Stage 6: Sync Alignment: stretch only if explicitly requested, otherwise pad to video length
 if [ "$DO_STRETCH" = true ]; then
     FILTER_PARTS+=("atempo=${SPEED_RATIO}")
 else
