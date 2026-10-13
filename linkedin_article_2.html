@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LinkedIn Article 2: The Mirage of Competence</title>
+<style>
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+h1, h2, h3 {
+    color: #000;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+}
+blockquote {
+    border-left: 4px solid #0a66c2;
+    margin: 1.5em 0;
+    padding: 10px 20px;
+    background-color: #f3f6f8;
+    color: #333;
+    font-style: italic;
+}
+ul, ol {
+    padding-left: 25px;
+}
+li {
+    margin-bottom: 8px;
+}
+code {
+    background: #f0f2f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+.banner-preview {
+    margin: 20px 0;
+    text-align: center;
+}
+.banner-preview img {
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.meta-box {
+    background: #eef3f8;
+    border: 1px solid #d0dbe5;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px 0;
+}
+.network-post-box {
+    background: #fcf8e3;
+    border: 1px solid #faebcc;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px 0;
+}
+.copy-btn {
+    background: #0a66c2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.copy-btn:hover {
+    background: #004182;
+}
+</style>
+<script>
+function copySection(id) {
+    const el = document.getElementById(id);
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    document.execCommand('copy');
+    sel.removeAllRanges();
+    alert('Copied to clipboard! Ready to paste into LinkedIn.');
+}
+</script>
+</head>
+<body>
+
+<h1>LinkedIn Article 2 Publishing Companion</h1>
+<p>Open this document in Chromium or Safari, select the relevant sections, and paste directly into the LinkedIn Article editor.</p>
+
+<div class="meta-box">
+  <strong>1. Canonical LinkedIn Article Title:</strong><br>
+  <code>The Mirage of Competence: An Experiment in Public on AI Slop, False Confidence, and Domain Boundaries</code>
+  <br><br>
+  <strong>2. Cover Image Caption &amp; Credit:</strong><br>
+  <code>Left: 345 kV video frame. Right: 60 Hz hum spectrogram. Credit: Mike Hall / PVL</code>
+  <br><br>
+  <strong>3. Origin References (Explicitly Linked):</strong><br>
+  • Previous LinkedIn Article: <a href="https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/" target="_blank">https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/</a><br>
+  • Previous LinkedIn Feed Post: <a href="https://lnkd.in/p/gS5i7Pjz" target="_blank">https://lnkd.in/p/gS5i7Pjz</a>
+</div>
+
+<div class="network-post-box">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <strong>4. "Tell Your Network" Companion Feed Post (paste into the Publish pop-up):</strong>
+    <button class="copy-btn" onclick="copySection('feed-post')">Copy Post</button>
+  </div>
+  <div id="feed-post" style="margin-top: 12px;">
+Earlier this week, I shared an initial deep dive on recovering a corrupted video recorded under 345,000-volt power lines (https://lnkd.in/p/gS5i7Pjz / article: https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/).<br><br>
+
+Now, look at how much of that original analysis was wrong.<br><br>
+
+This is an experiment in public: a real-world inquiry into what happens when AI hands you an answer so articulate, polished, and mathematically fluent that it gives you a dangerous false confidence in a domain far beyond even a competent engineer's ability to safely reason with.<br><br>
+
+It started with a 13-word search query:<br>
+<code>recording a video under high tension wires repair audio sync</code><br><br>
+
+From that vague prompt, modern AI extruded a complete spec diagnosing "clock crystal drift," applied an atempo stretch, and slurred human speech into slow motion. And that was just the beginning. The early economic numbers were off. The notch filter cascades smeared phase in the low-mids. The trailing silence caused Whisper to hallucinate tokens in a loop.<br><br>
+
+Like Deep Thought answering "42" in The Hitchhiker's Guide to the Galaxy, the machine gave an immaculate answer to a question we did not even know how to comprehend, much less ask.<br><br>
+
+Over 4 days and 501 million tokens (on a $5/month promotional plan), I worked through 3,695 steps to trace the line where human intent ends and synthetic hallucination begins:<br><br>
+
+• Why the previous article's numbers and assumptions were part of the mirage<br>
+• When an LLM speaks with absolute authority, how do you tell if the answer is even in the right domain?<br>
+• How five "good enough" components compound into a 44% reliability failure<br>
+• Why sovereign verification, not code extrusion, is the only real moat in engineering<br><br>
+
+Read the new companion article below. How are you navigating this superpower without getting blinded by the false confidence?<br><br>
+
+#SoftwareEngineering #GenerativeAI #SystemsArchitecture #SoftwareCraftsmanship #EngineeringLeadership #TechEthics
+  </div>
+</div>
+
+<div class="banner-preview">
+  <img src="linkedin_banner.png" alt="LinkedIn Banner">
+</div>
+
+<hr>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <h2>Article Content for LinkedIn Editor</h2>
+  <button class="copy-btn" onclick="copySection('article-content')">Copy Article</button>
+</div>
+
+<div id="article-content">
+
+<blockquote>
+<p>Disclosure of Provenance: Every line of code, audio filter, and analytical word in this series was generated by AI (Google DeepMind's Gemini 3.8 Flash via the Antigravity pairing CLI). The only human in this entire loop is me: the guy talking into a phone beneath 345 kV utility conductors, and the guy sitting at the terminal continually steering, interrogating, and prodding the model. We are not hiding the machine. We are laying it bare.</p>
+</blockquote>
+
+<p>A few days ago, I published an initial case study detailing how I used an AI pairing assistant to recover an oral history video recorded beneath high-voltage transmission lines in Northern Illinois (read the original article here: <a href="https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/">https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/</a> and original post: <a href="https://lnkd.in/p/gS5i7Pjz">https://lnkd.in/p/gS5i7Pjz</a>).</p>
+
+<p>In that first article, I documented the apparent miracle: an unlistenable 3.1 GB video flooded with 60 Hz electromagnetic buzz, corona discharge clicks, and container timestamp anomalies was restored into a clean, frame-accurate master in an afternoon.</p>
+
+<p>Now, let's step back, empty the cup, and look at how much was actually wrong.</p>
+
+<h2>The Genesis: A 13-Word Search Query</h2>
+
+<p>The entire project did not begin inside an IDE or an advanced agent harness. It started in Google Chrome on google.com with an unvarnished thirteen-word search query:</p>
+
+<blockquote>
+<p>“recording a video under high tension wires repair audio sync”</p>
+</blockquote>
+
+<p>From that single prompt, the search overview returned what appeared to be an authoritative engineering specification with notch filter pole frequencies and duration stretch ratios.</p>
+
+<p>When that browser-generated prompt was brought into the terminal with Gemini 3.8 Flash, the model immediately leapt into action: designing digital signal processing chains, calculating duration ratios, and asserting conclusions with absolute, unyielding confidence.</p>
+
+<p>In <em>The Hitchhiker's Guide to the Galaxy</em>, the supercomputer Deep Thought famously spends 7.5 million years calculating the Answer to the Ultimate Question of Life, the Universe, and Everything, and finally announces: <strong>42</strong>. When the philosophers object, Deep Thought gently points out the catch: they never actually understood what the Ultimate Question was.</p>
+
+<p>That is the exact predicament of modern AI engineering. We just received an answer: complete with <code>atempo=0.837</code>, cascaded Butterworth filters, and shell scripts, to a question we did not even know how to comprehend, much less ask.</p>
+
+<h2>The First Hallucination: The Immaculate Lie of atempo=0.837</h2>
+
+<p>The container metadata showed an apparent audio-video discrepancy: video was 21 minutes 43 seconds, while audio was 18 minutes 11 seconds (a 212-second delta).</p>
+
+<p>The model immediately jumped to a naive mathematical conclusion: digital clock crystal drift. It divided 18 minutes by 21 minutes, calculated an <code>atempo=0.836979</code> ratio, stretched the audio into robotic slow motion, and declared victory.</p>
+
+<p>If I had accepted that first answer at face value, like so many automated workflows do, the output would have been unwatchable garbage.</p>
+
+<p>It took human skepticism to push back: “The sync really does not work. Prove it.”</p>
+
+<p>When we actually verified lip-sync frame-by-frame and aligned it with Whisper transcription, the truth came out: the speech concluded naturally at 18m 11s with “Thank you.” The camera had simply continued rolling silently as I walked back down the path. Speech had been recorded at natural 1.0x speed all along.</p>
+
+<p>The model had hallucinated a solution to a problem that did not exist, using math that looked immaculate.</p>
+
+<h2>Redefining AI Slop: Authority Without Domain Grounding</h2>
+
+<p>This is where the term “AI Slop” needs to be redefined.</p>
+
+<p>People often think of slop as blurry AI images with extra fingers, or low-quality SEO articles. But that is amateur slop.</p>
+
+<p>The far more dangerous form is <strong>Executive Engineering Slop</strong>: code that compiles cleanly, runs with exit code 0, passes unit tests, and sounds like senior engineering prose, while remaining fundamentally broken against physical reality.</p>
+
+<p>Slop does not mean there is not something that works. It means nobody comprehends what went into it, and the AI gives you an illusion of confidence in a domain far beyond even a competent engineer's ability to safely reason with.</p>
+
+<p>Acoustic DSP, electromagnetic induction, phase smear, and audio container interleaving are mathematically and physically brutal. An LLM has no biological ears. It cannot feel sub-bass pressure or hear the warmth of a human voice. It pulls textbook formulas out of its training weights and delivers them with absolute, unyielding certainty.</p>
+
+<p>Look at the subtle damage the model introduced that slipped past initial inspection:</p>
+<ul>
+<li>Chaining 10 recursive Butterworth notch filters smeared vocal phase in the low-mid frequencies, coloring natural chest resonance.</li>
+<li>Applying a blunt 4 kHz lowpass brickwall silenced corona sizzle, but also chopped off vocal sibilance like <em>s</em>, <em>th</em>, and <em>f</em> sounds.</li>
+<li>Gating pause noise by 91.8 percent sucked outdoor room tone away, creating an unnatural pumping sensation.</li>
+<li>Padding trailing silence with pure digital zeroes caused Whisper to hallucinate phantom phrases (“Thank you”) on empty space.</li>
+</ul>
+
+<p>When someone hands you an AI-generated solution, <strong>the critical question is no longer whether it looks good: it is whether you can tell if the answer is worth anything, or even operating in the right domain.</strong></p>
+
+<p>If the model diagnoses “clock crystal drift” when the problem is an unmuted secondary microphone acting as an inductive antenna, it does not matter how elegant the time-stretch algorithm is. It is an immaculate answer to the completely wrong question.</p>
+
+<h2>The Economic Mirage: The Real Ledger of Borrowed Labor</h2>
+
+<p>In my previous article, I cited an intermediate calculation of $39.40 in compute spend against $10,010 in human commercial labor.</p>
+
+<p>Now, let's examine the full, four-day forensic accounting. The reality is even more revealing:</p>
+
+<p>Because this entire session ran instrumented through the Gemini CLI / Antigravity harness, every token, context cache buffer, and tool execution across all 3,695 steps was recorded:</p>
+
+<ol>
+<li><strong>Master Lifecycle Volume</strong>:
+  <ul>
+    <li>16.8M uncached prompt input tokens</li>
+    <li>483.2M context cache read tokens</li>
+    <li>1.04M output and reasoning (thinking) tokens</li>
+    <li><strong>Total Compute Volume: 501,096,098 tokens (0.501 Billion)</strong></li>
+  </ul>
+</li>
+<li><strong>True API Dollar Value</strong>: $10.63 at blended developer rates (or $39.40 in early un-discounted sprint snapshots).</li>
+<li><strong>Actual Out-of-Pocket Cash</strong>: <strong>under $1.25</strong> of prorated monthly promotional subscription on a $5/month Google AI Pro plan.</li>
+</ol>
+
+<p>To achieve this without AI, an engineering organization would have had to coordinate 70 billable hours across 5 specialists (Audio Forensics, Video Container Architecture, Systems Automation, Speech ML, and Technical Writing), totaling <strong>$10,010 in commercial labor</strong>.</p>
+
+<p>That represents a <strong>1,000:1 list price leverage</strong>, and up to an <strong>8,000:1 out-of-pocket cash leverage</strong>.</p>
+
+<h2>The Competence Trap: The High-Thrown Ball</h2>
+
+<p>And that is precisely why the trap is so deadly.</p>
+
+<p>When you save $10,000 and 70 hours for less than the price of a cup of coffee, your subconscious tricks you into believing that <em>you possess $10,000 worth of multi-disciplinary judgment</em>. You feel like an omnicompetent staff architect capable of simultaneously mastering Maxwellian physics, digital IIR filter topologies, H.264 container timing, and neural speech decoders.</p>
+
+<p>You forget that you did not acquire that competence: you rented an approximation of it.</p>
+
+<p>This is the Dunning-Kruger Catapult:</p>
+<blockquote>
+<p>“How high can I throw the ball before I lose sight of it, drop it, or have it come crashing straight down on my head?”</p>
+</blockquote>
+
+<p>When you use an AI tool outside your domain, you are throwing that ball higher and higher into the clouds. The danger is that you are competent enough to recognize <em>surface improvement</em>, but lack the domain depth to recognize <em>subtle structural damage</em>. If you do not know where the math breaks down, the ball eventually comes down on your head in production.</p>
+
+<h2>The Compounding Debt of “Good Enough”</h2>
+
+<p>Beyond the audio file, there is an even bigger systemic lesson: evaluating “good enough” in isolation is a trap.</p>
+
+<p>When people look at an AI demo, they evaluate the primary output: “The audio sounds fine on my laptop speakers! Ship it.”</p>
+
+<p>They ignore the brittle scaffolding around it:</p>
+<ul>
+<li>The transcription tool that enters infinite hallucination loops on silent gaps.</li>
+<li>The shell script that assumes GNU flags and breaks on macOS BSD userlands.</li>
+<li>The static publishing pipeline where unescaped diagram syntax crashes builds.</li>
+<li>The broadcast setup where display scaling desyncs canvas capture.</li>
+</ul>
+
+<p>If five components in your pipeline each operate at an 85 percent confidence threshold, the overall reliability of the system is not 85 percent: it is <code>0.85^5 ≈ 44.3%</code>.</p>
+
+<p>More than half the time, an unverified AI stack fails in production. The money saved upfront is deferred into continuous operational triage.</p>
+
+<h2>When Implementation Is Free, What Does “Done” Mean?</h2>
+
+<p>For decades, software teams hid behind mechanical definitions of done: passing linters, green unit tests, and closed tickets. We got away with that because writing the code was 80 percent of the sprint friction. Implementation difficulty acted as a masquerade for engineering rigor.</p>
+
+<p>Now, an LLM acts like a 3D printer: it extrudes thousands of lines of syntax in thirty seconds for pennies.</p>
+
+<p>When implementation is free, what does “Done” even mean?</p>
+
+<p>It can no longer mean that the code exists and compiles without errors. If an AI hands you a script that executes cleanly with exit code 0, but slows down a human voice by 16 percent because it took an unverified shortcut, the task is not done.</p>
+
+<p>In this new era, “Done” means <strong>negotiating the boundary between the machine’s closed world and physical reality</strong>. Inside the model, everything is tokens, syntax, and self-consistent probabilities. Outside the machine, there are physical microphone asymmetries, wind gusts, and human ears.</p>
+
+<p>The skill of software engineering is shifting from authoring syntax to discretionary judgment: knowing what can be abstracted behind the “new compiler” and what demands hands-on human wiring.</p>
+
+<p>This is where Software Craftsmanship, the ideas born out of the 2008 Chicago gatherings (SCMC, 8th Light, Obtiva), becomes essential again. It was never about dogmatic purity or corporate ceremonies. It was simply a shared anchor for practitioners facing uncertainty and pressure, to keep from becoming cynical.</p>
+
+<p>The antidote is <strong>Emptying the Cup</strong> (<em>Apprenticeship Patterns</em>, 2009). An experienced engineer has to approach the terminal with a beginner's mindset, eager to explore what is possible for pocket change, without contempt, while keeping the discipline required to say “Prove it” and verify the machine down to the metal.</p>
+
+<h2>Inoculating Ourselves Against AI Psychosis</h2>
+
+<p>This is not written to call anyone out. If anything, I am diagnosing myself first.</p>
+
+<p>When you sit at a terminal and watch a multi-variable problem get solved in an afternoon for the cost of lunch, a psychological shift happens. It is easy to slip into what some engineers call “AI psychosis”: a euphoric feeling that because the model answers quickly and plausibly from a simple prompt, the friction of reality has disappeared.</p>
+
+<p>You start believing your own hype.</p>
+
+<p>How do we inoculate ourselves against that?</p>
+<ol>
+<li><strong>Anchor in the physical baseline</strong>: Never throw away the raw recording, the raw trace, or the failing test.</li>
+<li><strong>Measure the compromises, not just the speed</strong>: For every win the AI gives you, look for what it broke or blurred to get there.</li>
+<li><strong>Invite open peer review</strong>: Do not hide behind polished demos. Share the seams and let other humans verify the work.</li>
+</ol>
+
+<p>That is why both the raw 3.1 GB corrupted master and the restored master are stored side-by-side in public storage and linked in the project repository.</p>
+
+<p>An amateur hides the raw file because they fear comparison. A craftsman puts the unvarnished problem next to the automated solution, publishes the code, discloses the compromises, and invites people to inspect the seams.</p>
+
+<h2>Let's Discuss</h2>
+
+<p>This is an experiment in public learning. I am curious how other engineers and engineering leaders are navigating this:</p>
+
+<ul>
+<li>How do you keep yourself and your teams grounded when the leverage is this high?</li>
+<li>When an AI provides a plausible answer in an unfamiliar domain, what verification gates do you use to ensure it is even in the right problem space?</li>
+<li>What practices are you using to avoid mistaking rented AI competence for real craftsmanship?</li>
+</ul>
+
+<p>I would love to hear your thoughts in the comments.</p>
+
+<h2>Links &amp; Artifacts</h2>
+<ul>
+<li>Previous LinkedIn Article (Part 1): <a href="https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/">https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc/</a></li>
+<li>Previous LinkedIn Feed Post: <a href="https://lnkd.in/p/gS5i7Pjz">https://lnkd.in/p/gS5i7Pjz</a></li>
+<li>Comprehensive Jekyll Case Study: <a href="https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/">https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/</a></li>
+<li>Full Economic &amp; Technical Audit: <a href="https://github.com/just3ws/dehum/blob/main/ECONOMIC_AND_TECHNICAL_AUDIT.md">https://github.com/just3ws/dehum/blob/main/ECONOMIC_AND_TECHNICAL_AUDIT.md</a></li>
+<li>Chronological 64-Hour Execution Timeline: <a href="https://github.com/just3ws/dehum/blob/main/CONVERSATION_TIMELINE.md">https://github.com/just3ws/dehum/blob/main/CONVERSATION_TIMELINE.md</a></li>
+<li>Open-Source Restoration Script (<code>fix_video.sh</code>): <a href="https://github.com/just3ws/dehum">https://github.com/just3ws/dehum</a></li>
+<li>Raw Field Recording [HEADPHONE WARNING: BAD AUDIO]: <a href="https://youtu.be/8LYHo1dOkMo">https://youtu.be/8LYHo1dOkMo</a></li>
+</ul>
+
+<p>#SoftwareEngineering #GenerativeAI #SystemsArchitecture #SoftwareCraftsmanship #EngineeringLeadership #TechEthics #ContinuousLearning</p>
+
+</div>
+
+</body>
+</html>
