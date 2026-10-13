@@ -9,6 +9,7 @@
 
 # Transcripts & temp artifacts from scratch testing
 sample_*
+!docs/assets/audio/*.m4a
 chan_*
 test_*.mp4
 test_*.wav
