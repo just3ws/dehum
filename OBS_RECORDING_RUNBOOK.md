@@ -142,6 +142,8 @@ open -a OBS
   - "That is the razor's edge we are walking: on one side, an ocean of unverified AI artifice and seductive hallucinations. On the other side, an actual, tangible piece of engineering that works in the physical world. The craft is learning how to stand right on that line without falling into either ditch."
 - **Facing the Uncertainty ("Maybe this all sucks")**:
   - "Maybe this all sucks. Maybe it's nothing. I don't know. And honestly, that’s the best part. Because if you already think you know, you’re just a promoter buying your own press release. True craftsmanship is doing the work in the open, exposing the seams, and welcoming people to critique the compromises."
+- **The Hallucination Series (By Mike Hall)**:
+  - "And don't lose the headline: I didn't write the Bash script. That was generated. I didn't design the 10 harmonic notch filters. That was extruded. This entire exploration is organized under the theme **Hallucinations**—a play on my own name, Mike Hall, and the defining condition of our industry right now. These articles and tools are experiments in public learning: exploring what happens when human discernment collides with machine hallucinations."
 - **The Call to Audit**: Point viewers to:
   - YouTube Master: `https://youtu.be/8LYHo1dOkMo`
   - Case Study: `https://www.just3ws.com`
