@@ -364,6 +364,24 @@
     .callout-warning strong {
       color: var(--dash-accent);
     }
+
+    /* Responsive adjustments for narrow/half-screen displays */
+    @media (max-width: 1080px) {
+      body {
+        height: auto;
+        overflow-y: auto;
+      }
+      .cockpit-grid {
+        grid-template-columns: 1fr;
+        overflow: visible;
+      }
+      .cockpit-panel {
+        max-height: none;
+      }
+      .panel-body {
+        max-height: 480px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -490,6 +508,62 @@
               "In legacy enterprise systems, we run test suites to reassure ourselves that code 'works.' But green tests often measure comforting lies rather than reality. We ship slop every day because someone completed a ticket in isolation without understanding the broader architecture."
               <div class="prompt-quote">
                 "With generative AI, we face this at civilizational scale: an LLM cannot reliably count the 'R's in 'Strawberry,' yet it can construct and reason through a 10-harmonic notch filter DSP pipeline. Where does responsibility land when millions of developers push uncomprehended AI code into production?"
+              </div>
+            </div>
+          </div>
+
+          <!-- Section B.2: Compounding Fragility of Good Enough -->
+          <div class="prompt-card">
+            <div class="prompt-phase">Phase 2.5 // The 0.85^n Trap</div>
+            <div class="prompt-lead">The Compounding Fragility of "Good Enough" Scaffolding</div>
+            <div class="prompt-body">
+              "Evaluating 'good enough' in isolation is a trap. When five 'good enough' components (each 85% reliable) are chained together, system determinism drops to <strong>44.3%</strong>:"
+              <div style="overflow-x: auto; margin: 10px 0; border: 1px solid var(--dash-border); border-radius: 6px; background: rgba(0,0,0,0.3);">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.82rem; text-align: left;">
+                  <thead>
+                    <tr style="border-bottom: 1px solid var(--dash-border); background: var(--dash-panel-header);">
+                      <th style="padding: 6px 10px; color: var(--text-muted);">Stage</th>
+                      <th style="padding: 6px 10px; color: var(--text-muted);">Component</th>
+                      <th style="padding: 6px 10px; text-align: right; color: var(--text-muted);">Reliability</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                      <td style="padding: 6px 10px;">1. DSP</td>
+                      <td style="padding: 6px 10px;">Audio pass (phone grade)</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-active);">85%</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                      <td style="padding: 6px 10px;">2. Whisper</td>
+                      <td style="padding: 6px 10px;">Transcription (hallucinates on silence)</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-active);">85%</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                      <td style="padding: 6px 10px;">3. Shell</td>
+                      <td style="padding: 6px 10px;">Glue script (POSIX/BSD regex traps)</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-active);">85%</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                      <td style="padding: 6px 10px;">4. Web</td>
+                      <td style="padding: 6px 10px;">Publishing & syndication metadata</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-active);">85%</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--dash-border);">
+                      <td style="padding: 6px 10px;">5. OBS</td>
+                      <td style="padding: 6px 10px;">Broadcast overlay determinism</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-active);">85%</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr style="background: rgba(255, 123, 114, 0.08); font-weight: 700;">
+                      <td colspan="2" style="padding: 6px 10px; color: var(--dash-red);">0.85^5 Pipeline Survival:</td>
+                      <td style="padding: 6px 10px; text-align: right; font-family: var(--font-mono); color: var(--dash-red);">44.3%</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
+                "The $10,000 saved on upfront engineering gets repaid as continuous operational fires unless verified by a human craftsman."
               </div>
             </div>
           </div>
