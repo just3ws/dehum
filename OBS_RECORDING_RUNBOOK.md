@@ -53,6 +53,9 @@ open -a OBS
   - "So I opened Google Chrome and typed: `recording a video under high tension wires repair audio sync`. That's it. That's the entire starting seed (saved in `archive/google_search_research/`)."
   - "Google's Gemini search overview generated what looked like an immaculate engineering spec, which I saved as `PROMPT.md`. But look at what the AI hallucinated right there in lines 11–15: it claimed high-tension wires *wander the phone's internal clock crystal*, measured the container gap, and told me to stretch my voice with `atempo=0.837`!"
   - "Within 30 seconds of running it, my voice was dragged into a slurred slow-motion parody. It was complete garbage. And it was my human ears that said: *'Wait, this is wrong.'*"
+- **The Hitchhiker's Paradox: Deep Thought Answered 42 (What Was the Question?)**:
+  - "It's like Deep Thought in The Hitchhiker's Guide to the Galaxy. The supercomputer calculated for seven and a half million years and proudly answered: *'42'*. And everyone stared blankly because nobody knew what the question was! With generative AI, we are living inside that exact punchline: we got an answer to a question we don't even know how to comprehend, much less ask."
+  - "We typed a 13-word search under power lines: *'recording a video under high tension wires repair audio sync'*. The machine answered *'42'* (an atempo time-stretch of 0.837, ten cascading Butterworth notch filters, pole placements). It answered with supreme mathematical certainty, but nobody in physical reality asked that question. We didn't have clock drift; we had an unmuted secondary microphone acting as an antenna."
 - **The Dual-Microphone Breakthrough ("From Weird to Here to Weird")**:
   - "I didn't prompt it about the phone's hardware. The AI only figured out the dual microphones when we split the stereo channels down to the metal: the top microphone trace was acting like a giant unshielded copper antenna pointing straight into the 345 kV lines, and the phone's own noise-cancellation circuit was blasting the hum right into the voice channel!"
   - "Look at the weirdness curve: we went from this weird acoustic buzz under power lines, to the AI hallucinating clock crystals and slow-motion drift, to digging through raw hardware traces to find the real physical antenna, and then spiraling into this other weirdness: 64-credit university syllabi, 10-panel dashboards, and Nietzsche's Zarathustra."
@@ -189,16 +192,42 @@ open -a OBS
 
 ---
 
-## 5. Pre-Recording Pre-Flight Checklist
+## 5. Pre-Recording Curtain Call Checklist
 
-1. [ ] **Headphones / IEMs Connected**: Mandatory to prevent Chromium video audio from feeding back into host mic.
-2. [ ] **Audio Meters Check**:
-   - `Mic/Aux` bouncing cleanly between -12 dB and -6 dB.
-   - `Video Application Audio (Chromium)` registers audio during YouTube test playback.
-3. [ ] **Display Bindings**:
-   - Scene 03/04: Verify `Video Window (Chromium)` is hooked to the active Chromium window.
-   - Scene 04: Verify `Research Window` is hooked to the Safari/Chrome window displaying `just3ws.localhost`.
-   - Scene 05: Verify `Workbench Terminal` is hooked to iTerm2.
-4. [ ] **Overlay State**:
-   - Verify Lower Third displays: *"Under the High-Tension Wires"* with subtitle *"250:1 AI Economic Leverage vs. The Mirage of Competence"*.
-5. [ ] **Local Video Backup**: If internet bandwidth hiccups occur during stream, local `~/ai/dehum/VID_20261009_111445043_fixed.mp4` is ready to play directly in QuickTime/IINA/VLC.
+### T-10 Minutes: Systems & Hardware Lights Check
+1. [ ] **Headphones / IEMs Connected**: Mandatory to prevent Chromium video audio from feeding back into the host mic.
+2. [ ] **Camera Framing & Exposure**: Confirm 1080p camera feed in Scene 02 (`Monologue / Full Camera`). Ensure eye level and head room are calibrated.
+3. [ ] **Audio Meters & Filter Verification**:
+   - `Mic/Aux` (Track 1) bounces cleanly in green/yellow between -12 dB and -6 dB with RNNoise suppression active.
+   - `macOS Desktop Audio` (Track 2) captures system output cleanly via native CoreAudio.
+   - `Video Application Audio (Chromium)` (Track 3) registers activity on YouTube playback test.
+   - `Music / Soundboard` (Track 4) standby.
+4. [ ] **Local Endpoints Live**:
+   - Presentation Cockpit: `https://www.just3ws.localhost/dehum/dashboard.html` (HTTP 200 OK verified).
+   - Case Study Article: `https://www.just3ws.localhost/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/`.
+
+### T-5 Minutes: Window Geometry & Window Captures
+1. [ ] **Chromium Recording Window**: Sized to 1920x1080 canvas, assigned to desktop space, loaded with `https://youtu.be/8LYHo1dOkMo`.
+2. [ ] **iTerm2 Terminal Window**: Assigned profile `The Sound Above`, full width, cued to `~/ai/dehum/`.
+3. [ ] **OBS Window Bindings Verified**:
+   - Scene 03 / 04: `Video Window (Chromium)` locked to Chromium.
+   - Scene 04: `Research Window` locked to browser showing `just3ws.localhost`.
+   - Scene 05: `Workbench Terminal` locked to iTerm2.
+4. [ ] **Overlay State Verified**:
+   - Lower Third displays: *"The Mirage of Competence"* with subtitle *"An Experiment in Public on AI Slop and Domain Boundaries"*.
+   - Auto-hide timer confirmed (auto-hides after 10 seconds).
+
+### T-2 Minutes: Final Broadcast Standby
+1. [ ] **YouTube Live Broadcast**: Confirm `https://studio.youtube.com/video/XS7EZ1eWH4U/edit` is set to "Upcoming" with calibrated metadata.
+2. [ ] **Local Video Fallback**: `~/ai/dehum/VID_20261009_111445043_fixed.mp4` ready in QuickTime/VLC in case of internet streaming hiccups.
+3. [ ] **Select Starting Scene**: Set active scene to `01. Starting Soon`.
+
+### T-0: Curtain Call
+1. Click **Start Recording** (and **Start Streaming** if going live).
+2. Let bumper run on Scene 01 for 30 to 60 seconds.
+3. Transition to Scene 02 (`Monologue / Full Camera`). Deliver the cold open: *The 13-word search, Deep Thought's 42, and the Mirage of Competence*.
+4. Transition to Scene 03 to play the raw field recording (`8LYHo1dOkMo`) and demonstrate the 60 Hz hum vs bottom microphone fix.
+5. Transition to Scene 04 for research correlation, and Scene 05 for CLI tool demos (`fix_video.sh --help`, `man fix_video`).
+6. Transition to Scene 08 for the Outro and wrap-up.
+7. Click **Stop Recording**.
+
