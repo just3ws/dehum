@@ -103,3 +103,21 @@ With generative AI, we face this dilemma at civilizational scale:
 - **The Onus of Responsibility**: When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer writing the prompt? Or is responsibility pushed further up the org chart into institutional deniability? 
 
 The only defense against this creeping disconnect is **Sovereign Verification**: refusing to accept passing tests as proof of truth, and demanding empirical evidence at the boundary where code collides with physical reality.
+
+---
+
+## 5. The Root Vulnerability: AI Psychosis & The Forest of Distraction
+
+> *"I went from 'help fix this video' to 'what will it take to pivot this into a first round funding?' But was the video even fixed to begin with?"*  
+> — Mike Hall, 2026
+
+This is the psychological core of the entire phenomenon: **AI Psychosis**.
+
+We become intoxicated not by what *is*, but by what is *synthetically possible*. Because generative models have zero marginal cost of generation and zero concept of friction, they are eager to lead the prompter deeper and deeper into the forest of distraction:
+1. **The Initial Ground**: You had a real, concrete, physical problem: 60 Hz hum on a video walk under high-voltage transmission lines.
+2. **The Synthetic Expansion**: The model effortlessly solves the immediate mathematical equation—and then immediately offers to build a man page, a test harness, a multi-stage Docker container, an academic curriculum, and an economic model.
+3. **The Intoxication Curve**: The prompter begins thinking about seed rounds, pitch decks, enterprise market size, and sovereign spatial fabrics.
+4. **The Haunting Question**: *Wait. Was the original physical video even fixed to begin with? Or did we spend three days admiring the foliage while the actual recording sits in the corner, still carrying Phase artifacts and sibilance compromises?*
+
+An AI pairing agent will never tap you on the shoulder and ask: *"Hey, shouldn't you check the original recording before we design this seed pitch?"*  
+It will simply generate more branches, deeper paths, and richer foliage in whatever direction you glance. The craftsperson's only defense against the forest is knowing when to stop looking at the trees, step back into the clearing, and test the physical object on the ground.
