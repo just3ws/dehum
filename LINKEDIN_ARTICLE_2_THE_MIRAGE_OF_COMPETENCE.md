@@ -114,13 +114,9 @@ Now, let's examine the full, four-day forensic accounting. The reality is even m
 
 Because this entire session ran instrumented through the Gemini CLI / Antigravity harness, every token, context cache buffer, and tool execution across all 3,695 steps was recorded:
 
-1. **Master Lifecycle Volume**:
-   - 16.8M uncached prompt input tokens
-   - 483.2M context cache read tokens
-   - 1.04M output and reasoning (thinking) tokens
-   - **Total Compute Volume: 501,096,098 tokens (0.501 Billion)**
+1. **Master Lifecycle Volume**: 501,096,098 total tokens (16.8M uncached prompt input, 483.2M context cache read, 1.04M output and thinking tokens across 3,695 steps).
 2. **True API Dollar Value**: $10.63 at blended developer rates (or $39.40 in early un-discounted sprint snapshots).
-3. **Actual Out-of-Pocket Cash**: **under $1.25** of prorated monthly promotional subscription on a $5/month Google AI Pro plan.
+3. **Actual Out-of-Pocket Cash**: under $1.25 of prorated monthly promotional subscription on a $5/month Google AI Pro plan.
 
 To achieve this without AI, an engineering organization would have had to coordinate 70 billable hours across 5 specialists (Audio Forensics, Video Container Architecture, Systems Automation, Speech ML, and Technical Writing), totaling **$10,010 in commercial labor**.
 

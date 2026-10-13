@@ -334,8 +334,8 @@ Every asset referenced in this audit is committed, verified, and publicly access
 | Asset Name | Target URI / Location | Purpose / Verification |
 | :--- | :--- | :--- |
 | **Restored Video (YouTube)** | [https://youtu.be/8LYHo1dOkMo](https://youtu.be/8LYHo1dOkMo) | Public 1080p restored master with WebVTT captions |
-| **Companion Analysis Post** | [https://www.just3ws.com/.../](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/) | Complete 5,000-word published case study |
-| **LinkedIn Published Article** | [LinkedIn Pulse](https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc) | Public published LinkedIn companion article |
+| **LinkedIn Published Article (Part 1)** | [LinkedIn Pulse: Part 1](https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc) | Public published LinkedIn Part 1 article |
+| **LinkedIn Published Article (Part 2)** | [LinkedIn Pulse: Part 2](https://www.linkedin.com/pulse/mirage-competence-experiment-public-ai-slop-false-confidence-hall-y8e9c) | Public published LinkedIn Part 2 article |
 | **Localhost Preview** | `https://www.just3ws.localhost/...` | Local Nginx verification endpoint (HTTP 200) |
 | **Restoration Script (`dehum`)** | [`just3ws/dehum: fix_video.sh`](https://github.com/just3ws/dehum/blob/main/fix_video.sh) | Deterministic 5-stage DSP restoration pipeline |
 | **UNIX Man Page** | [`just3ws/dehum: fix_video.1`](https://github.com/just3ws/dehum/blob/main/fix_video.1) | Documented options, return codes, and standards |
