@@ -68,3 +68,18 @@ If you go into software engineering or AI experimentation convinced that you've 
 The moment you admit that this might all be nothing, you empty the cup (*Shoshin* / Beginner's Mind). You liberate yourself to look directly at the seams, to inspect the compromises, and to conduct the inquiry in public without needing to defend an illusion.
 
 Power and responsibility aren't just comic book tropes—they are the literal daily challenge of working with systems that will happily give you an elaborate lie disguised as a masterpiece.
+
+---
+
+## 4. Legacy Comfort, The Strawberry Paradox & The Comprehension Crisis
+
+### 4.1 The Comforting Lies of Passing Specs
+In legacy codebases maintained over decades by dozens or hundreds of developers with differing skill and motivation, we run test suites to reassure ourselves that code "works." But green tests often measure comforting lies rather than reality. A passing spec proves only that the code satisfies the narrow assertion someone wrote years ago—not that the system is doing what it *should*, or that anyone left alive still comprehends the trajectory of the architecture. We ship slop every day because someone completed a ticket in isolation without understanding the broader context.
+
+### 4.2 The Strawberry Paradox & The Scale of Disconnect
+With generative AI, we face the same dilemma at civilizational scale:
+- **The Strawberry Paradox**: An LLM cannot reliably count the "R"s in the word *"Strawberry,"* yet it can construct and reason through a 10-harmonic notch filter DSP pipeline.
+- **The Value Proposition**: Why use an LLM if it hallucinates? Because true domain comprehension (acoustics, electrical engineering, FFmpeg filtergraph internals, POSIX portability) requires years of study that are prohibitively costly in time and capital. The AI offers 250:1 economic leverage—if and only if you can detect its traps.
+- **The Onus of Responsibility**: When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer writing the prompt? Or is responsibility pushed further up the org chart into institutional deniability? 
+
+The only defense against this creeping disconnect is **Sovereign Verification**: refusing to accept passing tests as proof of truth, and demanding empirical evidence at the boundary where code collides with physical reality.
