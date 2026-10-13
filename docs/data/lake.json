@@ -431,5 +431,13 @@
       "validate_shellcheck.sh",
       "test_fix_video.sh"
     ]
+  },
+  "central_operating_premise": {
+    "root_question": "What tools and techniques can one use to determine slop from a solution and when does it make a difference?",
+    "caveat_emptor": "This repository is a personal engineering experiment and transparent forensic audit, not a commercial product or canonical standard.",
+    "legacy_test_dilemma": "In legacy systems with myriad contributors, passing specs often prove only narrow isolated assertions rather than physical system correctness, reassuring us while shipping slop.",
+    "strawberry_paradox": "An LLM cannot reliably count the Rs in Strawberry, yet constructs complex 10-harmonic DSP pipelines, creating an unprecedented scale of uncomprehended complexity.",
+    "devaluation_of_old_signals": "Outer signals of competence (man pages, Mermaid diagrams, 100% CI badges, schemas) cost zero with AI and no longer guarantee depth. Relying on them is hazardous.",
+    "sovereign_verification": "The only viable defense is checking the boundary where code collides with physical reality (phase integrity, vocal intelligibility, lip-sync keyframes, and lossless stream copy)."
   }
 }
