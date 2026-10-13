@@ -26,7 +26,7 @@ When I asked Gemini 3.8 Flash to fix it, it fell into the classic container trap
 By forcing the model back down to physical ground truth (verifying speech onset at t_0 and inspecting phone dual-mic hardware asymmetry), we built a deterministic 150-line Bash pipeline (`fix_video.sh`) that restored the audio with surgical IIR notch filters (Q=30) and copied the 1080p camera frames bit-for-bit with `-c:v copy` (zero generational loss).
 
 The case study breaks down:
-1. The 250:1 economic asymmetry ($39.40 in compute vs. ~$10,000 in specialized human forensic verification).
+1. The economic asymmetry (501M tokens at ~$10.63 API list value / under $1.25 subscription cash vs. ~$10,010 in specialized human forensic verification, delivering 1,000:1 to 8,000:1 leverage).
 2. Why we actively refused to rewrite this in Rust or wrap it in a $40k/month GPU cluster.
 3. The epistemic warning: building systems with LLMs that we cannot independently validate.
 
@@ -92,7 +92,7 @@ We open-sourced the whole pipeline, including a UNIX man page, GitHub Actions CI
 > Because FFmpeg filters are already hand-tuned C and SIMD assembly. Rewriting a 150-line Bash script in Rust purely for status is Classic Loki artifice. A simple script gets the job done.
 
 **Tweet 5 (Outro & Links)**:
-> Code generation is free ($39.40). Verification is expensive ($10,010 across 5 disciplines).
+> Code generation is practically free (501M tokens for ~$10.63 API value or <$1.25 subscription cash). Verification is expensive ($10,010 across 5 disciplines).
 > 
 > Read the full forensic breakdown, inspect the diffs, and clone the tool:
 > 

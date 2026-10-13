@@ -13,7 +13,7 @@
 
 ## 1. Executive Curriculum Overview & Pedagogical Philosophy
 
-The modern expansion of generative artificial intelligence creates an unprecedented asymmetry: **the mechanical generation of complex technical artifacts has become nearly instantaneous ($39.40), while the empirical verification of physical truth remains demanding ($10,000+)**.
+The modern expansion of generative artificial intelligence creates an unprecedented asymmetry: **the mechanical generation of complex technical artifacts has become nearly instantaneous (501M tokens processed at ~$10.63 developer API list value / under $1.25 amortized promotional subscription cash), while the empirical verification of physical truth remains demanding ($10,010 in multidisciplinary human engineering labor)**.
 
 To prevent automated systems from producing catastrophic hallucinations—such as misidentifying container duration anomalies as crystal clock drift or introducing phase-smeared notch distortion into archival recordings—the engineer must operate across five historically disjoint technical domains:
 1. Classical Electrodynamics & Atmospheric High-Voltage Physics
@@ -113,7 +113,7 @@ flowchart TD
 - **Credits**: 6.0 Graduate Credits (Seminar & Residency: 6 hrs)
 - **Prerequisites**: All Year 1 & Year 2 courses.
 - **Course Description**:
-  Investigation into the failure modes of large multimodal language models (LMLMs) applied to systems engineering. The "Container Fallacy": why autoregressive models prioritize symbolic container symmetry over physical signal realities. Deconstruction of the `atempo=0.837` hallucination. The 250:1 economic leverage asymmetry ($39.40 compute versus $10,010 human verification labor). Engineering ethics of the "New Compiler": why verification constitutes the entire intellectual property of modern engineering. "Emptying the Cup" (*Shoshin*) and the discipline of Sovereign Verification.
+  Investigation into the failure modes of large multimodal language models (LMLMs) applied to systems engineering. The "Container Fallacy": why autoregressive models prioritize symbolic container symmetry over physical signal realities. Deconstruction of the `atempo=0.837` hallucination. The economic leverage asymmetry (501M tokens at ~$10.63 API value / under $1.25 subscription cash versus $10,010 human verification labor, yielding 1,000:1 to 8,000:1 leverage). Engineering ethics of the "New Compiler": why verification constitutes the entire intellectual property of modern engineering. "Emptying the Cup" (*Shoshin*) and the discipline of Sovereign Verification.
 
 ---
 
