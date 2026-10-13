@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Under the High-Tension Wires | DSP Restoration & AI Hallucination Forensics</title>
+  <meta name="description" content="A forensic case study in high-voltage electromagnetic interference (EMI) cleanup, mobile dual-mic asymmetry, and sovereign verification of AI hallucinations.">
+  <link rel="canonical" href="https://www.just3ws.com/dehum/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.just3ws.com/dehum/">
+  <meta property="og:title" content="Under the High-Tension Wires: Building Deterministic Tools from Nondeterministic Systems">
+  <meta property="og:description" content="A forensic postmortem on AI hallucinations, mobile dual-mic hardware phase cancellation, and classical Chicago Software Craftsmanship.">
+  <meta property="og:image" content="https://www.just3ws.com/dehum/assets/linkedin_banner.png">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Under the High-Tension Wires: Building Deterministic Tools from Nondeterministic Systems">
+  <meta name="twitter:description" content="A forensic postmortem on AI hallucinations, mobile dual-mic hardware phase cancellation, and classical Chicago Software Craftsmanship.">
+  <meta name="twitter:image" content="https://www.just3ws.com/dehum/assets/linkedin_banner.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Privacy-Preserving Analytics (GoatCounter) matching just3ws.com standard -->
+  <script data-goatcounter="https://just3ws.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script src="js/analytics-events.js" defer></script>
+
+  <!-- Structured Data: TechArticle & SoftwareSourceCode -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Under the High-Tension Wires: Building Deterministic Tools from Nondeterministic Systems",
+    "description": "High-voltage EMI audio dehum, corona de-crackle, and clock-drift forensic restoration engine. An open experiment in Chicago Software Craftsmanship vs. AI hallucination traps.",
+    "author": {
+      "@type": "Person",
+      "name": "Mike Hall",
+      "url": "https://www.just3ws.com"
+    },
+    "isPartOf": {
+      "@type": "Series",
+      "name": "Hallucinations"
+    },
+    "about": [
+      { "@type": "Thing", "name": "Digital Signal Processing" },
+      { "@type": "Thing", "name": "Audio Restoration" },
+      { "@type": "Thing", "name": "FFmpeg" },
+      { "@type": "Thing", "name": "Large Language Model Forensics" },
+      { "@type": "Thing", "name": "Software Craftsmanship" }
+    ],
+    "image": "https://www.just3ws.com/dehum/assets/linkedin_banner.png",
+    "url": "https://www.just3ws.com/dehum/"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="https://www.just3ws.com/dehum/" class="brand-badge" aria-label="Dehum Forensic Laboratory Homepage">
+        <span>⚡ dehum</span>
+        <span class="brand-tag">Hallucinations Series</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#background">Origin Story</a>
+        <a href="#pipeline">DSP Pipeline</a>
+        <a href="#telemetry">Telemetry</a>
+        <a href="#epistemic-risks">Epistemology</a>
+        <a href="#craftsmanship">Chicago Craft</a>
+        <a href="wiki/">Wiki</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="https://github.com/just3ws/dehum" class="btn btn-outline" rel="noopener noreferrer">
+          <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub Repo
+        </a>
+        <a href="https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/" class="btn btn-primary" rel="noopener noreferrer">
+          Read Companion Essay
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-pill">
+        <span>Part of the Hallucinations Series by Mike Hall</span>
+      </div>
+      <h1 id="hero-title">Under the High-Tension Wires:<br>Building Deterministic Tools from Nondeterministic Systems</h1>
+      <p class="hero-subtitle">
+        A 1,303-second high-voltage electromagnetic interference (EMI) audio dehum, corona de-crackle, and clock-drift forensic restoration engine. An open experiment in classical Chicago Software Craftsmanship vs. modern AI hallucination traps.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://github.com/just3ws/dehum" class="btn btn-primary" rel="noopener noreferrer">
+          Inspect Source on GitHub
+        </a>
+        <a href="https://youtu.be/8LYHo1dOkMo" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+          Watch Restored Video (YouTube)
+        </a>
+        <a href="wiki/" class="btn btn-outline">
+          Explore Technical Wiki
+        </a>
+      </div>
+
+      <div class="hero-stat-grid" aria-label="Key Project Metrics">
+        <div class="stat-card">
+          <div class="stat-val">1,303 s</div>
+          <div class="stat-label">Restored Duration</div>
+          <div class="stat-desc">21m 43s raw footage repaired without generational video loss</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">-18.4 dB</div>
+          <div class="stat-label">EMI Attenuation</div>
+          <div class="stat-desc">60 Hz hum and 10 harmonic multiples surgical suppression</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">250 : 1</div>
+          <div class="stat-label">Economic Leverage</div>
+          <div class="stat-desc">$39.40 compute amortized across a 15-year multidisciplinary curriculum</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">0 Regressions</div>
+          <div class="stat-label">Lossless Video Integrity</div>
+          <div class="stat-desc">Zero re-encoding artifacts via strict <code>-c:v copy</code> bitstream muxing</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Epistemic Warning Callout -->
+    <div class="hero" style="padding-top: 0; padding-bottom: 24px;">
+      <aside class="callout-box" aria-labelledby="callout-heading">
+        <div class="callout-title" id="callout-heading">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></aside>
+          <span>Epistemic Warning: The Hallucination Series by Mike Hall</span>
+        </div>
+        <p>
+          <strong>This repository is a forensic experiment, not a turnkey commercial product.</strong> The author did not write the underlying Bash script; that was generated. The author did not manually tune the 10 harmonic notch filters; that was extruded by large language models. The author walked under high-tension transmission towers with a smartphone, observed catastrophic audio buzzing, asked Google an ordinary question, and found himself trapped in a maze of plausible-sounding synthetic technical claims.
+        </p>
+        <p>
+          We organize this exploration under the banner <em>Hallucinations</em>—a playful nod to the author's surname (Hall) and a grave observation of our industry's current trajectory. We build tools that sound authoritative, create complex mathematical formulations, and risk willing systems into existence that no human operator can independently verify.
+        </p>
+      </aside>
+    </div>
+
+    <!-- Section: Origin Story & Chronology -->
+    <section id="background" class="section" aria-labelledby="heading-origin">
+      <div class="section-header">
+        <div class="section-tag">Phase 01 // Chronology</div>
+        <h2 id="heading-origin" class="section-title">From "This Weird" to "This Here" and "This Weird"</h2>
+        <p class="section-lead">
+          How a casual mobile walk under high-voltage utility lines triggered a chain reaction of AI hallucinations, physical discoveries, and sovereign verification.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>01. The Physical Incident</h3>
+          <p>
+            Recording a 21-minute outdoor walk near an 800 kV utility corridor. The smartphone's dual-microphone array captured intense 60 Hz hum, electrostatic arcing hiss, and phase cancellation that completely drowned out human speech.
+          </p>
+          <div class="card-meta">Location: Utility Easement // Duration: 1,303s</div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🤖</div>
+          <h3>02. The Initial Search & The Trap</h3>
+          <p>
+            A simple search query (<code>recording a video under high tension wires repair audio sync</code>) yielded a synthetic overview diagnosing "crystal oscillator clock drift" and proposing a destructive <code>atempo</code> time-stretch of 1.000355x.
+          </p>
+          <div class="card-meta">Saved Artifact: PROMPT.md // Flaw: Container padding vs true drift</div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🔬</div>
+          <h3>03. Human Discernment & The Ear</h3>
+          <p>
+            When the AI's "fix" was applied, the audio slipped out of lip-sync. A human ear detected what mathematical containers obscured: trailing container silence was not drift. The real culprit was electromagnetic induction across the dual microphones.
+          </p>
+          <div class="card-meta">Resolution: Dual-mic phase inversion & harmonic notches</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section: The 5-Stage DSP Pipeline -->
+    <section id="pipeline" class="section" aria-labelledby="heading-pipeline">
+      <div class="section-header">
+        <div class="section-tag">Phase 02 // Engineering</div>
+        <h2 id="heading-pipeline" class="section-title">The 5-Stage Deterministic DSP Pipeline</h2>
+        <p class="section-lead">
+          Executed via standard POSIX Bash and FFmpeg. Every filter stage is mathematically deterministic, repeatable, and preserves pure <code>-c:v copy</code> video streams without lossy re-encoding.
+        </p>
+      </div>
+
+      <div class="pipeline-list" role="list">
+        <div class="pipeline-step" role="listitem">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h4>Sub-Rumble Highpass Filtering</h4>
+            <p>Rolls off sub-audible low-frequency mechanical and wind rumble below human speech threshold.</p>
+          </div>
+          <div class="step-filter">highpass=f=80</div>
+        </div>
+
+        <div class="pipeline-step" role="listitem">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h4>Impulsive De-Clicking & Corona Discharge Roll-off</h4>
+            <p>Removes micro-arcing impulsive clicks caused by high-voltage electrostatic ionization in the air corridor.</p>
+          </div>
+          <div class="step-filter">adeclick</div>
+        </div>
+
+        <div class="pipeline-step" role="listitem">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h4>Adaptive Spectral Denoising</h4>
+            <p>Suppresses broadband thermal hiss and induction noise without generating metallic watery artifacts.</p>
+          </div>
+          <div class="step-filter">afftdn=nr=12:nf=-25</div>
+        </div>
+
+        <div class="pipeline-step" role="listitem">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h4>Harmonic Notch Filter Bank (High-Q = 30)</h4>
+            <p>Precision surgical notch filtering across the 60 Hz AC fundamental and 10 integral harmonics up to 660 Hz.</p>
+          </div>
+          <div class="step-filter">bandreject (10 harmonics)</div>
+        </div>
+
+        <div class="pipeline-step" role="listitem">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h4>Linear Sync Alignment (Sovereign Verification)</h4>
+            <p>Conditionally applies time-stretch only when physical linear drift is empirically proven by lip-sync keyframes.</p>
+          </div>
+          <div class="step-filter">atempo (Guarded by ground truth)</div>
+        </div>
+      </div>
+
+      <!-- Terminal Command Demo -->
+      <div class="terminal-window" aria-label="Terminal Command Example">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">bash — fix_video.sh execution</div>
+          <button class="btn btn-sm btn-outline" data-action="copy" data-target="cmd-snippet" aria-label="Copy shell command to clipboard">Copy</button>
+        </div>
+        <pre class="terminal-body"><code id="cmd-snippet"><span class="terminal-comment"># Run restoration with deterministic harmonic notches and lossless stream copy</span>
+<span class="terminal-prompt">$ </span>./fix_video.sh --force VID_20261009_111445043.mp4 VID_20261009_111445043_fixed.mp4
+
+<span class="terminal-comment">[INFO] Container Probe: Video=1303.450s Audio=1303.450s</span>
+<span class="terminal-comment">[INFO] Harmonic Notch: Applying 10 Q=30 bandreject filters across 60..660Hz</span>
+<span class="terminal-comment">[INFO] Video Mode: Lossless stream copy (-c:v copy)</span>
+<span class="terminal-comment">[INFO] Muxing: Audio encoded with AAC at 192k</span>
+<span class="terminal-comment">[SUCCESS] Output written to VID_20261009_111445043_fixed.mp4 in 14.8 seconds</span></code></pre>
+      </div>
+    </section>
+
+    <!-- Section: Forensic Telemetry & Acoustic Verification -->
+    <section id="telemetry" class="section" aria-labelledby="heading-telemetry">
+      <div class="section-header">
+        <div class="section-tag">Phase 03 // Telemetry</div>
+        <h2 id="heading-telemetry" class="section-title">Forensic Telemetry & Acoustic Verification Mega Dashboard</h2>
+        <p class="section-lead">
+          High-density empirical telemetry: time-domain oscillograms, crest factor shifts, raw vs. restored spectrogram heatmaps, and attenuation profiles.
+        </p>
+      </div>
+
+      <div class="media-container">
+        <img src="forensic_telemetry_dashboard.png" alt="10-panel forensic telemetry dashboard showing time-domain waveforms, FFT power spectra, harmonic attenuation profiles, and sovereign verification matrix" loading="lazy">
+        <div class="media-caption">
+          <strong>Figure 1.0:</strong> 10-Panel Forensic Telemetry & Acoustic Verification Mega Dashboard (PVL-SPEC-2026). Visualizing the surgical 18.4 dB hum attenuation while retaining total vocal clarity across 300–3,400 Hz.
+        </div>
+      </div>
+
+      <div class="media-container" style="margin-top: 24px;">
+        <img src="assets/sync_and_audio_delta.svg" alt="Diagram showing the dual microphone asymmetry, harmonic notches, and lossless video stream muxing" loading="lazy">
+        <div class="media-caption">
+          <strong>Figure 2.0:</strong> Signal Flow & Hardware Phase Cancellation Architecture. Illustrating the physical path from smartphone dual microphones through the 5-stage filtergraph.
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Epistemic Risks & The Zarathustra Inversion -->
+    <section id="epistemic-risks" class="section" aria-labelledby="heading-epistemic">
+      <div class="section-header">
+        <div class="section-tag">Phase 04 // Epistemology</div>
+        <h2 id="heading-epistemic" class="section-title">The Zarathustra Inversion & The Homer Simpson Car</h2>
+        <p class="section-lead">
+          Why generative AI is <em>The Homer</em> on an infinite credit card, and why Chicago Craftsmanship is knowing when to climb down from the mountain.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>The Zarathustra Inversion</h3>
+          <p>
+            In Nietzsche's <em>Thus Spoke Zarathustra</em> (Walter Kaufmann edition), Zarathustra stays ten years on the mountain accumulating wisdom before his <em>Untergang</em> (downgoing). In modern AI, developers invert this: they rush down the mountain on day one, proclaiming synthetic mastery before climbing a single slope of physical ground truth.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>The Homer Simpson Car Problem</h3>
+          <p>
+            <em>"Wait! Don't go! Just... trust me bro."</em> Herb Powell gave Homer an infinite design budget. Homer didn't forget cup holders or giant tailfins—he forgot to design a car that anyone actually needed to drive. Generative AI will willingly generate thousands of lines of Rube Goldberg code when a 150-line Bash script is all reality requires.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Sovereign Verification</h3>
+          <p>
+            The software industry's definition of "Done" is broken. A task is not done when an LLM writes code that exits with code 0. "Done" requires verifying the boundary between model hallucination and physical reality: checking phase integrity, vocal intelligibility, and lip-sync keyframes.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section: Comparison Matrix -->
+    <section id="craftsmanship" class="section" aria-labelledby="heading-comparison">
+      <div class="section-header">
+        <div class="section-tag">Phase 05 // Craftsmanship</div>
+        <h2 id="heading-comparison" class="section-title">The Engineering Comparison Matrix</h2>
+        <p class="section-lead">
+          Comparing the reality of sovereign craftsmanship against the promises of enterprise demo-ware.
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="comparison-table" aria-label="Comparison between Sovereign Tool and Venture Demo">
+          <thead>
+            <tr>
+              <th scope="col">Dimension</th>
+              <th scope="col" class="highlight-col">Our 150-Line POSIX Script</th>
+              <th scope="col">VC Enterprise "Dehum.ai Fabric"</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Compute Infrastructure</th>
+              <td class="highlight-col">Local CPU (macOS / Linux, Bash 3.2+)</td>
+              <td>Multi-tenant H100 GPU clusters ($40k/mo)</td>
+            </tr>
+            <tr>
+              <th scope="row">Video Stream Handling</th>
+              <td class="highlight-col">Lossless stream copy (<code>-c:v copy</code>)</td>
+              <td>Destructive lossy generational re-encode</td>
+            </tr>
+            <tr>
+              <th scope="row">Sync Drift Diagnosis</th>
+              <td class="highlight-col">Audited physical speech onset keyframes</td>
+              <td>Hallucinated crystal drift & slow-mo audio</td>
+            </tr>
+            <tr>
+              <th scope="row">Processing Speed</th>
+              <td class="highlight-col">14.8 seconds for 21 minutes (88x realtime)</td>
+              <td>Queue latency + 3-5 minute cloud rendering</td>
+            </tr>
+            <tr>
+              <th scope="row">Financial Out-of-Pocket</th>
+              <td class="highlight-col"><strong>$0.00 to $2.00 cash</strong></td>
+              <td>$250/mo enterprise SaaS seat + API egress</td>
+            </tr>
+            <tr>
+              <th scope="row">Code Transparency</th>
+              <td class="highlight-col">100% open source, ShellCheck verified</td>
+              <td>Proprietary black-box black hole</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Panoramic View Labs // dehum</h4>
+        <p>
+          Part of the <strong>Hallucinations</strong> series by Mike Hall. Probing the boundary between sovereign human craftsmanship and generative machine artifice.
+        </p>
+        <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-dim);">
+          Open source under MIT (code) and CC BY-SA 4.0 (documentation & forensic data).
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Documentation</h5>
+        <ul>
+          <li><a href="wiki/">Project Wiki</a></li>
+          <li><a href="wiki/DSP-Pipeline-Architecture.html">DSP Architecture</a></li>
+          <li><a href="wiki/Clock-Drift-Forensic-Autopsy.html">Clock-Drift Autopsy</a></li>
+          <li><a href="wiki/Sovereign-Verification-Protocol.html">Verification Protocol</a></li>
+          <li><a href="wiki/Loki-and-Mjolnir-Philosophy.html">Loki & Mjolnir Philosophy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Artifacts & Links</h5>
+        <ul>
+          <li><a href="https://github.com/just3ws/dehum" rel="noopener noreferrer">GitHub Repository</a></li>
+          <li><a href="https://github.com/just3ws/dehum/releases/tag/v1.0.0" rel="noopener noreferrer">Release v1.0.0</a></li>
+          <li><a href="https://youtu.be/8LYHo1dOkMo" target="_blank" rel="noopener noreferrer">YouTube Master Video</a></li>
+          <li><a href="https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/" rel="noopener noreferrer">Companion Case Study</a></li>
+          <li><a href="https://www.linkedin.com/pulse/under-high-tension-wires-building-deterministic-tools-from-mike-hall-m2gac/" target="_blank" rel="noopener noreferrer">LinkedIn Post</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Curriculum</h5>
+        <ul>
+          <li><a href="CURRICULUM_AND_ACADEMIC_STANDARDS.md">PVL-SPEC-2026-CURR-01</a></li>
+          <li><a href="DOMAIN_SYLLABUS_AND_EPISTEMIC_RISKS.md">15-Year Living Syllabus</a></li>
+          <li><a href="SYNDICATION_LAUNCHPAD.md">Syndication Launchpad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Mike Hall. Built with pure HTML/CSS and deterministic POSIX tooling.
+      </div>
+      <div>
+        Telemetry: <a href="https://www.just3ws.com/privacy/">GoatCounter (No Cookies, No Ad Profiles)</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
