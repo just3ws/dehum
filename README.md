@@ -15,6 +15,13 @@
 
 > [!WARNING]
 > **Caveat Emptor: This Is a Personal Engineering Experiment & Forensic Postmortem**  
+> 
+> **0. The Genesis Prompt // 13 Words to Multi-Tier Architecture**:  
+> > *"recording a video under high tension wires repair audio sync"*  
+> 
+> The entire repository, investigation, DSP pipeline, and broadcast curriculum originated from that single, 13-word search query entered into Google under 345,000-volt transmission wires.  
+> **The Premise:** With generative AI, you go from that exact vague prompt to an immediate hallucination (`atempo=0.837` slurring human speech into drunken slow-motion)—and then, through human-in-the-loop sovereign forensics, into a 150-line POSIX C/SIMD restoration engine, MCP server, automated test suite, 44.3% compounding pipeline fragility model, and live broadcast cockpit.  
+> 
 > **1. The Foundational Premise — Comprehension vs. The Comforting Lie of Passing Specs**:  
 > In legacy software systems maintained over decades by myriad hands of varying skill, motivation, and direction, we run test suites to prove that something "works." But green checkmarks often measure comforting lies rather than reality. A passing spec proves only that the system satisfies the narrow assertions someone wrote in isolation—not whether it is doing what it *should*, or whether anyone left alive still comprehends the system and the accumulated decisions that brought it here. We ship slop daily because tickets are completed in isolation without understanding the broader context.  
 > 
