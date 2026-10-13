@@ -160,7 +160,7 @@ man ./fix_video.1
 To evaluate the downstream impact on automated transcription (`recipes/yt-transcribe` / `whisper.cpp`):
 ```bash
 # Compare original vs restored transcripts:
-./compare_transcripts.py transcript_orig.json transcript_fixed.json -o TRANSCRIPT_DIFF.md
+python3 bin/compare_transcripts.py data/transcripts/transcript_orig.json data/transcripts/transcript_fixed.json -o data/transcripts/TRANSCRIPT_DIFF.md
 ```
 
 ### 5.4 Transcribing via zdots Pipeline
@@ -186,23 +186,29 @@ dehum/
 ├── ECONOMIC_AND_TECHNICAL_AUDIT.md # Comprehensive forensic audit: token telemetry vs human labor equivalence
 ├── FORENSICS.md                    # Detailed engineering forensics, EXIF telemetry, & signal analysis
 ├── LINKEDIN_POST.md                # Clean Markdown publication copy for LinkedIn Articles / Pulse
-├── PROMPT.md                       # Original task prompt and operational bounds
 ├── README.md                       # Complete engineering forensics and restoration guide
-├── TRANSCRIPT_DIFF.md              # Empirical transcript comparison and word-error telemetry
 ├── YOUTUBE_COMMUNITY_POST.md       # Long-form YouTube Community update linking to audits
-├── compare_transcripts.py          # Reproducible transcript comparison and diff tooling
-├── copy_to_clipboard.sh            # macOS RTF clipboard exporter for rich-text article editors
+├── YOUTUBE_BROADCAST_METADATA.md   # Production metadata & copy for YouTube Studio live broadcasts
 ├── fix_video.sh                    # Production executable restoration tool (Bash 3.2 / macOS)
 ├── fix_video.1                     # Troff/groff UNIX manual page
 ├── linkedin_article.html           # Standalone browser HTML source document for copy-pasting
 ├── linkedin_banner.png             # 1200x644 high-res LinkedIn article cover banner image
+├── sync_and_audio_delta.svg        # Forensic vector visualization of drift and spectrum delta
 ├── archive/
-│   ├── README.md                   # Archive manifest of prompt research
-│   └── google_search_research/     # Archival web research assets
-├── skills/
-│   └── video-audio-dehum-sync/
-│       └── SKILL.md                # Reusable Antigravity / Gemini CLI skill
-└── sync_and_audio_delta.svg        # Forensic vector visualization of drift and spectrum delta
+│   ├── README.md                   # Archive manifest of prompt research and genesis
+│   ├── genesis/                    # Pre-git artifacts (PROMPT.md, gemini_transcript.md)
+│   └── google_search_research/     # Archival web research and origin query captures
+├── bin/
+│   ├── compare_transcripts.py      # Reproducible transcript comparison and diff tooling
+│   ├── copy_to_clipboard.sh        # macOS RTF clipboard exporter for rich-text article editors
+│   ├── install_localhost.sh        # Localhost deployment synchronizer
+│   ├── mcp_dehum_server.rb         # Model Context Protocol service
+│   └── test_fix_video.sh           # Automated unit and contract test suite
+├── data/
+│   └── transcripts/                # Whisper raw/restored JSON and text datasets
+└── skills/
+    └── video-audio-dehum-sync/
+        └── SKILL.md                # Reusable Antigravity / Gemini CLI skill
 ```
 
 ---

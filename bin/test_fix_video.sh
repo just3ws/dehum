@@ -49,7 +49,8 @@ assert_failure "Missing argument error handling" ./fix_video.sh
 assert_failure "Non-existent file handling" ./fix_video.sh /path/to/definitely_missing_file_xyz.mp4
 
 # Test 6: Python transcript diff tool help
-assert_success "Transcript diff tool syntax" python3 compare_transcripts.py --help
+assert_success "Transcript diff tool syntax (bin)" python3 bin/compare_transcripts.py --help
+assert_success "Transcript diff tool syntax (root symlink)" python3 compare_transcripts.py --help
 
 # Test 7: TMI Guard passes cleanly
 assert_success "TMI/PII Guard validation" ruby bin/audit_tmi.rb

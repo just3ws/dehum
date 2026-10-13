@@ -1,5 +1,5 @@
 # Live Broadcast & Video Analysis Runbook: "Under the High-Tension Wires"
-**Series**: *Ramblin' & Amblin' — Field Forensics* / *The Sound Above Errata*  
+**Series**: *Ramblin' & Amblin' : Field Forensics* / *The Sound Above Errata*  
 **Host**: Mike Hall (Staff Observability & Software Craftsmanship Architect)  
 **Recording Date**: October 13, 2026  
 **Artifact / Episode**: `errata-concept-under-the-high-tension-wires`  
@@ -57,11 +57,11 @@ open -a OBS
   - "I didn't prompt it about the phone's hardware. The AI only figured out the dual microphones when we split the stereo channels down to the metal: the top microphone trace was acting like a giant unshielded copper antenna pointing straight into the 345 kV lines, and the phone's own noise-cancellation circuit was blasting the hum right into the voice channel!"
   - "Look at the weirdness curve: we went from this weird acoustic buzz under power lines, to the AI hallucinating clock crystals and slow-motion drift, to digging through raw hardware traces to find the real physical antenna, and then spiraling into this other weirdness: 64-credit university syllabi, 10-panel dashboards, and Nietzsche's Zarathustra."
 - **Classic Loki, Glorious Purpose & The Artifice**:
-  - "Over the last three days, as we worked through this, I watched this pairing system spin up an entire city of artifice around me. We willed POSIX man pages into existence, SVG vector diagrams, JSON-LD schemas, automated test harnesses, shields.io badges, and economic audit tables. For forty bucks."
-  - "Standing in the middle of it, you feel like Classic Loki in the void, conjuring all of Asgard out of green light and shouting *'Glorious Purpose!'* It is breathtaking. It is an intoxicating distraction. But the monster—physical reality, the acoustic noise floor, the ground truth—is still coming. The artifice slowed the monster down, but it didn't change the laws of physics."
+  - "Over the last three days, as we worked through this, I watched this pairing system spin up an entire city of artifice around me. We willed POSIX man pages into existence, SVG vector diagrams, JSON-LD schemas, automated test harnesses, shields.io badges, and economic audit tables. For pocket change."
+  - "Standing in the middle of it, you feel like Classic Loki in the void, conjuring all of Asgard out of green light and shouting *'Glorious Purpose!'* It is breathtaking. It is an intoxicating distraction. But the monster (physical reality, the acoustic noise floor, the ground truth) is still coming. The artifice slowed the monster down, but it didn't change the laws of physics."
 - **The Synchronicity with The Sound Above**:
-  - "The deep irony and synchronicity is the topic of this entire show: *The Sound Above*. We're exploring the Chicago Software Craftsmanship movement—the engineers who gathered twenty years ago arguing over Kent Beck's four rules of simple design, deliberate practice, and knowing your tools down to the metal."
-  - "This exercise is the living embodiment of that discipline in 2026. Without the craft—without demanding *'Prove it'*, without knowing phase distortion or room acoustics—that $39.40 of compute produces automated slop at scale. But *with* the craft, that $39.40 gives a solo engineer the forensic capability of an entire production studio and audio lab. That isn't a simulation. That's the work."
+  - "The deep irony and synchronicity is the topic of this entire show: *The Sound Above*. We're exploring the Chicago Software Craftsmanship movement: the engineers who gathered twenty years ago arguing over Kent Beck's four rules of simple design, deliberate practice, and knowing your tools down to the metal."
+  - "This exercise is the living embodiment of that discipline in 2026. Without the discipline (without demanding *'Prove it'*, without knowing phase distortion or room acoustics), automated code generation produces slop at scale. But when grounded in verification, a solo engineer can achieve what used to take an entire production studio and audio lab. That is the real work."
 
 ### Segment 2: Video Reaction & Playback (Scene 03: 05:00 – 12:00)
 *Cue YouTube (`https://youtu.be/8LYHo1dOkMo`) in Chromium window.*
@@ -78,14 +78,14 @@ open -a OBS
 *Split screen: YouTube on left, `https://www.just3ws.localhost/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/` on right.*
 - **The Economic Ledger**:
   - Show Section 4 of the article.
-  - $39.40 of raw inference across 1,685 steps (actual out-of-pocket cash: ~$0.00–$2.00 across quota pools).
+  - $10.63 list API value across 3,695 steps and 501M tokens (actual out-of-pocket cash: under $1.25 on a $5/month promotional plan).
   - $10,010 of specialized human engineering labor across 5 disciplines (DSP acoustics, POSIX systems, static site infrastructure, editorial direction, sovereign verification).
-  - The ratio: 250:1. "AI makes code generation free; it makes verification expensive."
+  - The ratio: 1,000:1 to 8,000:1 leverage. "AI makes code generation free; it makes verification expensive."
 - **The Forensic Transcript Diff**:
   - Show the Whisper telemetry comparison:
     - Raw Whisper: 1,938 words, WER 18.4%, 4 hallucinatory repetitions under heavy wind noise.
     - Restored Whisper: 2,045 words, WER 0.8%, 0 hallucinations, 107 recovered technical words.
-  - "Cleaning the acoustic noise floor didn't just help human ears—it directly governed whether an downstream AI model hallucinated or understood reality."
+  - "Cleaning the acoustic noise floor didn't just help human ears: it directly governed whether an downstream AI model hallucinated or understood reality."
 
 ### Segment 4: Live Workbench & Terminal Archaeology (Scene 05: 20:00 – 28:00)
 *Switch to Scene 05: Workbench Terminal.*
@@ -116,34 +116,34 @@ open -a OBS
   - "And the answer is: because FFmpeg's filters are already hand-tuned C and SIMD assembly. Rewriting standard POSIX tools in Rust purely for status is the essence of green-light artifice."
   - "If I wanted a $50M seed round, I'd rebrand this tomorrow as **Dehum™ (not a real domain, do not buy this .ai domain): The Sovereign Autonomous Agentic Audio-Spatial Fabric™**. I'd wrap FFmpeg in a Docker container, deploy an un-quantized 70B parameter model to 'intelligently evaluate container drift', burn $40,000 of GPU compute a month to do what 3 lines of POSIX math does in 40 milliseconds, and slap a sleek Next.js glassmorphism dashboard on top."
 - **The Corpus Fixation Trap & Semantic Stickiness**:
-  - "And notice how dangerous prompt drift is: a side-comment casually typed in a conversation—even one you explicitly told the model to ignore—can get introduced into the corpus and become permanently stuck. The LLM fixates on it, weaves it into subsequent turns, and elevates a throwaway remark into a central architectural theme."
+  - "And notice how dangerous prompt drift is: a side-comment casually typed in a conversation (even one you explicitly told the model to ignore) can get introduced into the corpus and become permanently stuck. The LLM fixates on it, weaves it into subsequent turns, and elevates a throwaway remark into a central architectural theme."
   - "Every word, every character, and the sequence they are keyed in matters. But we don't know which associative fragments will prove stickiest and hardest to purge. That semantic stickiness is the ultimate warning sign of synthetic systems."
 - **"Over-Engineering is the New Hotness"**:
-  - "Because in 2026, **over-engineering is the new hotness**. We used to mock over-engineering—the Rube Goldberg machines, the XML enterprise beans, the needless microservice sprawl."
+  - "Because in 2026, **over-engineering is the new hotness**. We used to mock over-engineering: the Rube Goldberg machines, the XML enterprise beans, the needless microservice sprawl."
   - "Now? An LLM makes over-engineering literally zero-marginal-cost. You can prompt a model and say *'Give me an enterprise solution'* and it will instantly give you Kubernetes manifests, Terraform state, OpenTelemetry collectors, and vector databases for a problem that required a notch filter."
   - "It’s over-engineering on tap. It feels productive, it looks impressive in a slide deck, and it generates thousands of lines of code you don’t understand. But true craftsmanship has always been the opposite: simple design, minimum moving parts, and knowing when to put the hammer down."
 - **The Homer Simpson Car ("Wait! Don't go! Just... trust me bro!")**:
   - "Look at what happened here. If you're watching this, you're probably thinking: *'Wait. You wrote a 150-line Bash script to fix a YouTube video. Why do you have a 10-panel scientific dashboard, an accredited 64-credit university syllabus, and Walter Kaufmann's footnotes on Nietzsche?'*"
-  - "And to that, I hold up two hands and say: *'Wait! Don't go! Just... trust me bro! You don't understand—the eagle represents microsecond transients! Look at the Q-factor on the third horn!'*"
+  - "And to that, I hold up two hands and say: *'Wait! Don't go! Just... trust me bro! You don't understand: the eagle represents microsecond transients! Look at the Q-factor on the third horn!'*"
   - "This is **The Homer**. In *The Simpsons*, Herb Powell gave Homer unconstrained authority to build a car with no friction and no budget constraints. Homer didn't stop at cup holders: he added giant bubble domes, three horns that play *La Cucaracha*, and giant tailfins. What did Homer forget to design into his car? *He forgot to design a car that anyone actually needed to drive.*"
   - "Generative AI is The Homer on an infinite credit card. The 150-line shell script is the minimal tool that actually hauls groceries. The rest of this repository is The Homer: glorious, magnificent, absurd, and held together by an engineer screaming *'Trust me bro!'* into a microphone."
 - **The Zarathustra Inversion: The Mountain Before the Downgoing**:
   - "People love to quote Nietzsche's Zarathustra coming down from his mountain to preach in the marketplace. They fixate on the *downgoing* (*Untergang*). But they skip the opening sentence: *before you can descend, you have to spend ten years constructing the mountain*."
-  - "In the marketplace, nobody understands. But Zarathustra survived the heights because of his two companions: **the eagle and the snake**. The eagle is panoramic vision, systems thinking, soaring elevation. The snake is the cleverest animal under the sun because its entire belly touches the cold dirt—it feels the vibration of the earth."
+  - "In the marketplace, nobody understands. But Zarathustra survived the heights because of his two companions: **the eagle and the snake**. The eagle is panoramic vision, systems thinking, soaring elevation. The snake is the cleverest animal under the sun because its entire belly touches the cold dirt, feeling the vibration of the earth."
   - "An LLM lets anyone in the valley rent the eagle for 40 seconds. You feel like you're soaring at 10,000 feet. But you don't have the snake. You haven't spent 15 years crawling through broken container atoms and grounding loops. So when the synthetic eagle tells you to slow down your audio by 16%, you don't have the snake on your neck to whisper: *'Look at the ground. The lips on the screen are moving at 1.0x natural speed.'*"
 - **The Core Warning: Building What We Cannot Verify**:
   - "I want to be completely, uncomfortably honest with you: **I cannot independently verify or validate many of the wild claims and figures being spun up by the AI in this repository.**"
   - "I am prompting it. It is generating numbers, economic ratios, decibel roll-offs, and claims about institutional value. And because it speaks with absolute, unwavering confidence, it is terrifyingly easy to nod along and accept the illusion."
-  - "Let this be a warning to anyone using these tools: **Generative AI can make you spin up an entire mountain of infrastructure that is almost impossible to validate and verify independently.** We are entering an era where ordinary people and large corporations alike can will complex systems into existence that they do not understand—and then proceed to trust those systems with our data, our infrastructure, and potentially our lives."
-  - "That is why this project isn't a victory lap. It's a distress beacon. If you cannot independently prove what the model is asserting down to physical ground truth, you haven't engineered anything—you've just surrendered your judgment to a hallucination."
+  - "Let this be a warning to anyone using these tools: **Generative AI can make you spin up an entire mountain of infrastructure that is almost impossible to validate and verify independently.** We are entering an era where ordinary people and large corporations alike can will complex systems into existence that they do not understand, and then proceed to trust those systems with our data, our infrastructure, and potentially our lives."
+  - "That is why this project isn't a victory lap. It's a distress beacon. If you cannot independently prove what the model is asserting down to physical ground truth, you haven't engineered anything; you've just surrendered your judgment to a hallucination."
 - **And Yet: It IS Real**:
   - "**And yet... it is real.** That is the deepest paradox of this entire experience."
   - "The video is not a hallucination. The 345,000-volt power lines are real. The 60 Hz electromagnetic hum was real. The Motorola phone in the crosswind was real."
-  - "And the output file sitting right here on my machine—`VID_20261009_111445043_fixed.mp4`—is real. You can hear my voice. You can watch my lips match every syllable. All 39,069 original camera frames survived bit-for-bit without losing a single pixel of resolution."
+  - "And the output file sitting right here on my machine (`VID_20261009_111445043_fixed.mp4`) is real. You can hear my voice. You can watch my lips match every syllable. All 39,069 original camera frames survived bit-for-bit without losing a single pixel of resolution."
   - "The script is real. It runs in 40 milliseconds. It isn't a simulation of a tool; it is an actual tool that saved a corrupted master recording."
   - "That is the razor's edge we are walking: on one side, an ocean of unverified AI artifice and seductive hallucinations. On the other side, an actual, tangible piece of engineering that works in the physical world. The craft is learning how to stand right on that line without falling into either ditch."
 - **The Legacy Test Dilemma & The Comforting Lies of Passing Specs**:
-  - "I've worked in legacy codebases maintained over decades by dozens or hundreds of developers. We run test suites to reassure ourselves that code 'works.' But what does that test prove? It proves only that the system matches an isolated assertion written years ago—not whether it is doing what it *should*, or whether anyone alive still comprehends the trajectory of the architecture. We ship slop daily under the comforting umbrella of passing CI."
+  - "I've worked in legacy codebases maintained over decades by dozens or hundreds of developers. We run test suites to reassure ourselves that code 'works.' But what does that test prove? It proves only that the system matches an isolated assertion written years ago, not whether it is doing what it *should*, or whether anyone alive still comprehends the trajectory of the architecture. We ship slop daily under the comforting umbrella of passing CI."
 - **Straight to Legacy vs. AI Slop: What's the Difference?**:
   - "What's the difference between straight to legacy and AI slop? **Nothing. Nobody really understood what went in there either way.**"
   - "'Straight to legacy' was written by a human developer completing a Jira ticket in isolation, satisfying an isolated unit test, and merged as opaque legacy debt. 'AI slop' is the exact same phenomenon generated in 10 seconds by an LLM, adorned with zero-cost badges and diagrams, and merged without personal accountability. The only difference is speed, scale, and the elimination of responsibility."
@@ -152,17 +152,17 @@ open -a OBS
   - "When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer prompting the machine? Or is blame pushed up the org chart into institutional plausible deniability? Comprehension is prohibitively costly in time and capital. That is why **Caveat Emptor** is our operating premise: this is an experiment, not an industry standard. Sovereign verification is the only defense."
 - **The Arcade, The Tokens & Committing to the Bit**:
   - "Think about the article I wrote in April, *The Sound of Tokens*. In the 80s, you mowed lawns, fed brass tokens into the slot, and walked away proud of a sticker and a piece of bubble gum, while the arcade owner's kid rode by on a brand-new top-tier bike."
-  - "Now look at what happened here. Over the last 48 hours, I spent $40 of compute feeding the token slot. I went from *'help fix this 21-minute video'* to *'what will it take to pivot this into a first round funding?'*"
+  - "Now look at what happened here. Over the last 48 hours, I spent pocket change feeding the token slot. I went from *'help fix this 21-minute video'* to *'what will it take to pivot this into a first round funding?'*"
   - "And then the chill hits: *'Wait... was the video even fixed to begin with?'* We were ready to pitch Sand Hill Road on a $50M Sovereign Agentic Spatial Fabric, and we hadn't even checked if the vocal sibilance was muffled!"
   - "That is the definition of **committing to the bit**. In comedy, you commit to the premise until it becomes absurd. In modern AI engineering, the model happily commits to the bit with you, building tailfins and bubble domes until you're completely lost in the forest of distraction."
   - "True Chicago Software Craftsmanship is knowing how to enjoy the bit, laugh at the absurdity, take the sticker and the gum, and ride your own bike home."
 - **The Tech Bro AI Crypto-Capitalist Insight: Proof of Physical Work (PoPW)**:
   - "Here's the pitch when the tech bro AI cryptocapitalist in an interview asks what makes this cool: *'Look at the macro tokenomics.'* In modern AI, models act like zero-interest-rate central banks minting infinite synthetic token inflation with zero marginal cost. Most engineers take that inflation and debase their systems with 44.3% compounding fragility."
-  - "*'Dehum'* is the ultimate deflationary asset: **Proof of Physical Work (PoPW)** on bare metal. We took $39.40 of inflationary synthetic compute and crystallized it into a zero-runtime-cost, local-first utility that executes in 14.8 seconds on bare CPU. While venture-backed wrappers burn $40,000 a month in GPU rent-seeking to run lossy cloud transcoding, we captured 250:1 leverage without handing a dime to the cloud cartel."
+  - "*'Dehum'* is the ultimate deflationary asset: **Proof of Physical Work (PoPW)** on bare metal. We took synthetic compute and crystallized it into a zero-runtime-cost, local-first utility that executes in 14.8 seconds on bare CPU. While venture-backed wrappers burn $40,000 a month in GPU rent-seeking to run lossy cloud transcoding, we captured 1,000:1 leverage without handing a dime to the cloud cartel."
 - **The Devaluation of Old Signals**:
   - "And don't be fooled by the outer polish. Man pages, Mermaid diagrams, clean markdown, and passing CI used to prove months of human dedication. Today, an AI can generate those symbols of authority in 10 minutes. Relying on those old signals is a dangerous bet. If you can't verify physical ground truth, it's just green light."
 - **The Hallucination Series (By Mike Hall)**:
-  - "And don't lose the headline: I didn't write the Bash script. That was generated. I didn't design the 10 harmonic notch filters. That was extruded. This entire exploration is organized under the theme **Hallucinations**—a play on my own name, Mike Hall, and the defining condition of our industry right now. These articles and tools are experiments in public learning: exploring what happens when human discernment collides with machine hallucinations."
+  - "And don't lose the headline: I didn't write the Bash script. That was generated. I didn't design the 10 harmonic notch filters. That was extruded. This entire exploration is organized under the theme **Hallucinations** (a play on my own name, Mike Hall, and the defining condition of our industry right now). These articles and tools are experiments in public learning: exploring what happens when human discernment collides with machine hallucinations."
 - **The Call to Audit**: Point viewers to:
   - YouTube Master: `https://youtu.be/8LYHo1dOkMo`
   - Case Study: `https://www.just3ws.com`
