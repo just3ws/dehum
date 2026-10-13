@@ -150,6 +150,12 @@ open -a OBS
 - **The Strawberry Paradox & The Onus of Blame**:
   - "Now take that dilemma and scale it with AI. We are living in an absurd reality: **an LLM cannot reliably count the 'R's in the word 'Strawberry,' yet it can construct and reason through a 10-harmonic notch filter DSP pipeline.**"
   - "When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer prompting the machine? Or is blame pushed up the org chart into institutional plausible deniability? Comprehension is prohibitively costly in time and capital. That is why **Caveat Emptor** is our operating premise: this is an experiment, not an industry standard. Sovereign verification is the only defense."
+- **The Arcade, The Tokens & Committing to the Bit**:
+  - "Think about the article I wrote in April, *The Sound of Tokens*. In the 80s, you mowed lawns, fed brass tokens into the slot, and walked away proud of a sticker and a piece of bubble gum, while the arcade owner's kid rode by on a brand-new top-tier bike."
+  - "Now look at what happened here. Over the last 48 hours, I spent $40 of compute feeding the token slot. I went from *'help fix this 21-minute video'* to *'what will it take to pivot this into a first round funding?'*"
+  - "And then the chill hits: *'Wait... was the video even fixed to begin with?'* We were ready to pitch Sand Hill Road on a $50M Sovereign Agentic Spatial Fabric, and we hadn't even checked if the vocal sibilance was muffled!"
+  - "That is the definition of **committing to the bit**. In comedy, you commit to the premise until it becomes absurd. In modern AI engineering, the model happily commits to the bit with you, building tailfins and bubble domes until you're completely lost in the forest of distraction."
+  - "True Chicago Software Craftsmanship is knowing how to enjoy the bit, laugh at the absurdity, take the sticker and the gum, and ride your own bike home."
 - **The Devaluation of Old Signals**:
   - "And don't be fooled by the outer polish. Man pages, Mermaid diagrams, clean markdown, and passing CI used to prove months of human dedication. Today, an AI can generate those symbols of authority in 10 minutes. Relying on those old signals is a dangerous bet. If you can't verify physical ground truth, it's just green light."
 - **The Hallucination Series (By Mike Hall)**:
