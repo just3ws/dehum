@@ -228,6 +228,53 @@
       border-radius: 6px;
       padding: 16px;
       margin-bottom: 14px;
+      transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .prompt-card.dimmed {
+      opacity: 0.35;
+      border-color: rgba(40, 51, 71, 0.4);
+    }
+
+    .prompt-card.scene-focused {
+      border-color: var(--dash-active);
+      box-shadow: 0 0 16px rgba(88, 166, 255, 0.15);
+    }
+
+    .scene-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--dash-border);
+      border-radius: 6px;
+      font-size: 0.8rem;
+    }
+
+    .filter-btn-toggle {
+      background: var(--dash-panel-header);
+      border: 1px solid var(--dash-border);
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: var(--font-mono);
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn-toggle:hover {
+      color: #fff;
+      border-color: var(--dash-active);
+    }
+
+    .filter-btn-toggle.active {
+      background: rgba(88, 166, 255, 0.2);
+      border-color: var(--dash-active);
+      color: var(--dash-active);
+      font-weight: 700;
     }
 
     .prompt-phase {
@@ -483,6 +530,15 @@
       <div class="panel-body">
         <div class="teleprompter-view">
 
+          <!-- Scene Filter Toolbar -->
+          <div class="scene-filter-bar">
+            <span style="color: var(--text-muted); font-size: 0.78rem;">Filter: <strong id="filter-scene-label" style="color: var(--dash-active);">All Phases</strong></span>
+            <div style="display: flex; gap: 6px;">
+              <button id="btn-filter-all" class="filter-btn-toggle active" type="button">ALL PHASES</button>
+              <button id="btn-filter-active" class="filter-btn-toggle" type="button">ACTIVE SCENE ONLY</button>
+            </div>
+          </div>
+
           <!-- Core Operating Axiom & Prompt Genesis -->
           <div class="callout-warning" style="border-left-color: var(--dash-active); background: rgba(88, 166, 255, 0.08); border-color: rgba(88, 166, 255, 0.3);">
             <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--dash-active); font-weight: 700; margin-bottom: 4px;">The Genesis Prompt // 13 Words to Multi-Tier Architecture</div>
@@ -499,8 +555,8 @@
           </div>
 
           <!-- Section A: Cold Open -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 1 // The Seductive Trap</div>
+          <div class="prompt-card" data-scene="02">
+            <div class="prompt-phase">Phase 1 // Scene 02 // The Seductive Trap</div>
             <div class="prompt-lead">The Gap Between the Demo and the Dirt</div>
             <div class="prompt-body">
               "When people watch venture-backed commercial AI demos, they see miracles. They see a prompt turn into a Hollywood trailer in ten seconds. But what happens when you step out of the demo and walk under 345,000-volt transmission wires with a phone in a crosswind?"
@@ -511,8 +567,8 @@
           </div>
 
           <!-- Section A.2: The Hitchhiker's Paradox -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 1.5 // The Hitchhiker's Paradox</div>
+          <div class="prompt-card" data-scene="02">
+            <div class="prompt-phase">Phase 1.5 // Scene 02 // The Hitchhiker's Paradox</div>
             <div class="prompt-lead">Deep Thought Answered 42: But What Was the Question?</div>
             <div class="prompt-body">
               "Like Deep Thought in The Hitchhiker's Guide to the Galaxy, the computer calculated for seven and a half million years and proudly answered: '42'. But nobody knew what the question was!"
@@ -523,8 +579,8 @@
           </div>
 
           <!-- Section B: The Strawberry Paradox -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 2 // The Epistemic Razor</div>
+          <div class="prompt-card" data-scene="02">
+            <div class="prompt-phase">Phase 2 // Scene 02 // The Epistemic Razor</div>
             <div class="prompt-lead">The Strawberry Paradox & Passing Specs as Comforting Lies</div>
             <div class="prompt-body">
               "In legacy enterprise systems, we run test suites to reassure ourselves that code 'works.' But green tests often measure comforting lies rather than reality. We ship slop every day because someone completed a ticket in isolation without understanding the broader architecture."
@@ -534,9 +590,24 @@
             </div>
           </div>
 
+          <!-- Section Scene 03: Reaction / Video Focus -->
+          <div class="prompt-card" data-scene="03">
+            <div class="prompt-phase">Phase 2.2 // Scene 03 // Playback Scrub & Forensic Artifacts</div>
+            <div class="prompt-lead">Scrubbing YouTube 8LYHo1dOkMo: Speech Onset & The Acoustic Ghost</div>
+            <div class="prompt-body">
+              "Look closely at the raw YouTube master at 8LYHo1dOkMo. When we scrub to <strong>00:11</strong>, notice the precise moment speech begins: the 60 Hz hum creates massive low-end masking that obscures natural vocal timbre."
+              <div class="prompt-quote">
+                "Then scrub forward to <strong>04:08</strong>: a 25mph gust creates an acoustic ghost across the capsule diaphragm. An unguided AI model interprets wind turbulence as sustained low-frequency harmonic structure and attempts to notch out speech phonemes, completely degrading the audio envelope."
+              </div>
+              <div style="margin-top: 8px; font-size: 0.88rem; color: var(--dash-accent);">
+                Key verification points: 00:00 (baseline hum), 00:11 (speech onset lip-sync), 04:08 (acoustic ghost wind gust), 18:11 (trailing silence).
+              </div>
+            </div>
+          </div>
+
           <!-- Section B.2: Compounding Fragility of Good Enough -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 2.5 // The 0.85^n Trap</div>
+          <div class="prompt-card" data-scene="04">
+            <div class="prompt-phase">Phase 2.5 // Scene 04 // The 0.85^n Trap</div>
             <div class="prompt-lead">The Compounding Fragility of "Good Enough" Scaffolding</div>
             <div class="prompt-body">
               "Evaluating 'good enough' in isolation is a trap. When five 'good enough' components (each 85% reliable) are chained together, system determinism drops to <strong>44.3%</strong>:"
@@ -591,8 +662,8 @@
           </div>
 
           <!-- Section C: The Homer Car -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 3 // The Artifice Warning</div>
+          <div class="prompt-card" data-scene="05">
+            <div class="prompt-phase">Phase 3 // Scene 05 // The Artifice Warning</div>
             <div class="prompt-lead">The Homer Simpson Car ("Wait! Don't go! Just... trust me bro!")</div>
             <div class="prompt-body">
               "Look at what happened here. Herb Powell gave Homer unconstrained authority to build a car with no budget constraints. Homer added bubble domes, three horns that play La Cucaracha, and giant tailfins. What did Homer forget? <em>He forgot to design a car that anyone actually needed to drive.</em>"
@@ -603,8 +674,8 @@
           </div>
 
           <!-- Section C.5: AI Psychosis & The Forest of Distraction -->
-          <div class="prompt-card" style="border-left: 4px solid var(--dash-red);">
-            <div class="prompt-phase" style="color: var(--dash-red);">Phase 3.5 // The Root Vulnerability</div>
+          <div class="prompt-card" data-scene="05" style="border-left: 4px solid var(--dash-red);">
+            <div class="prompt-phase" style="color: var(--dash-red);">Phase 3.5 // Scene 05 // The Root Vulnerability</div>
             <div class="prompt-lead">AI Psychosis: The Forest of Distraction & "Was It Even Fixed?"</div>
             <div class="prompt-body">
               "Think about the psychological spiral that just occurred: <em>I went from 'help fix this video' to 'what will it take to pivot this into a first round funding?'</em>"
@@ -619,8 +690,8 @@
           </div>
 
           <!-- Section D: And Yet It Is Real -->
-          <div class="prompt-card">
-            <div class="prompt-phase">Phase 4 // Sovereign Grounding</div>
+          <div class="prompt-card" data-scene="08">
+            <div class="prompt-phase">Phase 4 // Scene 08 // Sovereign Grounding</div>
             <div class="prompt-lead">And Yet, It IS Real</div>
             <div class="prompt-body">
               "The power lines are real. The 60 Hz hum was real. And the output master video sitting right here on my machine, with all 39,069 original 1080p camera frames preserved bit-for-bit without generational loss, and human speech restored to frame-accurate lip-sync, <strong>is real</strong>. Chicago Software Craftsmanship is learning how to walk that razor's edge: refusing the comforting lies of unverified hallucinations, while holding onto the empirical reality of the working tool."
@@ -757,9 +828,58 @@
       timerDisplay.textContent = `${hours}:${minutes}:${seconds}`;
     }
 
-    // Scene card selector
+    // Scene card selector & Teleprompter phase synchronizer
     const sceneCards = document.querySelectorAll('.scene-cue-card');
     const sceneIndicator = document.getElementById('active-scene-indicator');
+    const promptCards = document.querySelectorAll('.prompt-card');
+    const filterSceneLabel = document.getElementById('filter-scene-label');
+    const btnFilterAll = document.getElementById('btn-filter-all');
+    const btnFilterActive = document.getElementById('btn-filter-active');
+    const teleprompterBody = document.querySelector('.panel-body');
+
+    let currentActiveScene = '02';
+    let filterMode = 'all'; // 'all' or 'active'
+
+    function applySceneSelection(sceneNum, sceneName) {
+      currentActiveScene = sceneNum;
+      sceneIndicator.textContent = `SCENE ${sceneNum}: ${sceneName.toUpperCase()}`;
+      filterSceneLabel.textContent = `Scene ${sceneNum} (${sceneName})`;
+
+      let firstTargetCard = null;
+
+      promptCards.forEach(card => {
+        const cardScene = card.getAttribute('data-scene');
+        const matches = (cardScene === sceneNum);
+
+        if (filterMode === 'active') {
+          if (matches) {
+            card.style.display = 'block';
+            card.classList.remove('dimmed');
+            card.classList.add('scene-focused');
+            if (!firstTargetCard) firstTargetCard = card;
+          } else {
+            card.style.display = 'none';
+            card.classList.remove('scene-focused');
+          }
+        } else {
+          // 'all' mode: keep all visible, spotlight the matching scene, dim others
+          card.style.display = 'block';
+          if (matches) {
+            card.classList.remove('dimmed');
+            card.classList.add('scene-focused');
+            if (!firstTargetCard) firstTargetCard = card;
+          } else {
+            card.classList.add('dimmed');
+            card.classList.remove('scene-focused');
+          }
+        }
+      });
+
+      // Smooth scroll the teleprompter to the first matching phase card
+      if (firstTargetCard) {
+        firstTargetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
 
     sceneCards.forEach(card => {
       card.addEventListener('click', () => {
@@ -767,9 +887,32 @@
         card.classList.add('active');
         const sceneNum = card.getAttribute('data-scene');
         const sceneName = card.querySelector('.scene-name').textContent;
-        sceneIndicator.textContent = `SCENE ${sceneNum}: ${sceneName.toUpperCase()}`;
+        applySceneSelection(sceneNum, sceneName);
       });
     });
+
+    btnFilterAll.addEventListener('click', () => {
+      filterMode = 'all';
+      btnFilterAll.classList.add('active');
+      btnFilterActive.classList.remove('active');
+      const activeCard = document.querySelector('.scene-cue-card.active');
+      const sceneNum = activeCard ? activeCard.getAttribute('data-scene') : '02';
+      const sceneName = activeCard ? activeCard.querySelector('.scene-name').textContent : 'Monologue';
+      applySceneSelection(sceneNum, sceneName);
+    });
+
+    btnFilterActive.addEventListener('click', () => {
+      filterMode = 'active';
+      btnFilterActive.classList.add('active');
+      btnFilterAll.classList.remove('active');
+      const activeCard = document.querySelector('.scene-cue-card.active');
+      const sceneNum = activeCard ? activeCard.getAttribute('data-scene') : '02';
+      const sceneName = activeCard ? activeCard.querySelector('.scene-name').textContent : 'Monologue';
+      applySceneSelection(sceneNum, sceneName);
+    });
+
+    // Initialize with active Scene 02 state on page load
+    applySceneSelection('02', 'Monologue / Full Camera');
   </script>
 </body>
 </html>
