@@ -17,3 +17,4 @@ vframes_*
 
 # OS artifacts
 .DS_Store
+chrome/
