@@ -1,7 +1,7 @@
 # Live Broadcast & Video Analysis Runbook: "Under the High-Tension Wires"
 **Series**: *Ramblin' & Amblin' — Field Forensics* / *The Sound Above Errata*  
 **Host**: Mike Hall (Staff Observability & Software Craftsmanship Architect)  
-**Recording Date**: October 12, 2026  
+**Recording Date**: October 13, 2026  
 **Artifact / Episode**: `errata-concept-under-the-high-tension-wires`  
 **Target Video Master**: YouTube `8LYHo1dOkMo` / Local `~/ai/dehum/VID_20261009_111445043_fixed.mp4`
 
@@ -144,6 +144,9 @@ open -a OBS
   - "That is the razor's edge we are walking: on one side, an ocean of unverified AI artifice and seductive hallucinations. On the other side, an actual, tangible piece of engineering that works in the physical world. The craft is learning how to stand right on that line without falling into either ditch."
 - **The Legacy Test Dilemma & The Comforting Lies of Passing Specs**:
   - "I've worked in legacy codebases maintained over decades by dozens or hundreds of developers. We run test suites to reassure ourselves that code 'works.' But what does that test prove? It proves only that the system matches an isolated assertion written years ago—not whether it is doing what it *should*, or whether anyone alive still comprehends the trajectory of the architecture. We ship slop daily under the comforting umbrella of passing CI."
+- **Straight to Legacy vs. AI Slop: What's the Difference?**:
+  - "What's the difference between straight to legacy and AI slop? **Nothing. Nobody really understood what went in there either way.**"
+  - "'Straight to legacy' was written by a human developer completing a Jira ticket in isolation, satisfying an isolated unit test, and merged as opaque legacy debt. 'AI slop' is the exact same phenomenon generated in 10 seconds by an LLM, adorned with zero-cost badges and diagrams, and merged without personal accountability. The only difference is speed, scale, and the elimination of responsibility."
 - **The Strawberry Paradox & The Onus of Blame**:
   - "Now take that dilemma and scale it with AI. We are living in an absurd reality: **an LLM cannot reliably count the 'R's in the word 'Strawberry,' yet it can construct and reason through a 10-harmonic notch filter DSP pipeline.**"
   - "When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer prompting the machine? Or is blame pushed up the org chart into institutional plausible deniability? Comprehension is prohibitively costly in time and capital. That is why **Caveat Emptor** is our operating premise: this is an experiment, not an industry standard. Sovereign verification is the only defense."
