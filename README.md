@@ -18,6 +18,11 @@
 > **1. The Foundational Premise — Comprehension vs. The Comforting Lie of Passing Specs**:  
 > In legacy software systems maintained over decades by myriad hands of varying skill, motivation, and direction, we run test suites to prove that something "works." But green checkmarks often measure comforting lies rather than reality. A passing spec proves only that the system satisfies the narrow assertions someone wrote in isolation—not whether it is doing what it *should*, or whether anyone left alive still comprehends the system and the accumulated decisions that brought it here. We ship slop daily because tickets are completed in isolation without understanding the broader context.  
 > 
+> **1.1 What's the Difference Between "Straight to Legacy" and "AI Slop"? Nothing.**  
+> *"Straight to legacy"* has always been with us: a developer completing a ticket in isolation writes code they barely understand to satisfy a spec that tests an isolated assertion, and pushes it to production. It works by coincidence, nobody understands how it fits into the broader trajectory, and the moment it hits `main`, it is unmaintainable legacy debt.  
+> *"AI slop"* is the exact same phenomenon, accelerated to lightning speed: an LLM generates the change in 10 seconds, wraps it in the zero-cost trappings of authority (Mermaid charts, docstrings, unit tests), and pushes it into the codebase.  
+> **There is no fundamental difference between straight to legacy and AI slop: in both cases, nobody truly understood what went in there either way.** The only change is scale, velocity, and the complete elimination of personal accountability.  
+> 
 > **2. The New AI Scale & The Strawberry Paradox**:  
 > With generative AI, we face this exact dilemma at civilizational scale, severed from any individual who can be held accountable:  
 > - **The Strawberry Paradox**: An LLM cannot reliably count the "R"s in the word *"Strawberry,"* yet it can effortlessly construct and reason through a complex 10-harmonic notch filter DSP pipeline.  

@@ -86,8 +86,18 @@ Power and responsibility aren't just comic book tropes—they are the literal da
 ### 4.1 The Comforting Lies of Passing Specs
 In legacy codebases maintained over decades by dozens or hundreds of developers with differing skill and motivation, we run test suites to reassure ourselves that code "works." But green tests often measure comforting lies rather than reality. A passing spec proves only that the code satisfies the narrow assertion someone wrote years ago—not that the system is doing what it *should*, or that anyone left alive still comprehends the trajectory of the architecture. We ship slop every day because someone completed a ticket in isolation without understanding the broader context.
 
-### 4.2 The Strawberry Paradox & The Scale of Disconnect
-With generative AI, we face the same dilemma at civilizational scale:
+### 4.2 Straight to Legacy vs. AI Slop: The Illusion of Difference
+What is the actual difference between "straight to legacy" code and "AI slop"?
+
+**Nothing. Nobody really understood what went in there either way.**
+
+- **"Straight to Legacy"**: A human engineer, constrained by time, domain unfamiliarity, or ticket quotas, writes an isolated fix. They don't understand the systemic ramifications, but they make the immediate spec pass. The commit lands in production, immediately entering the codebase as opaque, unmaintainable legacy lore that future maintainers are afraid to touch.
+- **"AI Slop"**: An LLM, operating on statistical token prediction without grounding in physical reality, generates an elaborate implementation. It surrounds the code with immaculate docstrings, edge-case unit tests, and structural diagrams. The human prompter, lacking deep domain comprehension, sees green tests, assumes competence, and merges it.
+
+The mechanism is identical: code is introduced into a production system without holistic comprehension. The only distinction is that generative AI operates at a scale and velocity that human engineering orgs have never previously encountered, while completely diffusing individual responsibility.
+
+### 4.3 The Strawberry Paradox & The Scale of Disconnect
+With generative AI, we face this dilemma at civilizational scale:
 - **The Strawberry Paradox**: An LLM cannot reliably count the "R"s in the word *"Strawberry,"* yet it can construct and reason through a 10-harmonic notch filter DSP pipeline.
 - **The Value Proposition**: Why use an LLM if it hallucinates? Because true domain comprehension (acoustics, electrical engineering, FFmpeg filtergraph internals, POSIX portability) requires years of study that are prohibitively costly in time and capital. The AI offers 250:1 economic leverage—if and only if you can detect its traps.
 - **The Onus of Responsibility**: When millions of developers push uncomprehended AI code into production, where does accountability land? On the engineer writing the prompt? Or is responsibility pushed further up the org chart into institutional deniability? 
