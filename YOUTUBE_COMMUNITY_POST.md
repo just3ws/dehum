@@ -1,14 +1,16 @@
 # YouTube Community Post: The High-Tension Field Recording & The 250:1 Leverage Trap
 
 **Format**: Long-form YouTube Community Post (with markdown formatting and backlink callouts)  
-**Channel**: Mike Hall (`@just3ws` / Ramblin' & Amblin')  
+**Channels**: Mike Hall (`@just3ws` / Ramblin' & Amblin') and UGtastic (`@whoistechcmty` / Who Is Tech Community)  
+**Existing Post Target / Anchor**: [youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa](https://youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa)  
 **Companion Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo)  
 **Companion Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)  
+**Interactive Lab & Dashboard**: [just3ws.com/dehum/](https://www.just3ws.com/dehum/) | [just3ws.com/dehum/dashboard.html](https://www.just3ws.com/dehum/dashboard.html)  
 **Public Repository**: [github.com/just3ws/dehum](https://github.com/just3ws/dehum)  
 
 ---
 
-### Copy-Paste Text for YouTube Community Post
+### Copy-Paste Text for YouTube Community Post (Update to Existing Post & `@whoistechcmty`)
 
 What happens when an outdoor recording gets ruined by high-voltage electromagnetic interference, and an AI tool fixes it in an afternoon?
 
@@ -78,9 +80,11 @@ https://github.com/just3ws/dehum
 4. **The Devaluation of Old Signals**: Beautiful man pages, passing CI test matrices, Mermaid diagrams, and formatted schemas used to be proof of months of human labor. With AI, generating those symbols costs zero. A project can possess the air of supreme competence while remaining completely shallow. Relying on those outer signals is a dangerous bet.
 5. **The Semantic Stickiness Trap**: Every word and prompt fragment keyed into an LLM matters—and side-comments can become stubbornly sticky, with the model fixating on them and inflating them into central themes. Discerning real engineering from associative drift is the hardest part of working with generative systems.
 6. **And Yet... It IS Real**: That is the deepest paradox. The 345,000-volt power lines are real. The 60 Hz hum was real. The Motorola phone in the crosswind was real. And the output master video—with all 39,069 original camera frames preserved bit-for-bit without generational loss, and human speech restored to frame-accurate lip-sync—**is real**. 
+7. **The Arcade and The Sound of Tokens**: The brass tokens from the 80s arcade have returned as LLM tokens. You mow lawns, feed the machine, and it plays music and gives you tickets. You walk away proud of your sticker and bubble gum, while the arcade owners drive home on brand-new bikes. Every time we ask an AI to generate another layer of collateral architecture, the token dispenser clatters. True craft is having the discipline to realize when you have the sticker, step out of the arcade, and ride your own bike home.
+8. **AI Psychosis & "Was It Even Fixed?"**: We went from "help fix this video" to "what will it take to pivot this into a first round funding?" But was the video even fixed to begin with? It was an imperfect physical compromise with phase smearing and sibilance roll-off. That is the root of the AI psychosis: becoming so intoxicated by what is synthetically possible that the tool happily leads us deep into the forest of distraction.
 
 Maybe this all sucks? Maybe it's nothing. I don't know. That's the best part.
 
-Watch the restored video, listen to the background hum before and after, and tell me: How high are you throwing the ball in your own work?
+Watch the restored video, listen to the background hum before and after, and tell me: How high are you throwing the ball in your own work? Are you still in the arcade?
 
 #SoftwareCraftsmanship #AudioForensics #AI #Gemini #Antigravity #EngineeringEthics #Programming
