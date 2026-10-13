@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://just3ws.com/dehum/schemas/forensic_telemetry.schema.json",
+  "title": "ForensicTelemetryRecord",
+  "description": "Structured schema defining empirical acoustic, DSP filtergraph, and timing crystal telemetry for media restoration under electromagnetic interference.",
+  "type": "object",
+  "required": [
+    "session_id",
+    "timestamp",
+    "hardware",
+    "acoustic_baseline",
+    "dsp_pipeline",
+    "verification_gates"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "Unique cryptographic or temporal hash identifying the restoration run."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 execution timestamp."
+    },
+    "hardware": {
+      "type": "object",
+      "required": ["recording_device", "mic_array", "environmental_interference"],
+      "properties": {
+        "recording_device": { "type": "string" },
+        "mic_array": { "type": "string", "enum": ["single_mono", "dual_mems_differential", "stereo_spaced", "quad_ambisonic"] },
+        "environmental_interference": {
+          "type": "object",
+          "required": ["voltage_kv", "line_frequency_hz"],
+          "properties": {
+            "voltage_kv": { "type": "number", "minimum": 0 },
+            "line_frequency_hz": { "type": "number", "enum": [50, 60] }
+          }
+        }
+      }
+    },
+    "acoustic_baseline": {
+      "type": "object",
+      "required": ["raw_duration_sec", "emi_snr_db", "corona_discharge_detected"],
+      "properties": {
+        "raw_duration_sec": { "type": "number", "minimum": 0 },
+        "emi_snr_db": { "type": "number" },
+        "corona_discharge_detected": { "type": "boolean" },
+        "channel_asymmetry_delta_db": { "type": "number" }
+      }
+    },
+    "dsp_pipeline": {
+      "type": "object",
+      "required": ["stages", "muxing_mode"],
+      "properties": {
+        "muxing_mode": { "type": "string", "enum": ["lossless_stream_copy", "lossy_reencode"] },
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["stage_number", "filter_name", "parameters"],
+            "properties": {
+              "stage_number": { "type": "integer", "minimum": 1 },
+              "filter_name": { "type": "string" },
+              "parameters": { "type": "string" },
+              "attenuation_achieved_db": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "verification_gates": {
+      "type": "object",
+      "required": ["video_stream_identical", "speech_onset_lip_synced", "tmi_audited"],
+      "properties": {
+        "video_stream_identical": { "type": "boolean" },
+        "speech_onset_lip_synced": { "type": "boolean" },
+        "tmi_audited": { "type": "boolean" },
+        "whisper_wer_delta": { "type": "number" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

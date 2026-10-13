@@ -60,6 +60,12 @@ assert_success "Markdown Header quality gate" ruby bin/validate_markdown_headers
 # Test 9: ShellCheck quality gate passes cleanly
 assert_success "ShellCheck quality gate" ./bin/validate_shellcheck.sh
 
+# Test 10: Ruby MCP Server syntax check
+assert_success "MCP Server syntax validation" ruby -c bin/mcp_dehum_server.rb
+
+# Test 11: JSON Schema parse and structure check
+assert_success "Telemetry Schema syntax validation" ruby -e "require 'json'; JSON.parse(File.read('schemas/forensic_telemetry.schema.json'))"
+
 echo "========================================================="
 echo "Summary: $PASS passed, $FAIL failed."
 if [ "$FAIL" -gt 0 ]; then

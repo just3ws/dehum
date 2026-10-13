@@ -45,6 +45,11 @@ jobs:
           chmod +x bin/validate_shellcheck.sh
           ./bin/validate_shellcheck.sh
 
+      - name: Verify MCP Server & JSON Schemas
+        run: |
+          ruby -c bin/mcp_dehum_server.rb
+          ruby -e "require 'json'; JSON.parse(File.read('schemas/forensic_telemetry.schema.json'))"
+
       - name: Run Automated Test Suite
         run: |
           chmod +x bin/test_fix_video.sh
