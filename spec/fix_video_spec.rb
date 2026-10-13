@@ -34,7 +34,7 @@ RSpec.describe 'Dehum Forensic DSP Engine Contracts' do
       if File.exist?(test_file)
         stdout, _stderr, status = Open3.capture3("#{executable} --dry-run #{test_file.shellescape}")
         expect(status.exitstatus).to eq(0)
-        expect(stdout).to include('highpass=f=80')
+        expect(stdout).to include('highpass=f=90')
         expect(stdout).to include('adeclick')
         expect(stdout).to include('afftdn')
         expect(stdout).to include('bandreject')
