@@ -438,6 +438,7 @@
     "legacy_test_dilemma": "In legacy systems with myriad contributors, passing specs often prove only narrow isolated assertions rather than physical system correctness, reassuring us while shipping slop.",
     "strawberry_paradox": "An LLM cannot reliably count the Rs in Strawberry, yet constructs complex 10-harmonic DSP pipelines, creating an unprecedented scale of uncomprehended complexity.",
     "devaluation_of_old_signals": "Outer signals of competence (man pages, Mermaid diagrams, 100% CI badges, schemas) cost zero with AI and no longer guarantee depth. Relying on them is hazardous.",
-    "sovereign_verification": "The only viable defense is checking the boundary where code collides with physical reality (phase integrity, vocal intelligibility, lip-sync keyframes, and lossless stream copy)."
+    "sovereign_verification": "The only viable defense is checking the boundary where code collides with physical reality (phase integrity, vocal intelligibility, lip-sync keyframes, and lossless stream copy).",
+    "semantic_stickiness_trap": "Side-comments casually keyed into a chat can enter the corpus, become stubbornly sticky, and get inflated into central themes. Discerning real engineering from associative model fixation is a critical discipline."
   }
 }

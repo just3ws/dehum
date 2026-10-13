@@ -22,7 +22,7 @@ Draft the canonical spoof whitepaper pitching 'Dehum (dot) ai: The Sovereign Aut
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Features the Gold 2013 Toyota Sienna Bugatti as core architecture diagram
+- [ ] #1 Features the Occam's POSIX Razor vs. Rube Goldberg GPU Fabric diagram
 - [ ] #2 Explains the economic grift of wrapping 3 lines of POSIX math in 70B parameter models
 - [ ] #3 Ends with the Chicago Software Craftsmanship manifesto on physical ground truth
 <!-- AC:END -->
