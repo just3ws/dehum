@@ -47,6 +47,16 @@ You can conjure:
 
 All wrapped in the external signifiers of authority: citations, schemas, badges, and professional typography. The cost of generating the *symbols* of authority has dropped to zero.
 
+### 2.1 The Devaluation of Old Signals: Is It a Safe Bet?
+In the pre-LLM era, a project featuring formatted man pages, detailed Mermaid architecture diagrams, 100% test coverage badges, and clean documentation was a reliable proxy for deep engineering discipline. Those signals were costly to produce; they signaled months of dedicated human labor, comprehension, and attention to detail.
+
+**Today, those old signals have been completely devalued.** An AI pairing agent can generate an entire universe of external polish in 10 minutes. A project can project profound competence while remaining totally shallow, fragile, and utterly dependent on the model underneath.
+
+**Is relying on this air of legitimacy a safe bet? No. It is an extraordinary hazard.**
+- It creates the illusion of safety where none exists.
+- It dupes the prompter into believing they understand what they merely invoked.
+- The moment the system encounters an un-modeled physical boundary—like trailing silence vs. clock crystal drift—the entire edifice collapses into slow-motion slop.
+
 Like someone casually trying to hoist the hammer of Thor, the God of Thunder peers down and asks:
 > **"Are you worthy?"**
 
