@@ -1,7 +1,7 @@
 # YouTube Community Post: The High-Tension Field Recording & The 250:1 Leverage Trap
 
 **Format**: Long-form YouTube Community Post (with markdown formatting and backlink callouts)  
-**Channels**: Mike Hall (`@just3ws` / Ramblin' & Amblin') and UGtastic (`@whoistechcmty` / Who Is Tech Community)  
+**Channels**: Mike Hall (`@just3ws` / Ramblin' & Amblin') and UGtastic (`@whoistechcmty` / WHOIS Tech Community — the definitive directory & record of developer communities, playing on the UNIX/RFC 3912 `whois` lookup protocol)  
 **Existing Post Target / Anchor**: [youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa](https://youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa)  
 **Companion Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo)  
 **Companion Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)  
