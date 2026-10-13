@@ -72,6 +72,7 @@
         <a href="#telemetry">Telemetry</a>
         <a href="#epistemic-risks">Epistemology</a>
         <a href="#craftsmanship">Chicago Craft</a>
+        <a href="#datalake">Data Lake</a>
         <a href="wiki/">Wiki</a>
       </nav>
 
@@ -380,6 +381,50 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <!-- Section: Forensic Data Lake & Provenance Audit -->
+    <section id="datalake" class="section" aria-labelledby="heading-datalake">
+      <div class="section-header">
+        <div class="section-tag">Phase 06 // Trust & Authority</div>
+        <h2 id="heading-datalake" class="section-title">Forensic Data Lake & Provenance Audit Trail</h2>
+        <p class="section-lead">
+          Immutable git history, releases, and cryptographic commit provenance aggregated into an open data lake. Trust is not declared; it is mathematically verifiable.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">🗄️</div>
+          <h3>Structured Datalake Artifact</h3>
+          <p>
+            The entire development lifecycle, commit timestamps, release tags, and quality gates are compiled into a machine-readable data lake artifact for automated auditing.
+          </p>
+          <div style="margin-top: 14px;">
+            <a href="data/lake.json" class="btn btn-outline btn-sm" download>Download lake.json (16 KB)</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Continuous Verification Gates</h3>
+          <p>
+            Enforced across every local commit and cloud build: zero PII/PHI leakage (<code>bin/audit_tmi.rb</code>), 100% ShellCheck clean, zero heading jumps, and passing automated DSP tests.
+          </p>
+          <div class="card-meta">All 4 Quality Gates Passed Cleanly</div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📜</div>
+          <h3>Permanent DOI & Release Parity</h3>
+          <p>
+            Official release <code>v1.0.0</code> is permanently archived on GitHub with dual-licensing (MIT for software, CC BY-SA 4.0 for documentation & forensic telemetry).
+          </p>
+          <div style="margin-top: 14px;">
+            <a href="https://github.com/just3ws/dehum/releases/tag/v1.0.0" class="btn btn-outline btn-sm" rel="noopener noreferrer">Inspect Release v1.0.0</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
