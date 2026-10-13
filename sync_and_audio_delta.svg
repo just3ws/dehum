@@ -30,7 +30,7 @@
   <g transform="translate(50, 95)">
     <!-- Panel Background -->
     <rect width="900" height="290" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <text x="25" y="32" font-size="15" font-weight="600" fill="#58a6ff">1. LINEAR ASYNCHRONOUS CLOCK DRIFT &amp; SILENCE GAP</text>
+    <text x="25" y="32" font-size="15" font-weight="600" fill="#58a6ff">1. THE HALLUCINATION VS. PHYSICAL GROUND TRUTH (CONTAINER GAP)</text>
 
     <!-- X Axis (Video Time) -->
     <line x1="80" y1="210" x2="840" y2="210" stroke="#30363d" stroke-width="1.5"/>
@@ -39,38 +39,38 @@
     <text x="255" y="230" font-size="11" fill="#8b949e" text-anchor="middle">5m (300s)</text>
     <text x="430" y="230" font-size="11" fill="#8b949e" text-anchor="middle">10m (600s)</text>
     <text x="605" y="230" font-size="11" fill="#8b949e" text-anchor="middle">15m (900s)</text>
-    <text x="716" y="230" font-size="11" fill="#f85149" font-weight="600" text-anchor="middle">18.2m</text>
+    <text x="716" y="230" font-size="11" fill="#f85149" font-weight="600" text-anchor="middle">18.2m (1091s)</text>
     <text x="840" y="230" font-size="11" fill="#58a6ff" font-weight="600" text-anchor="middle">21.7m (1303.6s)</text>
 
     <!-- Video Track Bar -->
-    <text x="25" y="75" font-size="12" font-weight="600" fill="#c9d1d9">Video Track</text>
-    <text x="25" y="90" font-size="10" fill="#8b949e">(-c:v copy, untouched)</text>
-    <rect x="80" y="65" width="760" height="24" rx="4" fill="url(#blueGrad)"/>
-    <text x="460" y="81" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">21m 43.6s (1303.61s) — 1080p @ 29.92 fps</text>
+    <text x="25" y="70" font-size="12" font-weight="600" fill="#c9d1d9">Video Track</text>
+    <text x="25" y="85" font-size="10" fill="#8b949e">(-c:v copy passthrough)</text>
+    <rect x="80" y="60" width="760" height="24" rx="4" fill="url(#blueGrad)"/>
+    <text x="460" y="76" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">21m 43.6s (1303.61s) — 1080p @ 29.92 fps (39,069 Frames Preserved)</text>
 
-    <!-- Original Audio Bar -->
-    <text x="25" y="125" font-size="12" font-weight="600" fill="#f85149">Original Audio</text>
-    <text x="25" y="140" font-size="10" fill="#8b949e">(Clock ran 16.3% fast)</text>
-    <rect x="80" y="115" width="636" height="24" rx="4" fill="url(#redGrad)"/>
-    <text x="398" y="131" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">18m 11.1s (1091.09s) Audio Playing</text>
-    <!-- Silence Gap -->
-    <rect x="716" y="115" width="124" height="24" rx="4" fill="#21262d" stroke="#f85149" stroke-dasharray="4,3"/>
-    <text x="778" y="131" font-size="10" font-weight="600" fill="#f85149" text-anchor="middle">3m 32.5s SILENCE</text>
+    <!-- Audio Track Bar (Physical Reality) -->
+    <text x="25" y="115" font-size="12" font-weight="600" fill="#3fb950">Physical Speech</text>
+    <text x="25" y="130" font-size="10" fill="#8b949e">(Frame-accurate 1.0x)</text>
+    <rect x="80" y="105" width="636" height="24" rx="4" fill="url(#greenGrad)"/>
+    <text x="398" y="121" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">18m 11.1s (1091.09s) Spoken Presentation Ends Naturally at "Thank you."</text>
+    <!-- Trailing Silence Pad -->
+    <rect x="716" y="105" width="124" height="24" rx="4" fill="#21262d" stroke="#3fb950" stroke-dasharray="4,3"/>
+    <text x="778" y="121" font-size="10" font-weight="600" fill="#3fb950" text-anchor="middle">3m 32.5s Padded</text>
 
-    <!-- Fixed Audio Bar -->
-    <text x="25" y="175" font-size="12" font-weight="600" fill="#3fb950">Fixed Audio</text>
-    <text x="25" y="190" font-size="10" fill="#8b949e">(atempo=0.836979)</text>
-    <rect x="80" y="165" width="759.9" height="24" rx="4" fill="url(#greenGrad)"/>
-    <text x="460" y="181" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">1303.59s (Aligned within 14 ms of Video) — Fully Synced</text>
+    <!-- Hallucinated Trap Bar -->
+    <text x="25" y="160" font-size="12" font-weight="600" fill="#f85149">AI Trap</text>
+    <text x="25" y="175" font-size="10" fill="#8b949e">(atempo=0.837 slop)</text>
+    <rect x="80" y="150" width="759.9" height="24" rx="4" fill="url(#redGrad)"/>
+    <text x="460" y="166" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Synthetic Time-Stretch Hallucination: Drunken Slow-Motion & Desync</text>
 
-    <!-- Drift callout box -->
-    <g transform="translate(640, 248)">
-      <rect width="230" height="32" rx="4" fill="#21262d" stroke="#f85149" stroke-width="1"/>
-      <text x="115" y="20" font-size="11" font-weight="600" fill="#f85149" text-anchor="middle">Max Drift Gap: 212.51s (3.54 min)</text>
-    </g>
+    <!-- Forensic Discovery Callout Boxes -->
     <g transform="translate(80, 248)">
-      <rect width="250" height="32" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
-      <text x="125" y="20" font-size="11" font-weight="600" fill="#3fb950" text-anchor="middle">Fixed Residual Drift: 0.014s (14 ms)</text>
+      <rect width="360" height="32" rx="4" fill="#21262d" stroke="#f85149" stroke-width="1"/>
+      <text x="180" y="20" font-size="11" font-weight="600" fill="#f85149" text-anchor="middle">Early AI Fallacy: False Clock Crystal Drift (atempo)</text>
+    </g>
+    <g transform="translate(460, 248)">
+      <rect width="380" height="32" rx="4" fill="#21262d" stroke="#3fb950" stroke-width="1"/>
+      <text x="190" y="20" font-size="11" font-weight="600" fill="#3fb950" text-anchor="middle">Physical Ground Truth: Natural 1.0x Cadence + apad Tail</text>
     </g>
   </g>
 
