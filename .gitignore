@@ -4,6 +4,7 @@
 *.jpg
 *.png
 !docs/*.png
+!docs/assets/img/*
 !linkedin_banner.png
 *.svg.bak
 
