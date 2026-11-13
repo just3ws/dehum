@@ -6,6 +6,18 @@
 
 set -euo pipefail
 
+# Prefer keg-only ffmpeg-full ahead of core Homebrew ffmpeg/ffprobe when present.
+for _ff_bin in "${HOMEBREW_PREFIX:-/opt/homebrew}/opt/ffmpeg-full/bin" "/usr/local/opt/ffmpeg-full/bin"; do
+    if [ -d "$_ff_bin" ]; then
+        case ":${PATH:-}:" in
+            *":$_ff_bin:"*) ;;
+            *) export PATH="$_ff_bin:${PATH:-/usr/bin:/bin}" ;;
+        esac
+        break
+    fi
+done
+unset _ff_bin
+
 VERSION="1.3.0"
 HIGHPASS_FREQ=90
 Q_FACTOR=15
