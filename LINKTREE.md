@@ -20,11 +20,14 @@ A canonical index of all articles, repositories, video streams, telemetry audits
 
 | Resource | Target URI | Description |
 | :--- | :--- | :--- |
+| **YouTube Channel** | [`https://www.youtube.com/@just3ws-mike`](https://www.youtube.com/@just3ws-mike) | Mike Hall's official YouTube channel (consolidated from `@whoistechcmty`). |
 | **Raw Field Master Video** | [YouTube: `8LYHo1dOkMo`](https://youtu.be/8LYHo1dOkMo) | **[HEADPHONE WARNING: BAD AUDIO]** 21m 43s raw unvarnished recording beneath 345 kV lines with severe 60 Hz induction and corona discharge. |
 | **Upcoming Live Broadcast** | [YouTube: `XS7EZ1eWH4U`](https://studio.youtube.com/video/XS7EZ1eWH4U/edit) | *The Mirage of Competence: An Experiment in Public on AI Slop and Domain Boundaries* (The Sound Above Errata Series). |
-| **YouTube Community Post Draft** | [`YOUTUBE_COMMUNITY_POST.md`](YOUTUBE_COMMUNITY_POST.md) | Formatted draft for YouTube Community tab on `@just3ws` and `@whoistechcmty`. |
+| **YouTube Community Post Draft** | [`YOUTUBE_COMMUNITY_POST.md`](YOUTUBE_COMMUNITY_POST.md) | Formatted draft for YouTube Community tab on `@just3ws-mike` (consolidated from `@whoistechcmty`). |
 | **YouTube Community Anchor** | [YouTube Post Anchor](https://youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa) | Existing YouTube Community post thread. |
-| **Ramblin' & Amblin' Playlist** | [YouTube Playlist](https://www.youtube.com/playlist?list=PLNtb969T2-l0) | Full field recording series playlist containing this session. |
+| **Ramblin' & Amblin' Playlist** | [YouTube Playlist (`PLNtb969T2-l0`)](https://www.youtube.com/playlist?list=PLNtb969T2-l0) | Full field recording series playlist containing this session. |
+| **The Sound Above: Errata Playlist** | [YouTube Playlist (`PLKPAHha6I990`)](https://www.youtube.com/playlist?list=PLKPAHha6I990) | Forensic walkthroughs, audio restoration experiments, and demonstrations. |
+| **Patreon & Support** | [`https://www.patreon.com/c/just3ws`](https://www.patreon.com/c/just3ws) | Studio Notes, Hallway Track community chat, and cross-project support ([just3ws.com/support](https://www.just3ws.com/support/)). |
 
 ---
 

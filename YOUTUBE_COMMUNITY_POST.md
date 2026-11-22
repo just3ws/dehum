@@ -1,7 +1,7 @@
 # YouTube Community Post: Under the High-Tension Wires & The Mirage of Competence
 
 **Format**: Long-form YouTube Community Post (with markdown formatting and backlink callouts)  
-**Channels**: Mike Hall (`@just3ws` / Ramblin' & Amblin') and UGtastic (`@whoistechcmty` / WHOIS Tech Community)  
+**Channel**: Mike Hall (`@just3ws-mike`, consolidated from `@whoistechcmty` / WHOIS Tech Community)  
 **Existing Post Target / Anchor**: [youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa](https://youtube.com/post/UgkxOXYHZjnVYqNYcGUYpheDnlVYe0DY9fCa)  
 **Companion Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo)  
 **Companion Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)  

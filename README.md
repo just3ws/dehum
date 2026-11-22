@@ -215,8 +215,11 @@ dehum/
 
 ## 7. Media & Companion Publications
 
+- **YouTube Channel**: [Mike Hall (`@just3ws-mike`)](https://www.youtube.com/@just3ws-mike)
 - **YouTube Master Video**: [Under the High-Tension Wires (https://youtu.be/8LYHo1dOkMo)](https://youtu.be/8LYHo1dOkMo) (part of the [Ramblin' & Amblin' Playlist](https://www.youtube.com/playlist?list=PLNtb969T2-l0))
+- **YouTube Errata Broadcast**: [The Mirage of Competence (https://youtu.be/XS7EZ1eWH4U)](https://youtu.be/XS7EZ1eWH4U) (part of [The Sound Above: Errata Playlist](https://www.youtube.com/playlist?list=PLKPAHha6I990))
 - **Companion Architecture Article**: [just3ws.com: Building Deterministic Tools from Nondeterministic Systems](https://www.just3ws.com/ai/2026/10/12/under-the-high-tension-wires-building-deterministic-tools-from-nondeterministic-systems/)
+- **Patreon & Support**: [Patreon (`patreon.com/c/just3ws`)](https://www.patreon.com/c/just3ws) & [just3ws.com/support](https://www.just3ws.com/support/)
 - **Published LinkedIn Article**: [Under the High-Tension Wires: The 250:1 AI Leverage Trap, Slop, and Real Mastery](https://www.linkedin.com/pulse/under-high-tension-wires-2501-ai-leverage-trap-slop-real-mike-hall-gbbtc)
 - **LinkedIn Workspace Copy**: [`LINKEDIN_POST.md`](LINKEDIN_POST.md) / [`linkedin_article.html`](linkedin_article.html) with 1200x644 banner [`linkedin_banner.png`](linkedin_banner.png)
 - **Chronological Timeline**: [`CONVERSATION_TIMELINE.md`](CONVERSATION_TIMELINE.md)
